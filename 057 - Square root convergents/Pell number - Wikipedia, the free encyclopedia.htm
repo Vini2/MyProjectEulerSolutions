@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://en.wikipedia.org/wiki/Pell_number -->
+<html lang="en" dir="ltr" class="client-nojs"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Pell number - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23wmf14">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit">
+<link rel="apple-touch-icon" href="http://bits.wikimedia.org/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="http://bits.wikimedia.org/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom">
+<link rel="canonical" href="./Pell number - Wikipedia, the free encyclopedia_files/Pell number - Wikipedia, the free encyclopedia.htm">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.rtlcite%2Cwikihiero%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.common.interface%7Cskins.vector.styles&only=styles&skin=vector&*">
+<style>
+.cite-accessibility-label{position:absolute !important; top:-99999px;clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);padding:0 !important;border:0 !important;height:1px !important;width:1px !important;overflow:hidden}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:6989008023386f50501783f5c5ff5345 */
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px 8px;margin:0px;background-color:#F7F7F7;box-shadow:2px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-webkit-box-shadow:2px 4px 2px rgba(0,0,0,0.3)}.referencetooltip li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;border-top:12px #080086 solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7 solid;border-right:5px transparent solid;border-left:5px transparent solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js body .referencetooltip li li{border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086 solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7 solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:16px;width:16px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/e/ed/Cog.png);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity 0.15s;-moz-transition:opacity 0.15s;-o-transition:opacity 0.15s;-ms-transition:opacity 0.15s;transition:opacity 0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086 2px solid}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3c614aa75cecefe56b27b5e3c9197b7e */
+div#editpage-specialchars{display:block;margin-top:.5em;border:1px solid #c0c0c0;padding:.3em}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:29386c84f9c8f19dfb410df7e5be154b */
+.wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask a.external{background-image:none !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond a.external{background-image:none !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ba4e3603af357b5172e85672664d39a8 */
+#p-lang .uls-settings-trigger{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAgCAMAAAAVMLmlAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAALpQTFRF////W1tbgICAWVlZgICAUVFRgICAWVlZhYWFUlJShYWFVFRUgYGBVVVVgYGBVVVVgICAVFRUVVVVVlZWgYGBgICAVFRUgYGBVFRUgICAgYGBVVVVVVVVgYGBVlZWgYGBVFRUgICAVFRUgICAVVVVgICAVlZWgICAVFRUgICAVVVVgICAVFRUgICAVlZWgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICA9Fa9bgAAADx0Uk5TAA4OFBQWFhcXGRlJSUtLWlpbXV9fYGFhZGRlZmlpa2twcIiIioqPj5GRn5+goKGh6+vv7/Dw+fn8/P7+YuRUVgAAAOlJREFUGBmNwcdWAgEURMFLFCUaAcWAEhQYHBRmCN3//1u+BYcVC6s4p2U3OLrrVxN7Xn7uELoH5w65Dx1g6JNnoLazfz++VnZehkZir4pQ3NjzBg5TwtgBhzFh6kDr294UobiykxZc7ezVdLyx8yrw6pM+8GjnDjsf7gj3/WpiJ7Vhl6OW3eC/mlKdo5teZSHNSoM24XqvTCHTvg0MdDIASpn08/6ZSlkJ6jMpLUBhLc3qKEwIIwUURoSJAs2ltC5AIZUWTbjcSulktJayCvCikx7wJG0VttrfEp5eLpfS4uLtgaOmVOeMP8BAM9RClMO9AAAAAElFTkSuQmCC) no-repeat right top;background:transparent url(//bits.wikimedia.org/static-1.23wmf14/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.png?2014-02-13T17:50:00Z) no-repeat right top!ie;background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTRweCIgaGVpZ2h0PSIzMnB4Ij48cGF0aCBmaWxsPSIjODA4MDgwIiBkPSJNMTMuNTgyLDYuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTEuMzU5LTEuMzZjLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1QzkuNDMsMi44MzMsOC45MDgsMi42MTUsOC4zNjksMi40ODJWMS40MThDOC4zNjksMS4xODcsOC4xODIsMSw3Ljk1LDFINi4wMzJDNS44MDEsMSw1LjYxNCwxLjE4Nyw1LjYxNCwxLjQxOHYxLjA2M0M1LjA3MywyLjYxNiw0LjU1MiwyLjgzMyw0LjA2MiwzLjEyN2wtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQyOS0wLjE2NC0wLjU5MywwbC0xLjM2LDEuMzZjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMC43NSwwLjc1QzEuODE3LDUuNTY4LDEuNjE1LDYuMDk1LDEuNDgyLDYuNjMxSDAuNDE4QzAuMTg3LDYuNjMxLDAsNi44MTgsMCw3LjA1djEuOTE4YzAsMC4yMzEsMC4xODcsMC40MTgsMC40MTgsMC40MThoMS4wNDZjMC4xMzQsMC41NDIsMC4zNTEsMS4wNjIsMC42NDUsMS41NTFsLTAuNzUsMC43NWMtMC4xNjQsMC4xNjQtMC4xNjQsMC40MjksMCwwLjU5M2wxLjM2LDEuMzZjMC4xNjQsMC4xNjQsMC40MjksMC4xNjQsMC41OTMsMGwwLjc1LTAuNzVjMC40OTEsMC4yOTYsMS4wMSwwLjQ5MywxLjU1MSwwLjYyN3YxLjA2M0M1LjYxNCwxNC44MTMsNS44MDEsMTUsNi4wMzIsMTVINy45NWMwLjIzMSwwLDAuNDE5LTAuMTg3LDAuNDE5LTAuNDE4di0xLjA2M2MwLjU0Mi0wLjEzNCwxLjA2MS0wLjMzMywxLjU1MS0wLjYyN2wwLjc1LDAuNzVjMC4xNjQsMC4xNjQsMC40MywwLjE2NCwwLjU5NCwwbDEuMzU5LTEuMzZjMC4xNjQtMC4xNjQsMC4xNjQtMC40MjksMC0wLjU5M2wtMC43NS0wLjc1YzAuMjk1LTAuNDg5LDAuNTEtMS4wMTMsMC42NDUtMS41NTFoMS4wNjRDMTMuODEyLDkuMzg2LDE0LDkuMTk5LDE0LDguOTY4VjcuMDVDMTQsNi44MTgsMTMuODEyLDYuNjMyLDEzLjU4Miw2LjYzMnogTTcsMTAuNjQ0QzUuNTM5LDEwLjY0NCw0LjM1NSw5LjQ2LDQuMzU1LDhTNS41MzksNS4zNTYsNyw1LjM1NlM5LjY0NSw2LjU0LDkuNjQ1LDhTOC40NjEsMTAuNjQ0LDcsMTAuNjQ0eiIvPjxwYXRoIGZpbGw9IiM1NTU1NTUiIGQ9Ik0xMy41ODIsMjIuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDMsMC0wLjU5NGwtMS4zNTktMS4zNTljLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1Yy0wLjQ5LTAuMjk0LTEuMDEyLTAuNTEyLTEuNTUxLTAuNjQ1di0xLjA2NEM4LjM2OSwxNy4xODgsOC4xODIsMTcsNy45NSwxN0g2LjAzMmMtMC4yMzEsMC0wLjQxOSwwLjE4OC0wLjQxOSwwLjQxOHYxLjA2MmMtMC41NCwwLjEzNi0xLjA2MiwwLjM1My0xLjU1MSwwLjY0NmwtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQzLTAuMTY0LTAuNTk0LDBsLTEuMzU5LDEuMzU5Yy0wLjE2NCwwLjE2NC0wLjE2NCwwLjQzLDAsMC41OTRsMC43NSwwLjc1Yy0wLjI5MywwLjQ4OC0wLjQ5NCwxLjAxNS0wLjYyNywxLjU1MUgwLjQxOEMwLjE4OCwyMi42MzEsMCwyMi44MTgsMCwyMy4wNXYxLjkxOGMwLDAuMjMxLDAuMTg4LDAuNDE4LDAuNDE4LDAuNDE4aDEuMDQ2YzAuMTM0LDAuNTQyLDAuMzUxLDEuMDYyLDAuNjQ2LDEuNTUybC0wLjc1LDAuNzVjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMS4zNTksMS4zNmMwLjE2NCwwLjE2NCwwLjQzLDAuMTY0LDAuNTk0LDBsMC43NS0wLjc1YzAuNDksMC4yOTUsMS4wMSwwLjQ5MiwxLjU1MSwwLjYyN3YxLjA2MmMwLDAuMjMyLDAuMTg4LDAuNDIsMC40MTksMC40Mkg3Ljk1YzAuMjMxLDAsMC40MTktMC4xODgsMC40MTktMC40MThWMjkuNTJjMC41NDItMC4xMzUsMS4wNjEtMC4zMzQsMS41NTEtMC42MjdsMC43NSwwLjc1YzAuMTY0LDAuMTY0LDAuNDMsMC4xNjQsMC41OTQsMGwxLjM1OS0xLjM2YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTAuNzUtMC43NWMwLjI5NS0wLjQ4OSwwLjUxLTEuMDE0LDAuNjQ1LTEuNTUxaDEuMDY0QzEzLjgxMiwyNS4zODYsMTQsMjUuMTk5LDE0LDI0Ljk2OFYyMy4wNUMxNCwyMi44MTgsMTMuODEyLDIyLjYzMiwxMy41ODIsMjIuNjMyeiBNNywyNi42NDVjLTEuNDYxLDAtMi42NDUtMS4xODQtMi42NDUtMi42NDVTNS41MzksMjEuMzU1LDcsMjEuMzU1UzkuNjQ1LDIyLjUzOSw5LjY0NSwyNFM4LjQ2MSwyNi42NDUsNywyNi42NDV6Ii8+PC9zdmc+);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.23wmf14/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2014-02-13T17:50:00Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTRweCIgaGVpZ2h0PSIzMnB4Ij48cGF0aCBmaWxsPSIjODA4MDgwIiBkPSJNMTMuNTgyLDYuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTEuMzU5LTEuMzZjLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1QzkuNDMsMi44MzMsOC45MDgsMi42MTUsOC4zNjksMi40ODJWMS40MThDOC4zNjksMS4xODcsOC4xODIsMSw3Ljk1LDFINi4wMzJDNS44MDEsMSw1LjYxNCwxLjE4Nyw1LjYxNCwxLjQxOHYxLjA2M0M1LjA3MywyLjYxNiw0LjU1MiwyLjgzMyw0LjA2MiwzLjEyN2wtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQyOS0wLjE2NC0wLjU5MywwbC0xLjM2LDEuMzZjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMC43NSwwLjc1QzEuODE3LDUuNTY4LDEuNjE1LDYuMDk1LDEuNDgyLDYuNjMxSDAuNDE4QzAuMTg3LDYuNjMxLDAsNi44MTgsMCw3LjA1djEuOTE4YzAsMC4yMzEsMC4xODcsMC40MTgsMC40MTgsMC40MThoMS4wNDZjMC4xMzQsMC41NDIsMC4zNTEsMS4wNjIsMC42NDUsMS41NTFsLTAuNzUsMC43NWMtMC4xNjQsMC4xNjQtMC4xNjQsMC40MjksMCwwLjU5M2wxLjM2LDEuMzZjMC4xNjQsMC4xNjQsMC40MjksMC4xNjQsMC41OTMsMGwwLjc1LTAuNzVjMC40OTEsMC4yOTYsMS4wMSwwLjQ5MywxLjU1MSwwLjYyN3YxLjA2M0M1LjYxNCwxNC44MTMsNS44MDEsMTUsNi4wMzIsMTVINy45NWMwLjIzMSwwLDAuNDE5LTAuMTg3LDAuNDE5LTAuNDE4di0xLjA2M2MwLjU0Mi0wLjEzNCwxLjA2MS0wLjMzMywxLjU1MS0wLjYyN2wwLjc1LDAuNzVjMC4xNjQsMC4xNjQsMC40MywwLjE2NCwwLjU5NCwwbDEuMzU5LTEuMzZjMC4xNjQtMC4xNjQsMC4xNjQtMC40MjksMC0wLjU5M2wtMC43NS0wLjc1YzAuMjk1LTAuNDg5LDAuNTEtMS4wMTMsMC42NDUtMS41NTFoMS4wNjRDMTMuODEyLDkuMzg2LDE0LDkuMTk5LDE0LDguOTY4VjcuMDVDMTQsNi44MTgsMTMuODEyLDYuNjMyLDEzLjU4Miw2LjYzMnogTTcsMTAuNjQ0QzUuNTM5LDEwLjY0NCw0LjM1NSw5LjQ2LDQuMzU1LDhTNS41MzksNS4zNTYsNyw1LjM1NlM5LjY0NSw2LjU0LDkuNjQ1LDhTOC40NjEsMTAuNjQ0LDcsMTAuNjQ0eiIvPjxwYXRoIGZpbGw9IiM1NTU1NTUiIGQ9Ik0xMy41ODIsMjIuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDMsMC0wLjU5NGwtMS4zNTktMS4zNTljLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1Yy0wLjQ5LTAuMjk0LTEuMDEyLTAuNTEyLTEuNTUxLTAuNjQ1di0xLjA2NEM4LjM2OSwxNy4xODgsOC4xODIsMTcsNy45NSwxN0g2LjAzMmMtMC4yMzEsMC0wLjQxOSwwLjE4OC0wLjQxOSwwLjQxOHYxLjA2MmMtMC41NCwwLjEzNi0xLjA2MiwwLjM1My0xLjU1MSwwLjY0NmwtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQzLTAuMTY0LTAuNTk0LDBsLTEuMzU5LDEuMzU5Yy0wLjE2NCwwLjE2NC0wLjE2NCwwLjQzLDAsMC41OTRsMC43NSwwLjc1Yy0wLjI5MywwLjQ4OC0wLjQ5NCwxLjAxNS0wLjYyNywxLjU1MUgwLjQxOEMwLjE4OCwyMi42MzEsMCwyMi44MTgsMCwyMy4wNXYxLjkxOGMwLDAuMjMxLDAuMTg4LDAuNDE4LDAuNDE4LDAuNDE4aDEuMDQ2YzAuMTM0LDAuNTQyLDAuMzUxLDEuMDYyLDAuNjQ2LDEuNTUybC0wLjc1LDAuNzVjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMS4zNTksMS4zNmMwLjE2NCwwLjE2NCwwLjQzLDAuMTY0LDAuNTk0LDBsMC43NS0wLjc1YzAuNDksMC4yOTUsMS4wMSwwLjQ5MiwxLjU1MSwwLjYyN3YxLjA2MmMwLDAuMjMyLDAuMTg4LDAuNDIsMC40MTksMC40Mkg3Ljk1YzAuMjMxLDAsMC40MTktMC4xODgsMC40MTktMC40MThWMjkuNTJjMC41NDItMC4xMzUsMS4wNjEtMC4zMzQsMS41NTEtMC42MjdsMC43NSwwLjc1YzAuMTY0LDAuMTY0LDAuNDMsMC4xNjQsMC41OTQsMGwxLjM1OS0xLjM2YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTAuNzUtMC43NWMwLjI5NS0wLjQ4OSwwLjUxLTEuMDE0LDAuNjQ1LTEuNTUxaDEuMDY0QzEzLjgxMiwyNS4zODYsMTQsMjUuMTk5LDE0LDI0Ljk2OFYyMy4wNUMxNCwyMi44MTgsMTMuODEyLDIyLjYzMiwxMy41ODIsMjIuNjMyeiBNNywyNi42NDVjLTEuNDYxLDAtMi42NDUtMS4xODQtMi42NDUtMi42NDVTNS41MzksMjEuMzU1LDcsMjEuMzU1UzkuNjQ1LDIyLjUzOSw5LjY0NSwyNFM4LjQ2MSwyNi42NDUsNywyNi42NDV6Ii8+PC9zdmc+);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.23wmf14/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2014-02-13T17:50:00Z)!ie;height:16px;width:14px;float:right;cursor:pointer}.skin-vector #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang .uls-settings-trigger:hover{background-position:right -16px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:23c8d0fb96f860393f9f8127be6cddad */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+#container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen #playerContainer{position:absolute !important;width:100% !important;height:100%! important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{ left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?2014-02-13T17:50:00Z)}.mw-imported-resource{border:thin solid black}.kaltura-icon{background-image:url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?2014-02-13T17:50:00Z) !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none repeat scroll 0% 0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous} .play-btn-large{width:70px;height:53px;background :url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?2014-02-13T17:50:00Z);position :absolute;cursor :pointer;border :none !important;z-index :1}.play-btn-large:hover{background :url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?2014-02-13T17:50:00Z)}.carouselContainer{position :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px 20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px 6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position :absolute;bottom:23px}.carouselPrevButton{left :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal !important;font-size:14px !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px 10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71)) )}.alert-text{color :black !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f5d4c58e1b6cf163822d8d14275c99c2 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=site&only=styles&skin=vector&*">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+
+<script src="./Pell number - Wikipedia, the free encyclopedia_files/load.php"></script><script src="./Pell number - Wikipedia, the free encyclopedia_files/load(1).php"></script><style title="spinjs"></style>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pell_number","wgTitle":"Pell number","wgCurRevisionId":593062071,"wgRevisionId":593062071,"wgArticleId":1355482,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Integer sequences","Recurrence relations"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Pell_number","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgArticleFeedbackv5Permissions":{"aft-reader":true,"aft-member":false,"aft-editor":false,"aft-monitor":false,"aft-administrator":false,"aft-oversighter":false,"aft-noone":false},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"//bits.wikimedia.org/static-1.23wmf14/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048},"wikilove-recipient":"","wikilove-anon":0,"wgGuidedTourHelpGuiderUrl":"Help:Guided tours/guider","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"wikipedia","aftv5Article":{"id":1355482,"title":"Pell number","namespace":0,"categories":["Integer sequences","Recurrence relations"],"permissionLevel":false},"wgWikibaseItemId":"Q1386491"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"showhiddencats":false,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,
+"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"aftv5-last-filter":null,"visualeditor-enable":0,"visualeditor-enable-experimental":0,"visualeditor-enable-mwmath":0,"visualeditor-betatempdisable":0,"wikilove-enabled":1,"echo-subscriptions-web-page-review":true,"echo-subscriptions-email-page-review":false,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"echo-subscriptions-web-education-program":true,"echo-subscriptions-email-education-program":false,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"html","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,
+"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"echo-subscriptions-web-edit-thank":true,"echo-subscriptions-email-edit-thank":false,"echo-subscriptions-web-flow-discussion":true,"echo-subscriptions-email-flow-discussion":false,"gettingstarted-task-toolbar-show-intro":true,"uls-preferences":"","language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":
+false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"searchNs118":false,"searchNs119":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-teahouse":1,"gadget-ReferenceTooltips":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":1,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:5e4ad49afa9f26a7ed4e93dac6d2e189 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","wikibase.client.init","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script><script src="./Pell number - Wikipedia, the free encyclopedia_files/load(2).php"></script>
+<script src="./Pell number - Wikipedia, the free encyclopedia_files/geoiplookup"></script><link rel="dns-prefetch" href="http://meta.wikimedia.org/"><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.23wmf14/skins/vector/csshover.min.htc")}</style><![endif]--><script async="" src="./Pell number - Wikipedia, the free encyclopedia_files/load(3).php"></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Pell_number skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<div id="siteNotice"><!-- CentralNotice --></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Pell number</span></h1>
+			<div id="bodyContent">
+								<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="http://en.wikipedia.org/wiki/Pell_number#mw-navigation">navigation</a>, 					<a href="http://en.wikipedia.org/wiki/Pell_number#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="http://en.wikipedia.org/wiki/Mathematics" title="Mathematics">mathematics</a>, the <b>Pell numbers</b> are an infinite <a href="http://en.wikipedia.org/wiki/Sequence" title="Sequence">sequence</a> of <a href="http://en.wikipedia.org/wiki/Integers" title="Integers" class="mw-redirect">integers</a>, known since ancient times, that comprise the <a href="http://en.wikipedia.org/wiki/Denominator" title="Denominator" class="mw-redirect">denominators</a> of the <a href="http://en.wikipedia.org/wiki/Closest_rational_approximation" title="Closest rational approximation" class="mw-redirect">closest rational approximations</a> to the <a href="http://en.wikipedia.org/wiki/Square_root_of_2" title="Square root of 2">square root of 2</a>. This sequence of approximations begins 1/1, 3/2, 7/5, 17/12, and 41/29, so the sequence of Pell numbers begins with 1, 2, 5, 12, and 29. The numerators of the same sequence of approximations are half the <b>companion Pell numbers</b> or <b>Pell-Lucas numbers</b>; these numbers form a second infinite sequence that begins with 2, 6, 14, 34, and 82.</p>
+<p>Both the Pell numbers and the companion Pell numbers may be calculated by means of a <a href="http://en.wikipedia.org/wiki/Recurrence_relation" title="Recurrence relation">recurrence relation</a> similar to that for the <a href="http://en.wikipedia.org/wiki/Fibonacci_number" title="Fibonacci number">Fibonacci numbers</a>, and both sequences of numbers <a href="http://en.wikipedia.org/wiki/Exponential_growth" title="Exponential growth">grow exponentially</a>, proportionally to powers of the <a href="http://en.wikipedia.org/wiki/Silver_ratio" title="Silver ratio">silver ratio</a> 1&nbsp;+&nbsp;√2. As well as being used to approximate the square root of two, Pell numbers can be used to find <a href="http://en.wikipedia.org/wiki/Square_triangular_number" title="Square triangular number">square triangular numbers</a>, to construct integer approximations to the <a href="http://en.wikipedia.org/wiki/Right_isosceles_triangle" title="Right isosceles triangle" class="mw-redirect">right isosceles triangle</a>, and to solve certain <a href="http://en.wikipedia.org/wiki/Combinatorial_enumeration" title="Combinatorial enumeration" class="mw-redirect">combinatorial enumeration</a> problems.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>As with <a href="http://en.wikipedia.org/wiki/Pell%27s_equation" title="Pell&#39;s equation">Pell's equation</a>, the name of the Pell numbers stems from <a href="http://en.wikipedia.org/wiki/Leonhard_Euler" title="Leonhard Euler">Leonhard Euler's</a> mistaken attribution of the equation and the numbers derived from it to <a href="http://en.wikipedia.org/wiki/John_Pell" title="John Pell">John Pell</a>. The Pell-Lucas numbers are also named after <a href="http://en.wikipedia.org/wiki/%C3%89douard_Lucas" title="Édouard Lucas">Édouard Lucas</a>, who studied sequences defined by recurrences of this type; the Pell and companion Pell numbers are <a href="http://en.wikipedia.org/wiki/Lucas_sequence" title="Lucas sequence">Lucas sequences</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Pell_number#Pell_numbers"><span class="tocnumber">1</span> <span class="toctext">Pell numbers</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Pell_number#Approximation_to_the_square_root_of_two"><span class="tocnumber">2</span> <span class="toctext">Approximation to the square root of two</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Pell_number#Primes_and_squares"><span class="tocnumber">3</span> <span class="toctext">Primes and squares</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Pell_number#Pythagorean_triples"><span class="tocnumber">4</span> <span class="toctext">Pythagorean triples</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Pell_number#Pell-Lucas_numbers"><span class="tocnumber">5</span> <span class="toctext">Pell-Lucas numbers</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Pell_number#Computations_and_connections"><span class="tocnumber">6</span> <span class="toctext">Computations and connections</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Pell_number#Definitions"><span class="tocnumber">6.1</span> <span class="toctext">Definitions</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Pell_number#Approximations"><span class="tocnumber">6.2</span> <span class="toctext">Approximations</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Pell_number#H2.C2.A0.E2.88.92.C2.A02P2.C2.A0.3D.C2.A0.C2.B11"><span class="tocnumber">6.3</span> <span class="toctext"><i>H</i><sup>2</sup>&nbsp;−&nbsp;2<i>P</i><sup>2</sup>&nbsp;=&nbsp;±1</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Pell_number#Square_triangular_numbers"><span class="tocnumber">6.4</span> <span class="toctext">Square triangular numbers</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Pell_number#Pythagorean_triples_2"><span class="tocnumber">6.5</span> <span class="toctext">Pythagorean triples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Pell_number#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Pell_number#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Pell_number#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Pell_numbers">Pell numbers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=1" title="Edit section: Pell numbers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Pell numbers are defined by the <a href="http://en.wikipedia.org/wiki/Recurrence_relation" title="Recurrence relation">recurrence relation</a></p>
+<dl>
+<dd><img class="tex" alt="P_n=\begin{cases}0&amp;\mbox{if }n=0;\\1&amp;\mbox{if }n=1;\\2P_{n-1}+P_{n-2}&amp;\mbox{otherwise.}\end{cases}" src="http://upload.wikimedia.org/math/3/3/f/33fa080ecbc29f4a889e453fdfd5c476.png"></dd>
+</dl>
+<p>In words, the sequence of Pell numbers starts with 0 and 1, and then each Pell number is the sum of twice the previous Pell number and the Pell number before that. The first few terms of the sequence are</p>
+<dl>
+<dd><a href="http://en.wikipedia.org/wiki/0_(number)" title="0 (number)">0</a>, <a href="http://en.wikipedia.org/wiki/1_(number)" title="1 (number)">1</a>, <a href="http://en.wikipedia.org/wiki/2_(number)" title="2 (number)">2</a>, <a href="http://en.wikipedia.org/wiki/5_(number)" title="5 (number)">5</a>, <a href="http://en.wikipedia.org/wiki/12_(number)" title="12 (number)">12</a>, <a href="http://en.wikipedia.org/wiki/29_(number)" title="29 (number)">29</a>, <a href="http://en.wikipedia.org/wiki/70_(number)" title="70 (number)">70</a>, <a href="http://en.wikipedia.org/wiki/169_(number)" title="169 (number)">169</a>, 408, 985, 2378... (sequence <span class="nowrap"><a href="http://oeis.org/A000129" class="extiw" title="oeis:A000129">A000129</a></span> in <a href="http://en.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences" title="On-Line Encyclopedia of Integer Sequences">OEIS</a>).</dd>
+</dl>
+<p>The Pell numbers can also be expressed by the closed form formula</p>
+<dl>
+<dd><img class="tex" alt="P_n=\frac{(1+\sqrt2)^n-(1-\sqrt2)^n}{2\sqrt2}." src="./Pell number - Wikipedia, the free encyclopedia_files/746a5ae94d4613c8d0c1b678b6bed4dd.png"></dd>
+</dl>
+<p>For large values of <i>n</i>, the <img class="tex" alt="\scriptstyle (1+\sqrt 2)^n" src="http://upload.wikimedia.org/math/b/5/5/b55ce4dfa01451541494dce899b83dd1.png"> term dominates this expression, so the Pell numbers are approximately proportional to powers of the <a href="http://en.wikipedia.org/wiki/Silver_ratio" title="Silver ratio">silver ratio</a> <img class="tex" alt="\scriptstyle (1+\sqrt 2)" src="./Pell number - Wikipedia, the free encyclopedia_files/02fc6edb101196d7a69e06a0e8bb3e1c.png">, analogous to the growth rate of Fibonacci numbers as powers of the <a href="http://en.wikipedia.org/wiki/Golden_ratio" title="Golden ratio">golden ratio</a>.</p>
+<p>A third definition is possible, from the <a href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> formula</p>
+<dl>
+<dd><img class="tex" alt="\begin{pmatrix} P_{n+1} &amp; P_n \\ P_n &amp; P_{n-1} \end{pmatrix} = \begin{pmatrix} 2 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}^n." src="./Pell number - Wikipedia, the free encyclopedia_files/54eb728dd79e791cda66ff829b4e4ba7.png"></dd>
+</dl>
+<p>Many identities can be derived or proven from these definitions; for instance an identity analogous to <a href="http://en.wikipedia.org/wiki/Cassini%27s_identity" title="Cassini&#39;s identity" class="mw-redirect">Cassini's identity</a> for Fibonacci numbers,</p>
+<dl>
+<dd><img class="tex" alt="P_{n+1}P_{n-1}-P_n^2 = (-1)^n," src="./Pell number - Wikipedia, the free encyclopedia_files/42a1ece5fb222db1d9b721d075c23ff3.png"></dd>
+</dl>
+<p>is an immediate consequence of the matrix formula (found by considering the <a href="http://en.wikipedia.org/wiki/Determinant" title="Determinant">determinants</a> of the matrices on the left and right sides of the matrix formula).<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Approximation_to_the_square_root_of_two">Approximation to the square root of two</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=2" title="Edit section: Approximation to the square root of two">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="http://en.wikipedia.org/wiki/File:Pell_octagons.svg" class="image"><img alt="" src="./Pell number - Wikipedia, the free encyclopedia_files/300px-Pell_octagons.svg.png" width="300" height="300" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pell_octagons.svg/450px-Pell_octagons.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pell_octagons.svg/600px-Pell_octagons.svg.png 2x"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Pell_octagons.svg" class="internal" title="Enlarge"><img src="./Pell number - Wikipedia, the free encyclopedia_files/magnify-clip.png" width="15" height="11" alt=""></a></div>
+Rational approximations to regular <a href="http://en.wikipedia.org/wiki/Octagon" title="Octagon">octagons</a>, with coordinates derived from the Pell numbers.</div>
+</div>
+</div>
+<p>Pell numbers arise historically and most notably in the <a href="http://en.wikipedia.org/wiki/Diophantine_approximation" title="Diophantine approximation">rational approximation</a> to the <a href="http://en.wikipedia.org/wiki/Square_root_of_2" title="Square root of 2">square root of 2</a>. If two large integers <i>x</i> and <i>y</i> form a solution to the <a href="http://en.wikipedia.org/wiki/Pell_equation" title="Pell equation" class="mw-redirect">Pell equation</a></p>
+<dl>
+<dd><img class="tex" alt="\displaystyle x^2-2y^2=\pm 1," src="./Pell number - Wikipedia, the free encyclopedia_files/b7d2b187bb52f7ab68831b27c7ea286e.png"></dd>
+</dl>
+<p>then their ratio <img class="tex" alt="\tfrac{x}{y}" src="./Pell number - Wikipedia, the free encyclopedia_files/977a52974e9005919aa945d2268b30ec.png"> provides a close approximation to <img class="tex" alt="\scriptstyle\sqrt 2" src="./Pell number - Wikipedia, the free encyclopedia_files/cff472801d3a9c30aa03d9e2a60cd833.png">. The sequence of approximations of this form is</p>
+<dl>
+<dd><img class="tex" alt="1, \frac32, \frac75, \frac{17}{12}, \frac{41}{29}, \frac{99}{70}, \dots" src="./Pell number - Wikipedia, the free encyclopedia_files/018038d1c43836be1d21e41a41511ae1.png"></dd>
+</dl>
+<p>where the denominator of each fraction is a Pell number and the numerator is the sum of a Pell number and its predecessor in the sequence. That is, the solutions have the form <img class="tex" alt="\tfrac{P_{n-1}+P_n}{P_n}" src="./Pell number - Wikipedia, the free encyclopedia_files/d81ab2dd14b46909220f3da1f5f18f8c.png">. The approximation</p>
+<dl>
+<dd><img class="tex" alt="\sqrt 2\approx\frac{577}{408}" src="./Pell number - Wikipedia, the free encyclopedia_files/aa57ef416e1ccc6f77da3fdc91e7cdda.png"></dd>
+</dl>
+<p>of this type was known to Indian mathematicians in the third or fourth century B.C.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-3"><span>[</span>3<span>]</span></a></sup> The Greek mathematicians of the fifth century B.C. also knew of this sequence of approximations:<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-4"><span>[</span>4<span>]</span></a></sup> Plato refers to the numerators as <b>rational diameters</b>.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-5"><span>[</span>5<span>]</span></a></sup> In the 2nd century CE <a href="http://en.wikipedia.org/wiki/Theon_of_Smyrna" title="Theon of Smyrna">Theon of Smyrna</a> used the term the <b>side and diameter numbers</b> to describe the denominators and numerators of this sequence.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>These approximations can be derived from the <a href="http://en.wikipedia.org/wiki/Continued_fraction" title="Continued fraction">continued fraction</a> expansion of <img class="tex" alt="\scriptstyle\sqrt 2" src="./Pell number - Wikipedia, the free encyclopedia_files/cff472801d3a9c30aa03d9e2a60cd833.png">:</p>
+<dl>
+<dd><img class="tex" alt="\sqrt 2 = 1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots\,}}}}}." src="./Pell number - Wikipedia, the free encyclopedia_files/82865ae263d142ccf4e6602a0366f666.png"></dd>
+</dl>
+<p>Truncating this expansion to any number of terms produces one of the Pell-number-based approximations in this sequence; for instance,</p>
+<dl>
+<dd><img class="tex" alt="\frac{577}{408} = 1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2}}}}}}}." src="./Pell number - Wikipedia, the free encyclopedia_files/863a2df8e82ad2e45a038a00fa6785a7.png"></dd>
+</dl>
+<p>As Knuth (1994) describes, the fact that Pell numbers approximate <img class="tex" alt="\scriptstyle\sqrt 2" src="./Pell number - Wikipedia, the free encyclopedia_files/cff472801d3a9c30aa03d9e2a60cd833.png"> allows them to be used for accurate rational approximations to a regular <a href="http://en.wikipedia.org/wiki/Octagon" title="Octagon">octagon</a> with vertex coordinates <img class="tex" alt="(\pm P_i,\pm P_{i+1})" src="./Pell number - Wikipedia, the free encyclopedia_files/0c4baa6abe52dd1f892636c1a8b820e5.png"> and <img class="tex" alt="(\pm P_{i+1},\pm P_i)" src="./Pell number - Wikipedia, the free encyclopedia_files/68b1422cda894c1d0f034d70ee7aa5e0.png">. All vertices are equally distant from the origin, and form nearly uniform angles around the origin. Alternatively, the points <img class="tex" alt="(\pm(P_i+P_{i-1}),0)" src="./Pell number - Wikipedia, the free encyclopedia_files/5ed7f8a3e7e2fae2d930879e6fb90eaf.png">, <img class="tex" alt="(0,\pm(P_i+P_{i-1}))" src="./Pell number - Wikipedia, the free encyclopedia_files/8b51af202cf890013daa7d26a46588ae.png">, and <img class="tex" alt="(\pm P_i,\pm P_i)" src="./Pell number - Wikipedia, the free encyclopedia_files/4d15d5c5f91d73b00e1465066bf9ca64.png"> form approximate octagons in which the vertices are nearly equally distant from the origin and form uniform angles.</p>
+<h2><span class="mw-headline" id="Primes_and_squares">Primes and squares</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=3" title="Edit section: Primes and squares">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A <b>Pell prime</b> is a Pell number that is <a href="http://en.wikipedia.org/wiki/Prime_number" title="Prime number">prime</a>. The first few Pell primes are</p>
+<dl>
+<dd>2, 5, 29, 5741, ... (sequence <span class="nowrap"><a href="http://oeis.org/A086383" class="extiw" title="oeis:A086383">A086383</a></span> in <a href="http://en.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences" title="On-Line Encyclopedia of Integer Sequences">OEIS</a>).</dd>
+</dl>
+<p>As with the Fibonacci numbers, a Pell number <img class="tex" alt="P_n" src="./Pell number - Wikipedia, the free encyclopedia_files/9b34c48707062a07e6c080655df4337f.png"> can only be prime if <i>n</i> itself is prime.</p>
+<p>The only Pell numbers that are squares, cubes, or any higher power of an integer are 0, 1, and 169 = 13<sup>2</sup>.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>However, despite having so few squares or other powers, Pell numbers have a close connection to <a href="http://en.wikipedia.org/wiki/Square_triangular_number" title="Square triangular number">square triangular numbers</a>.<sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Pell_number#cite_note-8"><span>[</span>8<span>]</span></a></sup> Specifically, these numbers arise from the following identity of Pell numbers:</p>
+<dl>
+<dd><img class="tex" alt="\bigl((P_{k-1}+P_k)\cdot P_k\bigr)^2 = \frac{(P_{k-1}+P_k)^2\cdot\left((P_{k-1}+P_k)^2-(-1)^k\right)}{2}." src="./Pell number - Wikipedia, the free encyclopedia_files/32a41566be69e501800fa7b606efe722.png"></dd>
+</dl>
+<p>The left side of this identity describes a <a href="http://en.wikipedia.org/wiki/Square_number" title="Square number">square number</a>, while the right side describes a <a href="http://en.wikipedia.org/wiki/Triangular_number" title="Triangular number">triangular number</a>, so the result is a square triangular number.</p>
+<p>Santana and Diaz-Barrero (2006) prove another identity relating Pell numbers to squares and showing that the sum of the Pell numbers up to <img class="tex" alt="P_{4n+1}" src="./Pell number - Wikipedia, the free encyclopedia_files/dabe6fd1446f5d3a36838998e530daf7.png"> is always a square:</p>
+<dl>
+<dd><img class="tex" alt="\sum_{i=0}^{4n+1} P_i = \left(\sum_{r=0}^n 2^r{2n+1\choose 2r}\right)^2 = (P_{2n}+P_{2n+1})^2." src="./Pell number - Wikipedia, the free encyclopedia_files/074e5117b545e2fb357f47c1b407a335.png"></dd>
+</dl>
+<p>For instance, the sum of the Pell numbers up to <img class="tex" alt="P_5" src="./Pell number - Wikipedia, the free encyclopedia_files/d678e3a1d542ef776e92812b10286f7f.png">, <img class="tex" alt="0+1+2+5+12+29=49" src="./Pell number - Wikipedia, the free encyclopedia_files/4e4c9e1c6331e0e430c5ff3224a708bd.png">, is the square of <img class="tex" alt="P_2+P_3=2+5=7" src="./Pell number - Wikipedia, the free encyclopedia_files/ffeb177ac3a05347c8c986dde8a96a40.png">. The numbers <img class="tex" alt="P_{2n}+P_{2n+1}" src="./Pell number - Wikipedia, the free encyclopedia_files/8e26ff0cdce74706d1c3e95274b8b756.png"> forming the square roots of these sums,</p>
+<dl>
+<dd>1, 7, 41, 239, 1393, 8119, 47321, ... (sequence <span class="nowrap"><a href="http://oeis.org/A002315" class="extiw" title="oeis:A002315">A002315</a></span> in <a href="http://en.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences" title="On-Line Encyclopedia of Integer Sequences">OEIS</a>),</dd>
+</dl>
+<p>are known as the <a href="http://en.wikipedia.org/wiki/Newman%E2%80%93Shanks%E2%80%93Williams_number" title="Newman–Shanks–Williams number" class="mw-redirect">Newman–Shanks–Williams (NSW) numbers</a>.</p>
+<h2><span class="mw-headline" id="Pythagorean_triples">Pythagorean triples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=4" title="Edit section: Pythagorean triples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="http://en.wikipedia.org/wiki/File:Pell_right_triangles.svg" class="image"><img alt="" src="./Pell number - Wikipedia, the free encyclopedia_files/300px-Pell_right_triangles.svg.png" width="300" height="289" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pell_right_triangles.svg/450px-Pell_right_triangles.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pell_right_triangles.svg/600px-Pell_right_triangles.svg.png 2x"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Pell_right_triangles.svg" class="internal" title="Enlarge"><img src="./Pell number - Wikipedia, the free encyclopedia_files/magnify-clip.png" width="15" height="11" alt=""></a></div>
+Integer right triangles with nearly equal legs, derived from the Pell numbers.</div>
+</div>
+</div>
+<p>If a <a href="http://en.wikipedia.org/wiki/Right_triangle" title="Right triangle">right triangle</a> has integer side lengths <i>a</i>, <i>b</i>, <i>c</i> (necessarily satisfying the <a href="http://en.wikipedia.org/wiki/Pythagorean_theorem" title="Pythagorean theorem">Pythagorean theorem</a> <i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>=<i>c</i><sup>2</sup>), then (<i>a</i>,<i>b</i>,<i>c</i>) is known as a <a href="http://en.wikipedia.org/wiki/Pythagorean_triple" title="Pythagorean triple">Pythagorean triple</a>. As Martin (1875) describes, the Pell numbers can be used to form Pythagorean triples in which <i>a</i> and <i>b</i> are one unit apart, corresponding to right triangles that are nearly isosceles. Each such triple has the form</p>
+<dl>
+<dd><img class="tex" alt="(2P_{n}P_{n+1}, P_{n+1}^2 - P_{n}^2, P_{n+1}^2 + P_{n}^2=P_{2n+1})." src="./Pell number - Wikipedia, the free encyclopedia_files/29f228631a76444283de3dac5feedcc0.png"></dd>
+</dl>
+<p>The sequence of Pythagorean triples formed in this way is</p>
+<dl>
+<dd>(4,3,5), (20,21,29), (120,119,169), (696,697,985), ....</dd>
+</dl>
+<h2><span class="mw-headline" id="Pell-Lucas_numbers">Pell-Lucas numbers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=5" title="Edit section: Pell-Lucas numbers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <b>companion Pell numbers</b> or <b>Pell-Lucas numbers</b> are defined by the <a href="http://en.wikipedia.org/wiki/Recurrence_relation" title="Recurrence relation">recurrence relation</a></p>
+<dl>
+<dd><img class="tex" alt="Q_n=\begin{cases}2&amp;\mbox{if }n=0;\\2&amp;\mbox{if }n=1;\\2Q_{n-1}+Q_{n-2}&amp;\mbox{otherwise.}\end{cases}" src="./Pell number - Wikipedia, the free encyclopedia_files/b917a081aec106b38c2fa2794bd8fbef.png"></dd>
+</dl>
+<p>In words: the first two numbers in the sequence are both 2, and each successive number is formed by adding twice the previous Pell-Lucas number to the Pell-Lucas number before that, or equivalently, by adding the next Pell number to the previous Pell number: thus, 82 is the companion to 29, and 82 = 2 * 34 + 14 = 70 + 12. The first few terms of the sequence are (sequence <span class="nowrap"><a href="http://oeis.org/A002203" class="extiw" title="oeis:A002203">A002203</a></span> in <a href="http://en.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences" title="On-Line Encyclopedia of Integer Sequences">OEIS</a>): <a href="http://en.wikipedia.org/wiki/2_(number)" title="2 (number)">2</a>, <a href="http://en.wikipedia.org/wiki/2_(number)" title="2 (number)">2</a>, <a href="http://en.wikipedia.org/wiki/6_(number)" title="6 (number)">6</a>, <a href="http://en.wikipedia.org/wiki/14_(number)" title="14 (number)">14</a>, <a href="http://en.wikipedia.org/wiki/34_(number)" title="34 (number)">34</a>, <a href="http://en.wikipedia.org/wiki/82_(number)" title="82 (number)">82</a>, <a href="http://en.wikipedia.org/wiki/198_(number)" title="198 (number)">198</a>, <a href="http://en.wikipedia.org/wiki/478_(number)" title="478 (number)" class="mw-redirect">478</a>...</p>
+<p>The companion Pell numbers can be expressed by the closed form formula</p>
+<dl>
+<dd><img class="tex" alt="Q_n=(1+\sqrt 2)^n+(1-\sqrt 2)^n." src="./Pell number - Wikipedia, the free encyclopedia_files/4b2f5dd2bcf54bd1fb6a6b8c50b15039.png"></dd>
+</dl>
+<p>These numbers are all even; each such number is twice the numerator in one of the rational approximations to <img class="tex" alt="\scriptstyle\sqrt 2" src="./Pell number - Wikipedia, the free encyclopedia_files/cff472801d3a9c30aa03d9e2a60cd833.png"> discussed above.</p>
+<h2><span class="mw-headline" id="Computations_and_connections">Computations and connections</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=6" title="Edit section: Computations and connections">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following table gives the first few powers of the <a href="http://en.wikipedia.org/wiki/Silver_ratio" title="Silver ratio">silver ratio</a> <img class="tex" alt="\delta=\delta_S=1+\sqrt2" src="./Pell number - Wikipedia, the free encyclopedia_files/9c3fefd34af4316e49ac36a2858af071.png"> and its conjugate <img class="tex" alt="\bar{\delta}=1-\sqrt{2}" src="./Pell number - Wikipedia, the free encyclopedia_files/07b29c62b9e4ab1d088856115a5ff313.png">.</p>
+<table class="wikitable">
+<tbody><tr>
+<th><img class="tex" alt=" n " src="./Pell number - Wikipedia, the free encyclopedia_files/7b8b965ad4bca0e41ab51de7b31363a1.png"></th>
+<th><img class="tex" alt="(1+\sqrt{2})^n" src="./Pell number - Wikipedia, the free encyclopedia_files/7062b8336e7e74e39f5d1b9a68c160dc.png"></th>
+<th><img class="tex" alt="(1-\sqrt{2})^n" src="./Pell number - Wikipedia, the free encyclopedia_files/85812f9c5d93f3d2bc3c155406f7f9fa.png"></th>
+</tr>
+<tr>
+<td>0</td>
+<td><img class="tex" alt="1+0\sqrt{2}=1.0" src="./Pell number - Wikipedia, the free encyclopedia_files/47e6957b70ebd1237e4271504689a15e.png"></td>
+<td><img class="tex" alt="1-0\sqrt{2}=1.0" src="./Pell number - Wikipedia, the free encyclopedia_files/7322da58849d9272967035bffa070e89.png"></td>
+</tr>
+<tr>
+<td>1</td>
+<td><img class="tex" alt="1+1\sqrt{2}=2.41421\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/0e70a2370d73ddad47de609e394324b6.png"></td>
+<td><img class="tex" alt="1-1\sqrt{2}=-0.41421\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/0e337e89316eb737e0f6a3688948ed2f.png"></td>
+</tr>
+<tr>
+<td>2</td>
+<td><img class="tex" alt="3+2\sqrt{2}=5.82842\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/35db00dd88b927313101c7139516a1da.png"></td>
+<td><img class="tex" alt="3-2\sqrt{2}=0.17157\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/4eabc9862d40b3416685fa1d2129c49d.png"></td>
+</tr>
+<tr>
+<td>3</td>
+<td><img class="tex" alt="7+5\sqrt{2}=14.07106\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/e22e29ca4b924e90fe9c1d34e9ce1799.png"></td>
+<td><img class="tex" alt="7-5\sqrt{2}=-0.07106\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/19d1c2f0a58c94c69c41a793650f8595.png"></td>
+</tr>
+<tr>
+<td>4</td>
+<td><img class="tex" alt="17+12\sqrt{2}=33.97056\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/02814ce0d1acc42e5a1d4bfa7e325c9c.png"></td>
+<td><img class="tex" alt="17-12\sqrt{2}=0.02943\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/7d8be8343463a3ab6ea67969bf432cc2.png"></td>
+</tr>
+<tr>
+<td>5</td>
+<td><img class="tex" alt="41+29\sqrt{2}=82.01219\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/0a9f210089d71143f9aaedd8ad2056a8.png"></td>
+<td><img class="tex" alt="41-29\sqrt{2}=-0.01219\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/63d18e94e5c28dd5c5287a84d98faa10.png"></td>
+</tr>
+<tr>
+<td>6</td>
+<td><img class="tex" alt="99+70\sqrt{2}=197.9949\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/61448588cb9e48fa422e486b8e0429c6.png"></td>
+<td><img class="tex" alt="99-70\sqrt{2}=0.0050\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/3199bcd114bc51244e06fdb6366722de.png"></td>
+</tr>
+<tr>
+<td>7</td>
+<td><img class="tex" alt="239+169\sqrt{2}=478.00209\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/32d9561a49f058eee77ed5f342df5053.png"></td>
+<td><img class="tex" alt="239-169\sqrt{2}=-0.00209\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/435250adfa8ba4b860a8e6803931961d.png"></td>
+</tr>
+<tr>
+<td>8</td>
+<td><img class="tex" alt="577+408\sqrt{2}=1153.99913\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/4f3c09e1aa8f3ec5567a2c7066f2b454.png"></td>
+<td><img class="tex" alt="577-408\sqrt{2}=0.00086\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/051dcdddc59d7dd743444b6f725dcd2b.png"></td>
+</tr>
+<tr>
+<td>9</td>
+<td><img class="tex" alt="1393+985\sqrt{2}=2786.00035\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/aaa20342a71222daa0324aad2b40186e.png"></td>
+<td><img class="tex" alt="1393-985\sqrt{2}=-0.00035\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/597ec6c68dc9945deadf50eef8f9ef6d.png"></td>
+</tr>
+<tr>
+<td>10</td>
+<td><img class="tex" alt="3363+2378\sqrt{2}=6725.99985\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/65c97d32cc197eabd0cd86146a33ec93.png"></td>
+<td><img class="tex" alt="3363-2378\sqrt{2}=0.00014\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/d926ac3da9c61cf0512fc4d24791d354.png"></td>
+</tr>
+<tr>
+<td>11</td>
+<td><img class="tex" alt="8119+5741\sqrt{2}=16238.00006\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/4355538793c66c820738d6c5141611b4.png"></td>
+<td><img class="tex" alt="8119-5741\sqrt{2}=-0.00006\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/f15145ad17eb12c10b8c051789eb6a04.png"></td>
+</tr>
+<tr>
+<td>12</td>
+<td><img class="tex" alt="19601+13860\sqrt{2}=39201.99997\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/9f1e8175265d491be0d432a2cd197d33.png"></td>
+<td><img class="tex" alt="19601-13860\sqrt{2}=0.00002\ldots" src="./Pell number - Wikipedia, the free encyclopedia_files/bdcfde9763199db47cdd6280d58ac6f2.png"></td>
+</tr>
+</tbody></table>
+<p>The coefficients are the half companion Pell numbers <img class="tex" alt="H_n" src="./Pell number - Wikipedia, the free encyclopedia_files/83ebf1e52c0751dae18d910f74dc3818.png"> and the Pell numbers <img class="tex" alt="P_n" src="./Pell number - Wikipedia, the free encyclopedia_files/9b34c48707062a07e6c080655df4337f.png"> which are the (non-negative) solutions to <img class="tex" alt="H^2-2P^2=\pm1" src="./Pell number - Wikipedia, the free encyclopedia_files/ce38ccd770b281a844bd71d52c9e1e20.png">. A <a href="http://en.wikipedia.org/wiki/Square_triangular_number" title="Square triangular number">square triangular number</a> is a number <img class="tex" alt="N=\frac{t(t+1)}{2}=s^2" src="./Pell number - Wikipedia, the free encyclopedia_files/97bbde8861b373ef64b10fd6d2d20cf1.png"> which is both the <img class="tex" alt="t\," src="./Pell number - Wikipedia, the free encyclopedia_files/0c68620ee2ea4f1286fcd672a47ea080.png">th triangular number and the <img class="tex" alt="s\," src="./Pell number - Wikipedia, the free encyclopedia_files/d0438646c1f482faffdd1bac9a841799.png">th square number. A <i>near isosceles Pythagorean triple</i> is an integer solution to <img class="tex" alt="a^2+b^2=c^2" src="./Pell number - Wikipedia, the free encyclopedia_files/dc2c1c55d1fd18bc0084c64f61dfbbb4.png"> where <img class="tex" alt="a+1=b" src="./Pell number - Wikipedia, the free encyclopedia_files/9c1025b7d94546376406e8fdd883dd94.png">.</p>
+<p>The next table shows that splitting the odd number <img class="tex" alt="H_n" src="./Pell number - Wikipedia, the free encyclopedia_files/83ebf1e52c0751dae18d910f74dc3818.png"> into nearly equal halves gives a square triangular number when n is even and a near isosceles Pythagorean triple when n is odd. All solutions arise in this manner.</p>
+<table class="wikitable">
+<tbody><tr>
+<th><img class="tex" alt=" n " src="./Pell number - Wikipedia, the free encyclopedia_files/7b8b965ad4bca0e41ab51de7b31363a1.png"></th>
+<th><img class="tex" alt=" H_n " src="./Pell number - Wikipedia, the free encyclopedia_files/83ebf1e52c0751dae18d910f74dc3818.png"></th>
+<th><img class="tex" alt=" P_n " src="./Pell number - Wikipedia, the free encyclopedia_files/9b34c48707062a07e6c080655df4337f.png"></th>
+<th>t</th>
+<th>t+1</th>
+<th>s</th>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7</td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>17</td>
+<td>12</td>
+<td>8</td>
+<td>9</td>
+<td>6</td>
+</tr>
+<tr>
+<td>5</td>
+<td>41</td>
+<td>29</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+<td>21</td>
+<td>29</td>
+</tr>
+<tr>
+<td>6</td>
+<td>99</td>
+<td>70</td>
+<td>49</td>
+<td>50</td>
+<td>35</td>
+</tr>
+<tr>
+<td>7</td>
+<td>239</td>
+<td>169</td>
+<td></td>
+<td></td>
+<td></td>
+<td>119</td>
+<td>120</td>
+<td>169</td>
+</tr>
+<tr>
+<td>8</td>
+<td>577</td>
+<td>408</td>
+<td>288</td>
+<td>289</td>
+<td>204</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1393</td>
+<td>985</td>
+<td></td>
+<td></td>
+<td></td>
+<td>696</td>
+<td>697</td>
+<td>985</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3363</td>
+<td>2378</td>
+<td>1681</td>
+<td>1682</td>
+<td>1189</td>
+</tr>
+<tr>
+<td>11</td>
+<td>8119</td>
+<td>5741</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4059</td>
+<td>4060</td>
+<td>5741</td>
+</tr>
+<tr>
+<td>12</td>
+<td>19601</td>
+<td>13860</td>
+<td>9800</td>
+<td>9801</td>
+<td>6930</td>
+</tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Definitions">Definitions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=7" title="Edit section: Definitions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The half companion Pell Numbers <img class="tex" alt="H_n" src="./Pell number - Wikipedia, the free encyclopedia_files/83ebf1e52c0751dae18d910f74dc3818.png"> and the Pell numbers <img class="tex" alt="P_n" src="./Pell number - Wikipedia, the free encyclopedia_files/9b34c48707062a07e6c080655df4337f.png"> can be derived in a number of easily equivalent ways:</p>
+<p><i>Raising to powers</i>:</p>
+<dl>
+<dd><img class="tex" alt="(1+\sqrt2)^n=H_n+P_n\sqrt{2}" src="./Pell number - Wikipedia, the free encyclopedia_files/48e3b61fe62e908b1f81f42707e41402.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="(1-\sqrt2)^n=H_n-P_n\sqrt{2}." src="./Pell number - Wikipedia, the free encyclopedia_files/cdfc63902999b7d86367b60cf61ddfe3.png"></dd>
+</dl>
+<p>From this it follows that there are <i>closed forms</i>:</p>
+<dl>
+<dd><img class="tex" alt="H_n=\frac{(1+\sqrt2)^n+(1-\sqrt2)^n}{2}." src="./Pell number - Wikipedia, the free encyclopedia_files/27a3c597c011842beb50aed988fb38e3.png"></dd>
+</dl>
+<p>and</p>
+<dl>
+<dd><img class="tex" alt="P_n\sqrt2=\frac{(1+\sqrt2)^n-(1-\sqrt2)^n}{2}." src="./Pell number - Wikipedia, the free encyclopedia_files/4f2611c81bb67a2a125374a59544ccef.png"></dd>
+</dl>
+<p><i>Paired recurrences</i>:</p>
+<dl>
+<dd><img class="tex" alt="H_n=\begin{cases}1&amp;\mbox{if }n=0;\\H_{n-1}+2P_{n-1}&amp;\mbox{otherwise.}\end{cases}" src="./Pell number - Wikipedia, the free encyclopedia_files/26b845532e806905c70fc92c36968dc0.png"></dd>
+<dd><img class="tex" alt="P_n=\begin{cases}0&amp;\mbox{if }n=0;\\H_{n-1}+P_{n-1}&amp;\mbox{otherwise.}\end{cases}" src="./Pell number - Wikipedia, the free encyclopedia_files/8c514b14083addd113359c4b5292a9db.png"></dd>
+</dl>
+<p>and <i>matrix formulations</i>:</p>
+<dl>
+<dd><img class="tex" alt="\begin{pmatrix} H_n \\ P_n  \end{pmatrix} = \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 1 \end{pmatrix} \begin{pmatrix} H_{n-1} \\ P_{n-1}  \end{pmatrix} = \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}^n \begin{pmatrix} 1 \\ 0  \end{pmatrix}." src="./Pell number - Wikipedia, the free encyclopedia_files/846ae92efb0e730b5941595b8a2c5c3b.png"></dd>
+</dl>
+<p>So</p>
+<dl>
+<dd><img class="tex" alt=" \begin{pmatrix} H_n &amp; 2P_n \\ P_n &amp; H_n \end{pmatrix}= \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}^n ." src="./Pell number - Wikipedia, the free encyclopedia_files/5105dd7590c5e0f17411d9d0b6fd73f0.png"></dd>
+</dl>
+<h3><span class="mw-headline" id="Approximations">Approximations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=8" title="Edit section: Approximations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The difference between <img class="tex" alt="H_n \," src="./Pell number - Wikipedia, the free encyclopedia_files/cbce86b58b42a9905130c2f5af9fb8e1.png"> and <img class="tex" alt="P_n\sqrt2" src="./Pell number - Wikipedia, the free encyclopedia_files/5b338eda11002b5cefaf962155b1e0cd.png"> is <img class="tex" alt="(1-\sqrt2)^n \approx (-0.41421)^n" src="./Pell number - Wikipedia, the free encyclopedia_files/43bf08954bf1aea11c3db24b45e51f91.png"> which goes rapidly to zero. So <img class="tex" alt="(1+\sqrt2)^n=H_n+P_n\sqrt2 " src="./Pell number - Wikipedia, the free encyclopedia_files/1bc35efabec18ade6992b54b3c8a16ea.png"> is extremely close <img class="tex" alt="2H_n \, " src="./Pell number - Wikipedia, the free encyclopedia_files/4e035fbf3e1663fbe254cdcd554c763e.png">.</p>
+<p>From this last observation it follows that the integer ratios <img class="tex" alt="\frac{H_n}{P_n}" src="./Pell number - Wikipedia, the free encyclopedia_files/6d183114b7e0fb1219a8774ab440e34e.png"> rapidly approach <img class="tex" alt="\sqrt2 \," src="./Pell number - Wikipedia, the free encyclopedia_files/80088e84b7b8cae92170b0499e57a6b8.png"> while <img class="tex" alt="\frac{H_n}{H_{n-1}}\, " src="./Pell number - Wikipedia, the free encyclopedia_files/30f4525d7734936fdfd1014bb3443d8e.png"> and <img class="tex" alt="\frac{P_n}{P_{n-1}}\, " src="./Pell number - Wikipedia, the free encyclopedia_files/ae8aa47a77f02a88234c3f9881b20261.png"> rapidly approach <img class="tex" alt="1+\sqrt2 \, " src="./Pell number - Wikipedia, the free encyclopedia_files/624faabc15b33dd2dfdcff7bcabc798b.png">.</p>
+<h3><span class="mw-headline" id="H2.C2.A0.E2.88.92.C2.A02P2.C2.A0.3D.C2.A0.C2.B11"><i>H</i><sup>2</sup>&nbsp;−&nbsp;2<i>P</i><sup>2</sup>&nbsp;=&nbsp;±1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=9" title="Edit section: H2 − 2P2 = ±1">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Since <img class="tex" alt="\sqrt2" src="./Pell number - Wikipedia, the free encyclopedia_files/c475af0fc6a341d865339933e251aba7.png"> is irrational, we can't have <img class="tex" alt="\frac{H}{P}=2\, " src="./Pell number - Wikipedia, the free encyclopedia_files/c60fb377327ab407febc5632c2eb2a09.png"> i.e. <img class="tex" alt="\frac{H^2}{P^2}=\frac{2P^2}{P^2}\, " src="./Pell number - Wikipedia, the free encyclopedia_files/246387509d1851399d4b3b9653eef37c.png">. The best we can achieve is either <img class="tex" alt="\frac{H^2}{P^2}=\frac{2P^2-1}{P^2}\, " src="./Pell number - Wikipedia, the free encyclopedia_files/71d5b1cf783154ad491386875a896537.png"> or <img class="tex" alt="\frac{H^2}{P^2}=\frac{2P^2+1}{P^2} " src="./Pell number - Wikipedia, the free encyclopedia_files/9b182b4fd55da7125ebe4ea62445a1ca.png">.</p>
+<p>The (non-negative) solutions to <img class="tex" alt="H^2-2P^2=1 \," src="./Pell number - Wikipedia, the free encyclopedia_files/a5195a02837cd7cddb8a607324c5c698.png"> are exactly the pairs <img class="tex" alt="H_n,P_n \mbox{ with } n\, " src="./Pell number - Wikipedia, the free encyclopedia_files/41942453cb5b3c65df0adb14394623b9.png"> even and the solutions to <img class="tex" alt="H^2-2P^2=-1 \," src="./Pell number - Wikipedia, the free encyclopedia_files/5a8e2dca154c7910b89a3c9bcec28c93.png"> are exactly the pairs <img class="tex" alt="H_n,P_n \mbox{ with } n \," src="./Pell number - Wikipedia, the free encyclopedia_files/41942453cb5b3c65df0adb14394623b9.png"> odd. To see this, note first that</p>
+<dl>
+<dd><img class="tex" alt="H_{n+1}^2-2P_{n+1}^2=(H_n+2P_n)^2-2(H_n+P_n)^2=-(H_n^2-2P_n^2) \," src="./Pell number - Wikipedia, the free encyclopedia_files/db86bc78b72075313092106c0d32a167.png"></dd>
+</dl>
+<p>so that these differences, starting with <img class="tex" alt="H_{0}^2-2P_{0}^2=1 \, " src="./Pell number - Wikipedia, the free encyclopedia_files/612f39e3466571f1af8ed2d94046590e.png"> are alternately <img class="tex" alt="1 \mbox{ and }-1 \," src="./Pell number - Wikipedia, the free encyclopedia_files/5c061d778746b41120a83d0d7ee84c9d.png">. Then note that every positive solution comes in this way from a solution with smaller integers since <img class="tex" alt="(2P-H)^2-2(H-P)^2=-(H^2-2P^2) \," src="./Pell number - Wikipedia, the free encyclopedia_files/452781ef10b8f70c876dd39f0cc28bf3.png">. The smaller solution also has positive integers with the one exception <img class="tex" alt="H=P=1 \," src="./Pell number - Wikipedia, the free encyclopedia_files/11380d8dc3ac6efac1586401e772ab1d.png"> which comes from <img class="tex" alt="H_0=1 \mbox{ and }P_0=0 \," src="./Pell number - Wikipedia, the free encyclopedia_files/e6cb6d4fa2490ce981277435f595f5e2.png">.</p>
+<h3><span class="mw-headline" id="Square_triangular_numbers">Square triangular numbers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=10" title="Edit section: Square triangular numbers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.wikipedia.org/wiki/Square_triangular_number" title="Square triangular number">Square triangular number</a></div>
+<p>The required equation <img class="tex" alt="\frac{t(t+1)}{2}=s^2\, " src="./Pell number - Wikipedia, the free encyclopedia_files/ef695a6e53494623b22458cce73bf047.png"> is equivalent to <img class="tex" alt="4t^2+4t+1=8s^2+1 \," src="./Pell number - Wikipedia, the free encyclopedia_files/a16f7923a57f40c9fa0e6e6e80e7d3b9.png"> which becomes <img class="tex" alt="H^2=2P^2+1" src="./Pell number - Wikipedia, the free encyclopedia_files/c6b019af00489e9ee6e3312e180262ae.png"> with the substitutions <img class="tex" alt="H=2t+1 \mbox{ and } P=2s " src="./Pell number - Wikipedia, the free encyclopedia_files/74b200624b2ec3e56ae6a179e1134ea9.png">. Hence the nth solution is <img class="tex" alt="t_n=\frac{H_{2n}-1}{2}" src="./Pell number - Wikipedia, the free encyclopedia_files/6b3e57211c756f9d1ff5a02e8cc0f0b1.png"> and <img class="tex" alt="s_n=\frac{P_{2n}}{2}." src="./Pell number - Wikipedia, the free encyclopedia_files/4d7f53bc200af7c785a61ed52019ac4b.png"></p>
+<p>Observe that <img class="tex" alt="t" src="./Pell number - Wikipedia, the free encyclopedia_files/e358efa489f58062f10dd7316b65649e.png"> and <img class="tex" alt="t+1" src="./Pell number - Wikipedia, the free encyclopedia_files/43c98a64bcde4857b095743482e04281.png"> are relatively prime so that <img class="tex" alt="\frac{t(t+1)}{2}=s^2\, " src="./Pell number - Wikipedia, the free encyclopedia_files/ef695a6e53494623b22458cce73bf047.png"> happens exactly when they are adjacent integers, one a square <img class="tex" alt="H^2" src="./Pell number - Wikipedia, the free encyclopedia_files/3163817c541c07bb8317c3ee29d7de9e.png"> and the other twice a square <img class="tex" alt="2P^2" src="./Pell number - Wikipedia, the free encyclopedia_files/cfa20081e17f5114e584c5a435588d48.png">. Since we know all solutions of that equation, we also have</p>
+<dl>
+<dd><img class="tex" alt="t_n=\begin{cases}2P_n^2&amp;\mbox{if }n\mbox{ is even};\\H_{n}^2&amp;\mbox{if }n\mbox{ is odd.}\end{cases}" src="./Pell number - Wikipedia, the free encyclopedia_files/2d301f29db4cd5a40bf8b0dd9eb628d1.png"></dd>
+</dl>
+<p>and <img class="tex" alt="s_n=H_nP_n\," src="./Pell number - Wikipedia, the free encyclopedia_files/60f3043135a991b17774c3ab2ff3ae96.png"></p>
+<p>This alternate expression is seen in the next table.</p>
+<table class="wikitable">
+<tbody><tr>
+<th><img class="tex" alt=" n " src="./Pell number - Wikipedia, the free encyclopedia_files/7b8b965ad4bca0e41ab51de7b31363a1.png"></th>
+<th><img class="tex" alt=" H_n " src="./Pell number - Wikipedia, the free encyclopedia_files/83ebf1e52c0751dae18d910f74dc3818.png"></th>
+<th><img class="tex" alt=" P_n " src="./Pell number - Wikipedia, the free encyclopedia_files/9b34c48707062a07e6c080655df4337f.png"></th>
+<th></th>
+<th>t</th>
+<th>t+1</th>
+<th>s</th>
+<th></th>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td></td>
+<td>8</td>
+<td>9</td>
+<td>6</td>
+<td></td>
+<td>21</td>
+<td>20</td>
+<td>29</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7</td>
+<td>5</td>
+<td></td>
+<td>49</td>
+<td>50</td>
+<td>35</td>
+<td></td>
+<td>119</td>
+<td>120</td>
+<td>169</td>
+</tr>
+<tr>
+<td>4</td>
+<td>17</td>
+<td>12</td>
+<td></td>
+<td>288</td>
+<td>289</td>
+<td>204</td>
+<td></td>
+<td>697</td>
+<td>696</td>
+<td>985</td>
+</tr>
+<tr>
+<td>5</td>
+<td>41</td>
+<td>29</td>
+<td></td>
+<td>1681</td>
+<td>1682</td>
+<td>1189</td>
+<td></td>
+<td>4059</td>
+<td>4060</td>
+<td>5741</td>
+</tr>
+<tr>
+<td>6</td>
+<td>99</td>
+<td>70</td>
+<td></td>
+<td>9800</td>
+<td>9801</td>
+<td>6930</td>
+<td></td>
+<td>23661</td>
+<td>23660</td>
+<td>33461</td>
+</tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Pythagorean_triples_2">Pythagorean triples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=11" title="Edit section: Pythagorean triples">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The equality <img class="tex" alt="c^2=a^2+(a+1)^2=2a^2+2a+1" src="./Pell number - Wikipedia, the free encyclopedia_files/5c76f10d252aa56649f357178bf35a0d.png"> occurs exactly when <img class="tex" alt="2c^2=4a^2+4a+2" src="./Pell number - Wikipedia, the free encyclopedia_files/38c7249f5c4284358855bd40deb4d71c.png"> which becomes <img class="tex" alt="2P^2=H^2+1" src="./Pell number - Wikipedia, the free encyclopedia_files/af808e0883db39115b2c2a5bcc9371b4.png"> with the substitutions <img class="tex" alt="H=2a+1 \mbox{ and } P=c " src="./Pell number - Wikipedia, the free encyclopedia_files/a4dfd8abcce9508dd1d1d9fb96ae2b88.png">. Hence the nth solution is <img class="tex" alt="a_n=\frac{H_{2n+1}-1}{2}" src="./Pell number - Wikipedia, the free encyclopedia_files/5bce20136fee301d551fd72c4f06b023.png"> and <img class="tex" alt="c_n={P_{2n+1}}. \," src="./Pell number - Wikipedia, the free encyclopedia_files/75700d6e51b9be3e26d55209ba7e3937.png"></p>
+<p>The table above shows that, in one order or the other, <img class="tex" alt="a_n\mbox{ and }b_n=a_n+1" src="./Pell number - Wikipedia, the free encyclopedia_files/c060982a825236acc15147ea3398f54f.png"> are <img class="tex" alt="H_nH_{n+1}\mbox{ and }2P_nP_{n+1}" src="./Pell number - Wikipedia, the free encyclopedia_files/16cb7a5325bbb51662d774d8039c48dc.png"> while <img class="tex" alt="c_n=H_{n+1}P_n+P_{n+1}H_n." src="./Pell number - Wikipedia, the free encyclopedia_files/4fa63d52f2a19613ef6fccfc83b99e0c.png"></p>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=12" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-1">^</a></b></span> <span class="reference-text">For instance, Sellers (2002) proves that the number of <a href="http://en.wikipedia.org/wiki/Perfect_matching" title="Perfect matching" class="mw-redirect">perfect matchings</a> in the <a href="http://en.wikipedia.org/wiki/Cartesian_product_of_graphs" title="Cartesian product of graphs">Cartesian product</a> of a <a href="http://en.wikipedia.org/wiki/Path_graph" title="Path graph">path graph</a> and the graph <i>K</i><sub>4</sub>-<i>e</i> can be calculated as the product of a Pell number with the corresponding Fibonacci number.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-2">^</a></b></span> <span class="reference-text">For the matrix formula and its consequences see Ercolano (1979) and Kilic and Tasci (2005). Additional identities for the Pell numbers are listed by Horadam (1971) and Bicknell (1975).</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-3">^</a></b></span> <span class="reference-text">As recorded in the <a href="http://en.wikipedia.org/wiki/Shulba_Sutras" title="Shulba Sutras">Shulba Sutras</a>; see e.g. Dutka (1986), who cites Thibaut (1875) for this information.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-4">^</a></b></span> <span class="reference-text">See Knorr (1976) for the fifth century date, which matches <a href="http://en.wikipedia.org/wiki/Proclus" title="Proclus">Proclus</a>' claim that the side and diameter numbers were discovered by the <a href="http://en.wikipedia.org/wiki/Pythagoreans" title="Pythagoreans" class="mw-redirect">Pythagoreans</a>. For more detailed exploration of later Greek knowledge of these numbers see Thompson (1929), Vedova (1951), Ridenhour (1986), Knorr (1998), and Filep (1999).</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-5">^</a></b></span> <span class="reference-text">For instance, as several of the references from the previous note observe, in <a href="http://en.wikipedia.org/wiki/Plato%27s_Republic" title="Plato&#39;s Republic" class="mw-redirect">Plato's Republic</a> there is a reference to the "rational diameter of 5", by which <a href="http://en.wikipedia.org/wiki/Plato" title="Plato">Plato</a> means 7, the numerator of the approximation 7/5 of which 5 is the denominator.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-6">^</a></b></span> <span class="reference-text"><span id="CITEREFHeath1921" class="citation"><a href="http://en.wikipedia.org/wiki/Thomas_Little_Heath" title="Thomas Little Heath">Heath, Sir Thomas Little</a> (1921), <a rel="nofollow" class="external text" href="http://books.google.co.uk/books?id=drnY3Vjix3kC&pg=PA112"><i>History of Greek Mathematics: From Thales to Euclid</i></a>, Courier Dover Publications, p.&nbsp;112, <a href="http://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Special:BookSources/9780486240732" title="Special:BookSources/9780486240732">9780486240732</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.aufirst=Sir+Thomas+Little&amp;rft.au=Heath%2C+Sir+Thomas+Little&amp;rft.aulast=Heath&amp;rft.btitle=History+of+Greek+Mathematics%3A+From+Thales+to+Euclid&amp;rft.date=1921&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.co.uk%2Fbooks%3Fid%3DdrnY3Vjix3kC%26pg%3DPA112&amp;rft.isbn=9780486240732&amp;rft.pages=112&amp;rft.pub=Courier+Dover+Publications&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-7">^</a></b></span> <span class="reference-text">Pethő (1992); Cohn (1996). Although the <a href="http://en.wikipedia.org/wiki/Fibonacci_number" title="Fibonacci number">Fibonacci numbers</a> are defined by a very similar recurrence to the Pell numbers, Cohn writes that an analogous result for the Fibonacci numbers seems much more difficult to prove. (However, this was proven in 2006 by Bugeaud et al.)</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Pell_number#cite_ref-8">^</a></b></span> <span class="reference-text">Sesskin (1962). See the <a href="http://en.wikipedia.org/wiki/Square_triangular_number" title="Square triangular number">square triangular number</a> article for a more detailed derivation.</span></li>
+</ol>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=13" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="references-small" style="-moz-column-count:2; column-count:2;">
+<ul>
+<li><span class="citation journal">Bicknell, Marjorie (1975). "A primer on the Pell sequence and related sequences". <i><a href="http://en.wikipedia.org/wiki/Fibonacci_Quarterly" title="Fibonacci Quarterly">Fibonacci Quarterly</a></i> <b>13</b> (4): 345–349. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=0387173">0387173</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=A+primer+on+the+Pell+sequence+and+related+sequences&amp;rft.au=Bicknell%2C+Marjorie&amp;rft.aulast=Bicknell%2C+Marjorie&amp;rft.date=1975&amp;rft.genre=article&amp;rft.issue=4&amp;rft.jtitle=Fibonacci+Quarterly&amp;rft.mr=0387173&amp;rft.pages=345%E2%80%93349&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=13" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Cohn, J. H. E. (1996). "Perfect Pell powers". <i><a href="http://en.wikipedia.org/wiki/Glasgow_Mathematical_Journal" title="Glasgow Mathematical Journal">Glasgow Mathematical Journal</a></i> <b>38</b> (1): 19–20. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1017%2FS0017089500031207">10.1017/S0017089500031207</a>. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=1373953">1373953</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Perfect+Pell+powers&amp;rft.au=Cohn%2C+J.+H.+E.&amp;rft.aulast=Cohn%2C+J.+H.+E.&amp;rft.date=1996&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1017%2FS0017089500031207&amp;rft.issue=1&amp;rft.jtitle=Glasgow+Mathematical+Journal&amp;rft.mr=1373953&amp;rft.pages=19%E2%80%9320&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=38" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Dutka, Jacques (1986). "On square roots and their representations". <i><a href="http://en.wikipedia.org/wiki/Archive_for_History_of_Exact_Sciences" title="Archive for History of Exact Sciences">Archive for History of Exact Sciences</a></i> <b>36</b> (1): 21–39. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1007%2FBF00357439">10.1007/BF00357439</a>. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=0863340">0863340</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=On+square+roots+and+their+representations&amp;rft.au=Dutka%2C+Jacques&amp;rft.aulast=Dutka%2C+Jacques&amp;rft.date=1986&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1007%2FBF00357439&amp;rft.issue=1&amp;rft.jtitle=Archive+for+History+of+Exact+Sciences&amp;rft.mr=0863340&amp;rft.pages=21%E2%80%9339&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=36" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Ercolano, Joseph (1979). "Matrix generators of Pell sequences". <i><a href="http://en.wikipedia.org/wiki/Fibonacci_Quarterly" title="Fibonacci Quarterly">Fibonacci Quarterly</a></i> <b>17</b> (1): 71–77. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=0525602">0525602</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Matrix+generators+of+Pell+sequences&amp;rft.au=Ercolano%2C+Joseph&amp;rft.aulast=Ercolano%2C+Joseph&amp;rft.date=1979&amp;rft.genre=article&amp;rft.issue=1&amp;rft.jtitle=Fibonacci+Quarterly&amp;rft.mr=0525602&amp;rft.pages=71%E2%80%9377&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=17" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal"><a href="http://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Filep" title="László Filep">Filep, László</a> (1999). <a rel="nofollow" class="external text" href="http://www.emis.de/journals/AMAPN/vol15/filep.pdf">"Pythagorean side and diagonal numbers"</a>. <i><a href="http://en.wikipedia.org/w/index.php?title=Acta_Mathematica_Academiae_Paedagogiace_Ny%C3%ADregyh%C3%A1ziensis&action=edit&redlink=1" class="new" title="Acta Mathematica Academiae Paedagogiace Nyíregyháziensis (page does not exist)">Acta Mathematica Academiae Paedagogiace Nyíregyháziensis</a></i> <b>15</b>: 1–7.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Pythagorean+side+and+diagonal+numbers&amp;rft.au=Filep%2C+L%C3%A1szl%C3%B3&amp;rft.aulast=Filep%2C+L%C3%A1szl%C3%B3&amp;rft.date=1999&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.emis.de%2Fjournals%2FAMAPN%2Fvol15%2Ffilep.pdf&amp;rft.jtitle=Acta+Mathematica+Academiae+Paedagogiace+Ny%C3%ADregyh%C3%A1ziensis&amp;rft.pages=1%E2%80%937&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=15" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Horadam, A. F. (1971). "Pell identities". <i><a href="http://en.wikipedia.org/wiki/Fibonacci_Quarterly" title="Fibonacci Quarterly">Fibonacci Quarterly</a></i> <b>9</b> (3): 245–252, 263. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=0308029">0308029</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Pell+identities&amp;rft.au=Horadam%2C+A.+F.&amp;rft.aulast=Horadam%2C+A.+F.&amp;rft.date=1971&amp;rft.genre=article&amp;rft.issue=3&amp;rft.jtitle=Fibonacci+Quarterly&amp;rft.mr=0308029&amp;rft.pages=245%E2%80%93252%2C+263&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=9" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Kilic, Emrah; Tasci, Dursun (2005). "The linear algebra of the Pell matrix". <i><a href="http://en.wikipedia.org/w/index.php?title=Bolet%C3%ADn_de_la_Sociedad_Matem%C3%A1tica_Mexicana&action=edit&redlink=1" class="new" title="Boletín de la Sociedad Matemática Mexicana (page does not exist)">Boletín de la Sociedad Matemática Mexicana</a>, Tercera Serie</i> <b>11</b> (2): 163–174. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=2207722">2207722</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=The+linear+algebra+of+the+Pell+matrix&amp;rft.au=Kilic%2C+Emrah%3B+Tasci%2C+Dursun&amp;rft.aulast=Kilic%2C+Emrah%3B+Tasci%2C+Dursun&amp;rft.date=2005&amp;rft.genre=article&amp;rft.issue=2&amp;rft.jtitle=Bolet%C3%ADn+de+la+Sociedad+Matem%C3%A1tica+Mexicana%2C+Tercera+Serie&amp;rft.mr=2207722&amp;rft.pages=163%E2%80%93174&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=11" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal"><a href="http://en.wikipedia.org/wiki/Wilbur_Knorr" title="Wilbur Knorr">Knorr, Wilbur</a> (1976). "Archimedes and the measurement of the circle: A new interpretation". <i><a href="http://en.wikipedia.org/wiki/Archive_for_History_of_Exact_Sciences" title="Archive for History of Exact Sciences">Archive for History of Exact Sciences</a></i> <b>15</b> (2): 115–140. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1007%2FBF00348496">10.1007/BF00348496</a>. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=0497462">0497462</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Archimedes+and+the+measurement+of+the+circle%3A+A+new+interpretation&amp;rft.au=Knorr%2C+Wilbur&amp;rft.aulast=Knorr%2C+Wilbur&amp;rft.date=1976&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1007%2FBF00348496&amp;rft.issue=2&amp;rft.jtitle=Archive+for+History+of+Exact+Sciences&amp;rft.mr=0497462&amp;rft.pages=115%E2%80%93140&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=15" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal"><a href="http://en.wikipedia.org/wiki/Wilbur_Knorr" title="Wilbur Knorr">Knorr, Wilbur</a> (1998). "<span style="padding-left:0.2em;">"</span>Rational diameters" and the discovery of incommensurability". <i><a href="http://en.wikipedia.org/wiki/American_Mathematical_Monthly" title="American Mathematical Monthly">American Mathematical Monthly</a></i> <b>105</b> (5): 421–429. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.2307%2F3109803">10.2307/3109803</a>. <a href="http://en.wikipedia.org/wiki/JSTOR" title="JSTOR">JSTOR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.jstor.org/stable/3109803">3109803</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=%22Rational+diameters%22+and+the+discovery+of+incommensurability&amp;rft.au=Knorr%2C+Wilbur&amp;rft.aulast=Knorr%2C+Wilbur&amp;rft.date=1998&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F3109803&amp;rft.issue=5&amp;rft.jstor=3109803&amp;rft.jtitle=American+Mathematical+Monthly&amp;rft.pages=421%E2%80%93429&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=105" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal"><a href="http://en.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Knuth, Donald E.</a> (1994). "Leaper graphs". <i><a href="http://en.wikipedia.org/wiki/The_Mathematical_Gazette" title="The Mathematical Gazette">The Mathematical Gazette</a></i> <b>78</b> (483): 274–297. <a href="http://en.wikipedia.org/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="http://arxiv.org/abs/math.CO/9411240">math.CO/9411240</a>. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.2307%2F3620202">10.2307/3620202</a>. <a href="http://en.wikipedia.org/wiki/JSTOR" title="JSTOR">JSTOR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.jstor.org/stable/3620202">3620202</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Leaper+graphs&amp;rft.au=Knuth%2C+Donald+E.&amp;rft.aulast=Knuth%2C+Donald+E.&amp;rft.date=1994&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2Fmath.CO%2F9411240&amp;rft_id=info%3Adoi%2F10.2307%2F3620202&amp;rft.issue=483&amp;rft.jstor=3620202&amp;rft.jtitle=The+Mathematical+Gazette&amp;rft.pages=274%E2%80%93297&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=78" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal"><a href="http://en.wikipedia.org/wiki/Artemas_Martin" title="Artemas Martin">Martin, Artemas</a> (1875). "Rational right angled triangles nearly isosceles". <i><a href="http://en.wikipedia.org/wiki/Annals_of_Mathematics" title="Annals of Mathematics">The Analyst</a></i> <b>3</b> (2): 47–50. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.2307%2F2635906">10.2307/2635906</a>. <a href="http://en.wikipedia.org/wiki/JSTOR" title="JSTOR">JSTOR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.jstor.org/stable/2635906">2635906</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Rational+right+angled+triangles+nearly+isosceles&amp;rft.aulast=Martin%2C+Artemas&amp;rft.au=Martin%2C+Artemas&amp;rft.date=1875&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2635906&amp;rft.issue=2&amp;rft.jstor=2635906&amp;rft.jtitle=The+Analyst&amp;rft.pages=47%E2%80%9350&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=3" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation conference">Pethő, A. (1992). "The Pell sequence contains only trivial perfect powers". <i>Sets, graphs, and numbers (Budapest, 1991)</i>. Colloq. Math. Soc. János Bolyai, 60, North-Holland. pp.&nbsp;561–568. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=1218218">1218218</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Sets%2C+graphs%2C+and+numbers+%28Budapest%2C+1991%29&amp;rft.aulast=Peth%C5%91%2C+A.&amp;rft.au=Peth%C5%91%2C+A.&amp;rft.btitle=The+Pell+sequence+contains+only+trivial+perfect+powers&amp;rft.date=1992&amp;rft.genre=bookitem&amp;rft.mr=1218218&amp;rft.pages=561%E2%80%93568&amp;rft.pub=Colloq.+Math.+Soc.+J%C3%A1nos+Bolyai%2C+60%2C+North-Holland&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Ridenhour, J. R. (1986). "Ladder approximations of irrational numbers". <i><a href="http://en.wikipedia.org/wiki/Mathematics_Magazine" title="Mathematics Magazine">Mathematics Magazine</a></i> <b>59</b> (2): 95–105. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.2307%2F2690427">10.2307/2690427</a>. <a href="http://en.wikipedia.org/wiki/JSTOR" title="JSTOR">JSTOR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.jstor.org/stable/2690427">2690427</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Ladder+approximations+of+irrational+numbers&amp;rft.aulast=Ridenhour%2C+J.+R.&amp;rft.au=Ridenhour%2C+J.+R.&amp;rft.date=1986&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2690427&amp;rft.issue=2&amp;rft.jstor=2690427&amp;rft.jtitle=Mathematics+Magazine&amp;rft.pages=95%E2%80%93105&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=59" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Santana, S. F.; Diaz-Barrero, J. L. (2006). <a rel="nofollow" class="external text" href="http://www.math-cs.cmsu.edu/~mjms/2006.1/diazbar.pdf">"Some properties of sums involving Pell numbers"</a>. <i><a href="http://en.wikipedia.org/w/index.php?title=Missouri_Journal_of_Mathematical_Sciences&action=edit&redlink=1" class="new" title="Missouri Journal of Mathematical Sciences (page does not exist)">Missouri Journal of Mathematical Sciences</a></i> <b>18</b> (1).</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Some+properties+of+sums+involving+Pell+numbers&amp;rft.aulast=Santana%2C+S.+F.%3B+Diaz-Barrero%2C+J.+L.&amp;rft.au=Santana%2C+S.+F.%3B+Diaz-Barrero%2C+J.+L.&amp;rft.date=2006&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.math-cs.cmsu.edu%2F~mjms%2F2006.1%2Fdiazbar.pdf&amp;rft.issue=1&amp;rft.jtitle=Missouri+Journal+of+Mathematical+Sciences&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=18" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Sellers, James A. (2002). <a rel="nofollow" class="external text" href="http://www.emis.de/journals/JIS/VOL5/Sellers/sellers4.pdf">"Domino tilings and products of Fibonacci and Pell numbers"</a>. <i><a href="http://en.wikipedia.org/w/index.php?title=Journal_of_Integer_Sequences&action=edit&redlink=1" class="new" title="Journal of Integer Sequences (page does not exist)">Journal of Integer Sequences</a></i> <b>5</b>. <a href="http://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=1919941">1919941</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Domino+tilings+and+products+of+Fibonacci+and+Pell+numbers&amp;rft.aulast=Sellers%2C+James+A.&amp;rft.au=Sellers%2C+James+A.&amp;rft.date=2002&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.emis.de%2Fjournals%2FJIS%2FVOL5%2FSellers%2Fsellers4.pdf&amp;rft.jtitle=Journal+of+Integer+Sequences&amp;rft.mr=1919941&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=5" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Sesskin, Sam (1962). "A "converse" to Fermat's last theorem?". <i><a href="http://en.wikipedia.org/wiki/Mathematics_Magazine" title="Mathematics Magazine">Mathematics Magazine</a></i> <b>35</b> (4): 215–217. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.2307%2F2688551">10.2307/2688551</a>. <a href="http://en.wikipedia.org/wiki/JSTOR" title="JSTOR">JSTOR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.jstor.org/stable/2688551">2688551</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=A+%22converse%22+to+Fermat%27s+last+theorem%3F&amp;rft.aulast=Sesskin%2C+Sam&amp;rft.au=Sesskin%2C+Sam&amp;rft.date=1962&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2688551&amp;rft.issue=4&amp;rft.jstor=2688551&amp;rft.jtitle=Mathematics+Magazine&amp;rft.pages=215%E2%80%93217&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=35" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal"><a href="http://en.wikipedia.org/wiki/George_Thibaut" title="George Thibaut">Thibaut, George</a> (1875). "On the Súlvasútras". <i><a href="http://en.wikipedia.org/w/index.php?title=Journal_of_the_Royal_Asiatic_Society_of_Bengal&action=edit&redlink=1" class="new" title="Journal of the Royal Asiatic Society of Bengal (page does not exist)">Journal of the Royal Asiatic Society of Bengal</a></i> <b>44</b>: 227–275.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=On+the+S%C3%BAlvas%C3%BAtras&amp;rft.aulast=Thibaut%2C+George&amp;rft.au=Thibaut%2C+George&amp;rft.date=1875&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+Royal+Asiatic+Society+of+Bengal&amp;rft.pages=227%E2%80%93275&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=44" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal"><a href="http://en.wikipedia.org/wiki/D%27Arcy_Wentworth_Thompson" title="D&#39;Arcy Wentworth Thompson">Thompson, D'Arcy Wentworth</a> (1929). "III.—Excess and defect: or the little more and the little less". <i><a href="http://en.wikipedia.org/wiki/Mind_(journal)" title="Mind (journal)">Mind: New Series</a></i> <b>38</b> (149): 43–55. <a href="http://en.wikipedia.org/wiki/JSTOR" title="JSTOR">JSTOR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.jstor.org/stable/2249223">2249223</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=III.%E2%80%94Excess+and+defect%3A+or+the+little+more+and+the+little+less&amp;rft.aulast=Thompson%2C+D%27Arcy+Wentworth&amp;rft.au=Thompson%2C+D%27Arcy+Wentworth&amp;rft.date=1929&amp;rft.genre=article&amp;rft.issue=149&amp;rft.jstor=2249223&amp;rft.jtitle=Mind%3A+New+Series&amp;rft.pages=43%E2%80%9355&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=38" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation journal">Vedova, G. C. (1951). "Notes on Theon of Smyrna". <i><a href="http://en.wikipedia.org/wiki/American_Mathematical_Monthly" title="American Mathematical Monthly">American Mathematical Monthly</a></i> <b>58</b> (10): 675–683. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.2307%2F2307978">10.2307/2307978</a>. <a href="http://en.wikipedia.org/wiki/JSTOR" title="JSTOR">JSTOR</a>&nbsp;<a rel="nofollow" class="external text" href="http://www.jstor.org/stable/2307978">2307978</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APell+number&amp;rft.atitle=Notes+on+Theon+of+Smyrna&amp;rft.aulast=Vedova%2C+G.+C.&amp;rft.au=Vedova%2C+G.+C.&amp;rft.date=1951&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2307978&amp;rft.issue=10&amp;rft.jstor=2307978&amp;rft.jtitle=American+Mathematical+Monthly&amp;rft.pages=675%E2%80%93683&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=58" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit&section=14" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation mathworld" id="Reference-Mathworld-Pell_Number"><a href="http://en.wikipedia.org/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a>, "<a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/PellNumber.html">Pell Number</a>", <i><a href="http://en.wikipedia.org/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</span></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;">
+<tbody><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;">
+<tbody><tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="http://en.wikipedia.org/wiki/Template:Prime_number_classes" title="Template:Prime number classes"><span title="View this template" style=";;background:none transparent;border:none;;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.wikipedia.org/wiki/Template_talk:Prime_number_classes" title="Template talk:Prime number classes"><span title="Discuss this template" style=";;background:none transparent;border:none;;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Prime_number_classes&action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:110%;"><a href="http://en.wikipedia.org/wiki/Prime_number" title="Prime number">Prime number</a> classes</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">By formula</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Fermat_number" title="Fermat number">Fermat</a> (2<sup>2<sup><i>n</i></sup></sup>&nbsp;+&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Mersenne_prime" title="Mersenne prime">Mersenne</a> (2<sup><i>p</i></sup>&nbsp;−&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Double_Mersenne_number" title="Double Mersenne number">Double Mersenne</a> (2<sup>2<sup><i>p</i></sup>−1</sup>&nbsp;−&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Wagstaff_prime" title="Wagstaff prime">Wagstaff</a> (2<sup><i>p</i></sup>&nbsp;+&nbsp;1)/3</li>
+<li><a href="http://en.wikipedia.org/wiki/Proth_number" title="Proth number">Proth</a> (<i>k</i>·2<sup><i>n</i></sup>&nbsp;+&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Factorial_prime" title="Factorial prime">Factorial</a> (<i>n</i>!&nbsp;±&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Primorial_prime" title="Primorial prime">Primorial</a> (<i>p<sub>n</sub></i>#&nbsp;±&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Euclid_number" title="Euclid number">Euclid</a> (<i>p<sub>n</sub></i>#&nbsp;+&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Pythagorean_prime" title="Pythagorean prime">Pythagorean</a> (4<i>n</i>&nbsp;+&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Pierpont_prime" title="Pierpont prime">Pierpont</a> (2<sup><i>u</i></sup>·3<sup><i>v</i></sup>&nbsp;+&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Solinas_prime" title="Solinas prime">Solinas</a> (2<sup><i>a</i></sup>&nbsp;±&nbsp;2<sup><i>b</i></sup>&nbsp;±&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Cullen_number" title="Cullen number">Cullen</a> (<i>n</i>·2<sup><i>n</i></sup>&nbsp;+&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Woodall_number" title="Woodall number">Woodall</a> (<i>n</i>·2<sup><i>n</i></sup>&nbsp;−&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Cuban_prime" title="Cuban prime">Cuban</a> (<i>x</i><sup>3</sup>&nbsp;−&nbsp;<i>y</i><sup>3</sup>)/(<i>x</i>&nbsp;−&nbsp;<i>y</i>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Carol_number" title="Carol number">Carol</a> (2<sup><i>n</i></sup>&nbsp;−&nbsp;1)<sup>2</sup>&nbsp;−&nbsp;2</li>
+<li><a href="http://en.wikipedia.org/wiki/Kynea_number" title="Kynea number">Kynea</a> (2<sup><i>n</i></sup>&nbsp;+&nbsp;1)<sup>2</sup>&nbsp;−&nbsp;2</li>
+<li><a href="http://en.wikipedia.org/wiki/Leyland_number" title="Leyland number">Leyland</a> (<i>x<sup>y</sup></i>&nbsp;+&nbsp;<i>y<sup>x</sup></i>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Thabit_number" title="Thabit number">Thabit</a> (3·2<sup><i>n</i></sup>&nbsp;−&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Mills%27_constant" title="Mills&#39; constant">Mills</a> (floor(<i>A</i><sup>3<sup><i>n</i></sup></sup>))</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">By integer sequence</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Fibonacci_prime" title="Fibonacci prime">Fibonacci</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lucas_number" title="Lucas number">Lucas</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Motzkin_number" title="Motzkin number">Motzkin</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bell_number" title="Bell number">Bell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Partition_(number_theory)" title="Partition (number theory)">Partitions</a></li>
+<li><strong class="selflink">Pell</strong></li>
+<li><a href="http://en.wikipedia.org/wiki/Perrin_number" title="Perrin number">Perrin</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Newman%E2%80%93Shanks%E2%80%93Williams_prime" title="Newman–Shanks–Williams prime">Newman–Shanks–Williams</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">By property</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Lucky_number" title="Lucky number">Lucky</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wall%E2%80%93Sun%E2%80%93Sun_prime" title="Wall–Sun–Sun prime">Wall–Sun–Sun</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wilson_prime" title="Wilson prime">Wilson</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wieferich_prime" title="Wieferich prime">Wieferich</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wieferich_pair" title="Wieferich pair">Wieferich pair</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fortunate_number" title="Fortunate number">Fortunate</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ramanujan_prime" title="Ramanujan prime">Ramanujan</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pillai_prime" title="Pillai prime">Pillai</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Regular_prime" title="Regular prime">Regular</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strong_prime" title="Strong prime">Strong</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Stern_prime" title="Stern prime">Stern</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Supersingular_prime_(for_an_elliptic_curve)" title="Supersingular prime (for an elliptic curve)">Supersingular (elliptic curve)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Supersingular_prime_(moonshine_theory)" title="Supersingular prime (moonshine theory)">Supersingular (moonshine theory)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wolstenholme_prime" title="Wolstenholme prime">Wolstenholme</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Good_prime" title="Good prime">Good</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Super-prime" title="Super-prime">Super</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Higgs_prime" title="Higgs prime">Higgs</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Highly_cototient_number" title="Highly cototient number">Highly cototient</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Illegal_prime" title="Illegal prime">Illegal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Base-dependent</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Happy_number" title="Happy number">Happy</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dihedral_prime" title="Dihedral prime">Dihedral</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Palindromic_prime" title="Palindromic prime">Palindromic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Emirp" title="Emirp">Emirp</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Repunit" title="Repunit">Repunit</a> (10<sup><i>n</i></sup>&nbsp;−&nbsp;1)/9</li>
+<li><a href="http://en.wikipedia.org/wiki/Permutable_prime" title="Permutable prime">Permutable</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Circular_prime" title="Circular prime">Circular</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Truncatable_prime" title="Truncatable prime">Truncatable</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strobogrammatic_prime" title="Strobogrammatic prime">Strobogrammatic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Minimal_prime_(recreational_mathematics)" title="Minimal prime (recreational mathematics)">Minimal</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Full_reptend_prime" title="Full reptend prime">Full reptend</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Unique_prime" title="Unique prime">Unique</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Primeval_number" title="Primeval number">Primeval</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Self_number" title="Self number">Self</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Smarandache%E2%80%93Wellin_number" title="Smarandache–Wellin number">Smarandache–Wellin</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Patterns</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Twin_prime" title="Twin prime">Twin</a> (<i>p</i>, <i>p</i>&nbsp;+&nbsp;2)</li>
+<li><a href="http://en.wikipedia.org/wiki/Bi-twin_chain" title="Bi-twin chain">Bi-twin chain</a> (<i>p</i>&nbsp;−&nbsp;1, <i>p</i>&nbsp;+&nbsp;1, 2<i>p</i>&nbsp;−&nbsp;1, 2<i>p</i>&nbsp;+&nbsp;1, …)</li>
+<li><a href="http://en.wikipedia.org/wiki/Prime_triplet" title="Prime triplet">Triplet</a> (<i>p</i>, <i>p</i>&nbsp;+&nbsp;2 or <i>p</i>&nbsp;+&nbsp;4, <i>p</i>&nbsp;+&nbsp;6)</li>
+<li><a href="http://en.wikipedia.org/wiki/Prime_quadruplet" title="Prime quadruplet">Quadruplet</a> (<i>p</i>, <i>p</i>&nbsp;+&nbsp;2, <i>p</i>&nbsp;+&nbsp;6, <i>p</i>&nbsp;+&nbsp;8)</li>
+<li><a href="http://en.wikipedia.org/wiki/Prime_k-tuple" title="Prime k-tuple">Tuple</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cousin_prime" title="Cousin prime">Cousin</a> (<i>p</i>, <i>p</i>&nbsp;+&nbsp;4)</li>
+<li><a href="http://en.wikipedia.org/wiki/Sexy_prime" title="Sexy prime">Sexy</a> (<i>p</i>, <i>p</i>&nbsp;+&nbsp;6)</li>
+<li><a href="http://en.wikipedia.org/wiki/Chen_prime" title="Chen prime">Chen</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sophie_Germain_prime" title="Sophie Germain prime">Sophie Germain</a> (<i>p</i>, 2<i>p</i>&nbsp;+&nbsp;1)</li>
+<li><a href="http://en.wikipedia.org/wiki/Cunningham_chain" title="Cunningham chain">Cunningham chain</a> (<i>p</i>, 2<i>p</i>&nbsp;±&nbsp;1, …)</li>
+<li><a href="http://en.wikipedia.org/wiki/Safe_prime" title="Safe prime">Safe</a> (<i>p</i>, (<i>p</i>&nbsp;−&nbsp;1)/2)</li>
+<li><a href="http://en.wikipedia.org/wiki/Primes_in_arithmetic_progression" title="Primes in arithmetic progression">Arithmetic progression</a> (<i>p</i>&nbsp;+&nbsp;<i>a·n</i>, <i>n</i>&nbsp;=&nbsp;0,&nbsp;1,&nbsp;…)</li>
+<li><a href="http://en.wikipedia.org/wiki/Balanced_prime" title="Balanced prime">Balanced</a> (consecutive <i>p</i>&nbsp;−&nbsp;<i>n</i>, <i>p</i>, <i>p</i>&nbsp;+&nbsp;<i>n</i>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">By size</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Titanic_prime" title="Titanic prime">Titanic</a> <small>(1,000+ digits)</small></li>
+<li><a href="http://en.wikipedia.org/wiki/Gigantic_prime" title="Gigantic prime">Gigantic</a> <small>(10,000+)</small></li>
+<li><a href="http://en.wikipedia.org/wiki/Megaprime" title="Megaprime">Mega</a> <small>(1,000,000+)</small></li>
+<li><a href="http://en.wikipedia.org/wiki/Largest_known_prime_number" title="Largest known prime number">Largest known</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Complex_number" title="Complex number">Complex numbers</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Eisenstein_prime" title="Eisenstein prime">Eisenstein prime</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Gaussian_integer" title="Gaussian integer">Gaussian prime</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Composite_number" title="Composite number">Composite numbers</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Pseudoprime" title="Pseudoprime">Pseudoprime</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Almost_prime" title="Almost prime">Almost prime</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Semiprime" title="Semiprime">Semiprime</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Interprime" title="Interprime">Interprime</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related topics</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Probable_prime" title="Probable prime">Probable prime</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Industrial-grade_prime" title="Industrial-grade prime">Industrial-grade prime</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Formula_for_primes" title="Formula for primes">Formula for primes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Prime_gap" title="Prime gap">Prime gap</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div><a href="http://en.wikipedia.org/wiki/List_of_prime_numbers" title="List of prime numbers">List of prime numbers</a></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;">
+<tbody><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;">
+<tbody><tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="http://en.wikipedia.org/wiki/Template:Classes_of_natural_numbers" title="Template:Classes of natural numbers"><span title="View this template" style=";;background:none transparent;border:none;;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.wikipedia.org/wiki/Template_talk:Classes_of_natural_numbers" title="Template talk:Classes of natural numbers"><span title="Discuss this template" style=";;background:none transparent;border:none;;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Classes_of_natural_numbers&action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:110%;">Classes of <a href="http://en.wikipedia.org/wiki/Natural_number" title="Natural number">natural numbers</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Exponentiation" title="Exponentiation">Powers</a> and<br>
+related numbers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Achilles_number" title="Achilles number">Achilles numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Power_of_two" title="Power of two">Powers of two</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Powers_of_10" title="Powers of 10">Powers of 10</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Square_number" title="Square number">Squares</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cube_(algebra)" title="Cube (algebra)">Cubes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fourth_power" title="Fourth power">Fourth powers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fifth_power_(algebra)" title="Fifth power (algebra)">Fifth powers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Perfect_power" title="Perfect power">Perfect powers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Powerful_number" title="Powerful number">Powerful numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Prime_power" title="Prime power">Prime powers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Of the form<br>
+<i>a</i> × 2<sup><i>b</i></sup> ± 1</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Cullen_number" title="Cullen number">Cullen numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Double_Mersenne_number" title="Double Mersenne number">Double Mersenne numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fermat_number" title="Fermat number">Fermat numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Mersenne_prime" title="Mersenne prime">Mersenne numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Proth_number" title="Proth number">Proth numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Thabit_number" title="Thabit number">Thabit numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Woodall_number" title="Woodall number">Woodall numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">other polynomial<br>
+numbers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Carol_number" title="Carol number">Carol numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hilbert_number" title="Hilbert number">Hilbert numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Idoneal_number" title="Idoneal number">Idoneal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kynea_number" title="Kynea number">Kynea numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Leyland_number" title="Leyland number">Leyland numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lucky_numbers_of_Euler" title="Lucky numbers of Euler">Lucky numbers of Euler</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Repunit" title="Repunit">Repunits</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Recursion" title="Recursion">Recursively</a> defined<br>
+numbers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Fibonacci_number" title="Fibonacci number">Fibonacci numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Jacobsthal_number" title="Jacobsthal number">Jacobsthal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Leonardo_number" title="Leonardo number">Leonardo numbers</a></li>
+<li><strong class="selflink">Pell numbers</strong></li>
+<li><a href="http://en.wikipedia.org/wiki/Perrin_number" title="Perrin number">Perrin numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Possessing a<br>
+specific set<br>
+of other numbers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Kn%C3%B6del_number" title="Knödel number">Knödel numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Riesel_number" title="Riesel number">Riesel numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sierpinski_number" title="Sierpinski number">Sierpinski numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Expressible via<br>
+specific sums</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Nonhypotenuse_number" title="Nonhypotenuse number">Nonhypotenuse numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Polite_number" title="Polite number">Polite numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Practical_number" title="Practical number">Practical numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Primary_pseudoperfect_number" title="Primary pseudoperfect number">Primary pseudoperfect numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ulam_number" title="Ulam number">Ulam numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wolstenholme_number" title="Wolstenholme number">Wolstenholme numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Generated<br>
+via a <a href="http://en.wikipedia.org/wiki/Sieve_theory" title="Sieve theory">sieve</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Lucky_number" title="Lucky number">Lucky numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Code" title="Code">Code</a> related</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Meertens_number" title="Meertens number">Meertens numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Figurate_number" title="Figurate number">Figurate numbers</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;">
+<tbody><tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Two-dimensional_space" title="Two-dimensional space">2-dimensional</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;">
+<tbody><tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Centered_polygonal_number" title="Centered polygonal number">centered</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Centered_triangular_number" title="Centered triangular number">Centered triangular numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_square_number" title="Centered square number">Centered square numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_pentagonal_number" title="Centered pentagonal number">Centered pentagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_hexagonal_number" title="Centered hexagonal number">Centered hexagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_heptagonal_number" title="Centered heptagonal number">Centered heptagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_octagonal_number" title="Centered octagonal number">Centered octagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_nonagonal_number" title="Centered nonagonal number">Centered nonagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_decagonal_number" title="Centered decagonal number">Centered decagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Star_number" title="Star number">Star numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Polygonal_number" title="Polygonal number">non-centered</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Triangular_number" title="Triangular number">Triangular numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pentagonal_number" title="Pentagonal number">Pentagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hexagonal_number" title="Hexagonal number">Hexagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Heptagonal_number" title="Heptagonal number">Heptagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Octagonal_number" title="Octagonal number">Octagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Nonagonal_number" title="Nonagonal number">Nonagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Decagonal_number" title="Decagonal number">Decagonal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dodecagonal_number" title="Dodecagonal number">Dodecagonal numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Three-dimensional_space" title="Three-dimensional space">3-dimensional</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;">
+<tbody><tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Centered_polyhedral_number" title="Centered polyhedral number">centered</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Centered_tetrahedral_number" title="Centered tetrahedral number">Centered tetrahedral numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_cube_number" title="Centered cube number">Centered cube numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_octahedral_number" title="Centered octahedral number">Centered octahedral numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_dodecahedral_number" title="Centered dodecahedral number">Centered dodecahedral numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Centered_icosahedral_number" title="Centered icosahedral number">Centered icosahedral numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Polyhedral_number" title="Polyhedral number" class="mw-redirect">non-centered</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Tetrahedral_number" title="Tetrahedral number">Tetrahedral numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Octahedral_number" title="Octahedral number">Octahedral numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dodecahedral_number" title="Dodecahedral number">Dodecahedral numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Icosahedral_number" title="Icosahedral number">Icosahedral numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Stella_octangula_number" title="Stella octangula number">Stella octangula numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Pyramidal_number" title="Pyramidal number">pyramidal</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Square_pyramidal_number" title="Square pyramidal number">Square pyramidal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pentagonal_pyramidal_number" title="Pentagonal pyramidal number">Pentagonal pyramidal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hexagonal_pyramidal_number" title="Hexagonal pyramidal number">Hexagonal pyramidal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Heptagonal_pyramidal_number" title="Heptagonal pyramidal number">Heptagonal pyramidal numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.wikipedia.org/wiki/Four-dimensional_space" title="Four-dimensional space">4-dimensional</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;">
+<tbody><tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">centered</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Centered_pentachoric_number" title="Centered pentachoric number">Centered pentachoric numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Squared_triangular_number" title="Squared triangular number">Squared triangular numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">non-centered</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Pentatope_number" title="Pentatope number">Pentatope numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Pseudoprime" title="Pseudoprime">Pseudoprimes</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Carmichael_number" title="Carmichael number">Carmichael numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Catalan_pseudoprime" title="Catalan pseudoprime">Catalan pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Elliptic_pseudoprime" title="Elliptic pseudoprime">Elliptic pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Euler_pseudoprime" title="Euler pseudoprime">Euler pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Euler%E2%80%93Jacobi_pseudoprime" title="Euler–Jacobi pseudoprime">Euler–Jacobi pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fermat_pseudoprime" title="Fermat pseudoprime">Fermat pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fibonacci_pseudoprime" title="Fibonacci pseudoprime" class="mw-redirect">Fibonacci pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Frobenius_pseudoprime" title="Frobenius pseudoprime">Frobenius pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lucas_pseudoprime" title="Lucas pseudoprime">Lucas pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Somer%E2%80%93Lucas_pseudoprime" title="Somer–Lucas pseudoprime">Somer–Lucas pseudoprimes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strong_pseudoprime" title="Strong pseudoprime">Strong pseudoprimes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Combinatorial<br>
+numbers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Bell_number" title="Bell number">Bell numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cake_number" title="Cake number">Cake numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Catalan_number" title="Catalan number">Catalan numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dedekind_number" title="Dedekind number">Dedekind numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Delannoy_number" title="Delannoy number">Delannoy numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fuss%E2%80%93Catalan_number" title="Fuss–Catalan number">Fuss–Catalan numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lazy_caterer%27s_sequence" title="Lazy caterer&#39;s sequence">Lazy caterer's sequence</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lobb_numbers" title="Lobb numbers">Lobb numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Motzkin_number" title="Motzkin number">Motzkin numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Narayana_number" title="Narayana number">Narayana numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ordered_Bell_number" title="Ordered Bell number">Ordered Bell numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Schr%C3%B6der_number" title="Schröder number">Schröder numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Schr%C3%B6der%E2%80%93Hipparchus_number" title="Schröder–Hipparchus number">Schröder–Hipparchus numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Arithmetic_function" title="Arithmetic function">Arithmetic functions</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;">
+<tbody><tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">By properties of <a href="http://en.wikipedia.org/wiki/Divisor_function" title="Divisor function">σ(<i>n</i>)</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Abundant_number" title="Abundant number">Abundant numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Almost_perfect_number" title="Almost perfect number">Almost perfect numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Arithmetic_number" title="Arithmetic number">Arithmetic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Colossally_abundant_number" title="Colossally abundant number">Colossally abundant numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Descartes_number" title="Descartes number">Descartes numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hemiperfect_number" title="Hemiperfect number">Hemiperfect numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Highly_abundant_number" title="Highly abundant number">Highly abundant numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hyperperfect_number" title="Hyperperfect number">Hyperperfect numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Multiply_perfect_number" title="Multiply perfect number">Multiply perfect numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Perfect_number" title="Perfect number">Perfect numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Primitive_abundant_number" title="Primitive abundant number">Primitive abundant numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Quasiperfect_number" title="Quasiperfect number">Quasiperfect numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Refactorable_number" title="Refactorable number">Refactorable numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sublime_number" title="Sublime number">Sublime numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Superabundant_number" title="Superabundant number">Superabundant numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Superior_highly_composite_number" title="Superior highly composite number">Superior highly composite numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Superperfect_number" title="Superperfect number">Superperfect numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">By properties of <a href="http://en.wikipedia.org/wiki/Arithmetic_function#.CE.A9.28n.29.2C_.CF.89.28n.29.2C_.CE.BDp.28n.29_.E2.80.93_prime_power_decomposition" title="Arithmetic function">Ω(<i>n</i>)</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Almost_prime" title="Almost prime">Almost primes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Semiprime" title="Semiprime">Semiprimes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">By properties of <a href="http://en.wikipedia.org/wiki/Euler%27s_totient_function" title="Euler&#39;s totient function">φ(<i>n</i>)</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Highly_cototient_number" title="Highly cototient number">Highly cototient numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Highly_totient_number" title="Highly totient number">Highly totient numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Noncototient" title="Noncototient">Noncototients</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Nontotient" title="Nontotient">Nontotients</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Perfect_totient_number" title="Perfect totient number">Perfect totient numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sparsely_totient_number" title="Sparsely totient number">Sparsely totient numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">By properties of <a href="http://en.wikipedia.org/wiki/Divisor_function#Definition" title="Divisor function">s(<i>n</i>)</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Amicable_numbers" title="Amicable numbers">Amicable numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Betrothed_numbers" title="Betrothed numbers">Betrothed numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Deficient_number" title="Deficient number">Deficient numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Semiperfect_number" title="Semiperfect number">Semiperfect numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+<div>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Euclid_number" title="Euclid number">Euclid numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fortunate_number" title="Fortunate number">Fortunate numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Dividing a quotient</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Wieferich_number" title="Wieferich number" class="mw-redirect">Wieferich numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wilson_prime#Wilson_numbers" title="Wilson prime">Wilson numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other <a href="http://en.wikipedia.org/wiki/Prime_factor" title="Prime factor">prime factor</a><br>
+or <a href="http://en.wikipedia.org/wiki/Divisor" title="Divisor">divisor</a> related<br>
+numbers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Blum_integer" title="Blum integer">Blum integers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Woods_number" title="Erdős–Woods number">Erdős–Woods numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Friendly_number" title="Friendly number">Friendly numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Frugal_number" title="Frugal number">Frugal numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Giuga_number" title="Giuga number">Giuga numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Harmonic_divisor_number" title="Harmonic divisor number">Harmonic divisor numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Highly_composite_number" title="Highly composite number">Highly composite numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lucas%E2%80%93Carmichael_number" title="Lucas–Carmichael number">Lucas–Carmichael numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pronic_number" title="Pronic number">Pronic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Regular_number" title="Regular number">Regular numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Rough_number" title="Rough number">Rough numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Smooth_number" title="Smooth number">Smooth numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sociable_number" title="Sociable number">Sociable numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sphenic_number" title="Sphenic number">Sphenic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/St%C3%B8rmer_number" title="Størmer number">Størmer numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Super-Poulet_number" title="Super-Poulet number">Super-Poulet numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Zeisel_number" title="Zeisel number">Zeisel numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="http://en.wikipedia.org/wiki/Recreational_mathematics" title="Recreational mathematics">Recreational<br>
+mathematics</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;">
+<tbody><tr>
+<th scope="row" class="navbox-group" style="padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Base-dependent<br>
+numbers</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Automorphic_number" title="Automorphic number">Automorphic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Demlo_number" title="Demlo number" class="mw-redirect">Demlo numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Digit-reassembly_number" title="Digit-reassembly number">Digit-reassembly numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dudeney_number" title="Dudeney number">Dudeney numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Equidigital_number" title="Equidigital number">Equidigital numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Extravagant_number" title="Extravagant number">Extravagant numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Factorion" title="Factorion">Factorions</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Friedman_number" title="Friedman number">Friedman numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Happy_number" title="Happy number">Happy numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Harshad_number" title="Harshad number">Harshad numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kaprekar_number" title="Kaprekar number">Kaprekar numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Keith_number" title="Keith number">Keith numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lychrel_number" title="Lychrel number">Lychrel numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Narcissistic_number" title="Narcissistic number">Narcissistic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Palindromic_number" title="Palindromic number">Palindromic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pandigital_number" title="Pandigital number">Pandigital numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Parasitic_number" title="Parasitic number">Parasitic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pernicious_number" title="Pernicious number">Pernicious numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Polydivisible_number" title="Polydivisible number">Polydivisible numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Primeval_number" title="Primeval number">Primeval numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Repdigit" title="Repdigit">Repdigits</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Repunit" title="Repunit">Repunits</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Self_number" title="Self number">Self numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Self-descriptive_number" title="Self-descriptive number">Self-descriptive numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Smarandache%E2%80%93Wellin_number" title="Smarandache–Wellin number">Smarandache–Wellin numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strictly_non-palindromic_number" title="Strictly non-palindromic number">Strictly non-palindromic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strobogrammatic_number" title="Strobogrammatic number">Strobogrammatic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sum-product_number" title="Sum-product number">Sum-product numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Transposable_integer" title="Transposable integer">Transposable integers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Trimorphic_number" title="Trimorphic number">Trimorphic numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Undulating_number" title="Undulating number">Undulating numbers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Vampire_number" title="Vampire number">Vampire numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+<div>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Aronson%27s_sequence" title="Aronson&#39;s sequence">Aronson's sequence</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ban_number" title="Ban number">Ban numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1015
+CPU time usage: 2.008 seconds
+Real time usage: 35.697 seconds
+Preprocessor visited node count: 4773/1000000
+Preprocessor generated node count: 11123/1500000
+Post‐expand include size: 146085/2048000 bytes
+Template argument size: 7951/2048000 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 4/500
+Lua time usage: 0.148s
+Lua memory usage: 2.08 MB
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1355482-0!*!0!!en!4!*!math=0 and timestamp 20140219202538
+ -->
+<noscript>&lt;img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /&gt;</noscript></div>								<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Pell_number&oldid=593062071">http://en.wikipedia.org/w/index.php?title=Pell_number&amp;oldid=593062071</a>"				</div>
+												<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Integer_sequences" title="Category:Integer sequences">Integer sequences</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Recurrence_relations" title="Category:Recurrence relations">Recurrence relations</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Pell+number&type=signup">Create account</a></li><li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Pell+number" title="You&#39;re encouraged to log in; however, it&#39;s not mandatory. [o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="./Pell number - Wikipedia, the free encyclopedia_files/Pell number - Wikipedia, the free encyclopedia.htm" title="View the content page [c]" accesskey="c">Article</a></span></li>
+					<li id="ca-talk"><span><a href="http://en.wikipedia.org/wiki/Talk:Pell_number" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label"><span>Variants</span><a href="http://en.wikipedia.org/wiki/Pell_number#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="./Pell number - Wikipedia, the free encyclopedia_files/Pell number - Wikipedia, the free encyclopedia.htm">Read</a></span></li>
+					<li id="ca-edit"><span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=edit" title="You can edit this page. 
+Please review your changes before saving. [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=history" title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label"><span>Actions</span><a href="http://en.wikipedia.org/wiki/Pell_number#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="http://en.wikipedia.org/w/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton">		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel">
+					<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label">Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en" title="Support us">Donate to Wikipedia</a></li>
+			<li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikimedia Shop">Wikimedia Shop</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+	<h3 id="p-interaction-label">Interaction</h3>
+	<div class="body">
+		<ul>
+			<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label">Tools</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Pell_number" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Pell_number" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&oldid=593062071" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&action=info">Page information</a></li>
+			<li id="t-wikibase"><a href="http://www.wikidata.org/wiki/Q1386491" title="Link to connected data repository item [g]" accesskey="g">Data item</a></li>
+<li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:Cite&page=Pell_number&id=593062071" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+	<h3 id="p-coll-print_export-label">Print/export</h3>
+	<div class="body">
+		<ul>
+			<li id="coll-create_a_book"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=Pell+number">Create a book</a></li>
+			<li id="coll-download-as-rl"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=render_article&arttitle=Pell+number&oldid=593062071&writer=rl">Download as PDF</a></li>
+			<li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Pell_number&printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+	<h3 id="p-lang-label">Languages</h3>
+	<div class="body">
+		<ul>
+			<li class="interlanguage-link interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A7%87%E0%A6%B2_%E0%A6%B0%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BE" title="পেল রাশিমালা – Bengali" lang="bn" hreflang="bn">বাংলা</a></li>
+			<li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/Pell-Folge" title="Pell-Folge – German" lang="de" hreflang="de">Deutsch</a></li>
+			<li class="interlanguage-link interwiki-el"><a href="http://el.wikipedia.org/wiki/%CE%91%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CE%AF_%CF%84%CE%BF%CF%85_%CE%A0%CE%B5%CE%BB" title="Αριθμοί του Πελ – Greek" lang="el" hreflang="el">Ελληνικά</a></li>
+			<li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Nombre_de_Pell" title="Nombre de Pell – French" lang="fr" hreflang="fr">Français</a></li>
+			<li class="interlanguage-link interwiki-gl"><a href="http://gl.wikipedia.org/wiki/N%C3%BAmero_de_Pell" title="Número de Pell – Galician" lang="gl" hreflang="gl">Galego</a></li>
+			<li class="interlanguage-link interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%A1%D7%93%D7%A8%D7%AA_%D7%A4%D7%9C" title="סדרת פל – Hebrew" lang="he" hreflang="he">עברית</a></li>
+			<li class="interlanguage-link interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Pellgetal" title="Pellgetal – Dutch" lang="nl" hreflang="nl">Nederlands</a></li>
+			<li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E6%95%B0" title="ペル数 – Japanese" lang="ja" hreflang="ja">日本語</a></li>
+			<li class="interlanguage-link interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Liczby_Pella" title="Liczby Pella – Polish" lang="pl" hreflang="pl">Polski</a></li>
+			<li class="interlanguage-link interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%BE_%D0%9F%D0%B5%D0%BB%D0%BB%D1%8F" title="Число Пелля – Russian" lang="ru" hreflang="ru">Русский</a></li>
+			<li class="interlanguage-link interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E4%BD%A9%E5%B0%94%E6%95%B0" title="佩尔数 – Chinese" lang="zh" hreflang="zh">中文</a></li>
+			<li class="uls-p-lang-dummy"><a href="http://en.wikipedia.org/wiki/Pell_number#"></a></li>
+			<li class="wbc-editpage"><a href="http://www.wikidata.org/wiki/Q1386491#sitelinks-wikipedia" title="Edit interlanguage links">Edit links</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 30 January 2014 at 03:47.<br></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a> <br>
+Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a class="external" href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/wiki/Pell_number" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img src="./Pell number - Wikipedia, the free encyclopedia_files/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./Pell number - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.cite","mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.articleFeedbackv5.startup","ext.wikimediaShopLink.core","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script src="./Pell number - Wikipedia, the free encyclopedia_files/load(4).php"></script>
+<!-- Served by mw1055 in 0.228 secs. -->
+	
+
+</body></html>

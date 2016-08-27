@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Continued_fraction_expansion -->
+<html lang="en" dir="ltr" class="client-js ve-not-available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Methods of computing square roots - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23wmf14">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit">
+<link rel="apple-touch-icon" href="http://bits.wikimedia.org/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="http://bits.wikimedia.org/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom">
+<link rel="canonical" href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.geshi.local%7Cext.rtlcite%2Cwikihiero%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.common.interface%7Cskins.vector.styles&only=styles&skin=vector&*">
+<style>
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:0dcacc990dd02e7db9669ab3090b80f1 */
+.mw-editsection{white-space:nowrap;padding-right:0.25em; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555} .mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-left:-0.25em;margin-right:0.25em;color:#555} .mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-right:-0.25em;margin-left:0.25em;color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:10d5f32d441941e72673fc73cdfe14a9 */
+.uls-menu a{cursor:pointer}.uls-menu.callout .caret-before{border-top:20px solid transparent;border-right:20px solid #AAA;border-bottom:20px solid transparent;display:inline-block;left:-21px;top:30px;position:absolute}.uls-menu.callout .caret-after{border-top:20px solid transparent;border-right:20px solid #FCFCFC;border-bottom:20px solid transparent;display:inline-block;left:-20px;top:30px;position:absolute}.uls-ui-languages button{width:23%;text-overflow:ellipsis;margin-right:4%}button.uls-more-languages{width:auto}.settings-title{font-size:11pt}.settings-text{color:#555555;font-size:9pt}div.display-settings-block:hover .settings-text{color:#252525}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:491ee552778d7da2edfaacae0417e09b */
+.wbc-editpage{list-style:none none;text-align:right;padding-right:.5em !important}.wbc-editpage > a{padding-left:11px;background:no-repeat left center}.wbc-editpage > a:link,.wbc-editpage > a:visited{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAD1BMVEUZAAD///95eXmqqqrY2NjEIQ0cAAAAAXRSTlMAQObYZgAAACdJREFUCNdjYGBgYGIAASUFENNJCUiqmADZTM5OqExFFZAKRSG4YgBjcwODynSgDwAAAABJRU5ErkJggg==);background-image:url(//bits.wikimedia.org/static-1.23wmf14/extensions/Wikidata/extensions/Wikibase/client/resources/images/WBC-Asset-Pencil.png?2014-02-13T17:51:40Z)!ie;color:#797979 !important}.wbc-editpage > a:hover{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAD1BMVEWBAADY2Nj///8GRa0zZrtW2AECAAAAAXRSTlMAQObYZgAAACdJREFUCNdjYGBgYGYAAWMDEFPYGEgaOgLZzCLCqEwjQ5AKI2W4YgBg5QOTQPzBuAAAAABJRU5ErkJggg==);background-image:url(//bits.wikimedia.org/static-1.23wmf14/extensions/Wikidata/extensions/Wikibase/client/resources/images/WBC-Asset-Pencil-Hover.png?2014-02-13T17:51:40Z)!ie;color:#0645AD !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:9a80ed18cd60e13a378ef524a8f1d587 */
+@media print{#centralNotice{display:none}}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ddb0c98a055632ae8e349c9cf48ac703 */
+.tipsy{padding:5px;position:absolute;z-index:100000;cursor:default}.tipsy-inner{padding:5px 8px 4px 8px; background-color:#ffffff;border:solid 1px #a7d7f9;color:black;max-width:15em;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px; }.tipsy-arrow{position:absolute;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEX5+fmn1/n///9s6BFKAAAAAXRSTlMAQObYZgAAACpJREFUCB1jZBD4wMiQMoeRcUU4I9uSaYxSE54xZjn8AtMgPkgcJA9UBwAeDw1Qrb3pVAAAAABJRU5ErkJggg==) no-repeat top left;background:url(//bits.wikimedia.org/static-1.23wmf14/resources/jquery.tipsy/images/tipsy.png?2014-02-13T17:46:40Z) no-repeat top left!ie;width:11px;height:6px} .tipsy-n .tipsy-arrow{top:0px;left:50%;margin-left:-5px} .tipsy-nw .tipsy-arrow{top:1px;left:10px} .tipsy-ne .tipsy-arrow{top:1px;right:10px} .tipsy-s .tipsy-arrow{bottom:0px;left:50%;margin-left:-5px;background-position:bottom left} .tipsy-sw .tipsy-arrow{bottom:0px;left:10px;background-position:bottom left} .tipsy-se .tipsy-arrow{bottom:0px;right:10px;background-position:bottom left} .tipsy-e .tipsy-arrow{top:50%;margin-top:-5px;right:1px;width:5px;height:11px;background-position:top right} .tipsy-w .tipsy-arrow{top:50%;margin-top:-5px;left:0px;width:6px;height:11px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:a698aa5d67345d60aabc59a329d04328 */</style><style>
+.cite-accessibility-label{position:absolute !important; top:-99999px;clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);padding:0 !important;border:0 !important;height:1px !important;width:1px !important;overflow:hidden}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:6989008023386f50501783f5c5ff5345 */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(//bits.wikimedia.org/static-1.23wmf14/resources/mediawiki.action/images/green-checkmark.png?2014-02-13T17:46:40Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:835b467bd250310b6e90d133c28a7a61 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px 8px;margin:0px;background-color:#F7F7F7;box-shadow:2px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-webkit-box-shadow:2px 4px 2px rgba(0,0,0,0.3)}.referencetooltip li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;border-top:12px #080086 solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7 solid;border-right:5px transparent solid;border-left:5px transparent solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js body .referencetooltip li li{border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086 solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7 solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:16px;width:16px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/e/ed/Cog.png);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity 0.15s;-moz-transition:opacity 0.15s;-o-transition:opacity 0.15s;-ms-transition:opacity 0.15s;transition:opacity 0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086 2px solid}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3c614aa75cecefe56b27b5e3c9197b7e */
+div#editpage-specialchars{display:block;margin-top:.5em;border:1px solid #c0c0c0;padding:.3em}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:29386c84f9c8f19dfb410df7e5be154b */
+#container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen #playerContainer{position:absolute !important;width:100% !important;height:100%! important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{ left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?2014-02-13T17:50:00Z)}.mw-imported-resource{border:thin solid black}.kaltura-icon{background-image:url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?2014-02-13T17:50:00Z) !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none repeat scroll 0% 0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous} .play-btn-large{width:70px;height:53px;background :url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?2014-02-13T17:50:00Z);position :absolute;cursor :pointer;border :none !important;z-index :1}.play-btn-large:hover{background :url(//bits.wikimedia.org/static-1.23wmf14/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?2014-02-13T17:50:00Z)}.carouselContainer{position :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px 20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px 6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position :absolute;bottom:23px}.carouselPrevButton{left :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal !important;font-size:14px !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px 10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71)) )}.alert-text{color :black !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f5d4c58e1b6cf163822d8d14275c99c2 */
+#p-lang .uls-settings-trigger{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAgCAMAAAAVMLmlAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAALpQTFRF////W1tbgICAWVlZgICAUVFRgICAWVlZhYWFUlJShYWFVFRUgYGBVVVVgYGBVVVVgICAVFRUVVVVVlZWgYGBgICAVFRUgYGBVFRUgICAgYGBVVVVVVVVgYGBVlZWgYGBVFRUgICAVFRUgICAVVVVgICAVlZWgICAVFRUgICAVVVVgICAVFRUgICAVlZWgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICA9Fa9bgAAADx0Uk5TAA4OFBQWFhcXGRlJSUtLWlpbXV9fYGFhZGRlZmlpa2twcIiIioqPj5GRn5+goKGh6+vv7/Dw+fn8/P7+YuRUVgAAAOlJREFUGBmNwcdWAgEURMFLFCUaAcWAEhQYHBRmCN3//1u+BYcVC6s4p2U3OLrrVxN7Xn7uELoH5w65Dx1g6JNnoLazfz++VnZehkZir4pQ3NjzBg5TwtgBhzFh6kDr294UobiykxZc7ezVdLyx8yrw6pM+8GjnDjsf7gj3/WpiJ7Vhl6OW3eC/mlKdo5teZSHNSoM24XqvTCHTvg0MdDIASpn08/6ZSlkJ6jMpLUBhLc3qKEwIIwUURoSJAs2ltC5AIZUWTbjcSulktJayCvCikx7wJG0VttrfEp5eLpfS4uLtgaOmVOeMP8BAM9RClMO9AAAAAElFTkSuQmCC) no-repeat right top;background:transparent url(//bits.wikimedia.org/static-1.23wmf14/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.png?2014-02-13T17:50:00Z) no-repeat right top!ie;background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTRweCIgaGVpZ2h0PSIzMnB4Ij48cGF0aCBmaWxsPSIjODA4MDgwIiBkPSJNMTMuNTgyLDYuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTEuMzU5LTEuMzZjLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1QzkuNDMsMi44MzMsOC45MDgsMi42MTUsOC4zNjksMi40ODJWMS40MThDOC4zNjksMS4xODcsOC4xODIsMSw3Ljk1LDFINi4wMzJDNS44MDEsMSw1LjYxNCwxLjE4Nyw1LjYxNCwxLjQxOHYxLjA2M0M1LjA3MywyLjYxNiw0LjU1MiwyLjgzMyw0LjA2MiwzLjEyN2wtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQyOS0wLjE2NC0wLjU5MywwbC0xLjM2LDEuMzZjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMC43NSwwLjc1QzEuODE3LDUuNTY4LDEuNjE1LDYuMDk1LDEuNDgyLDYuNjMxSDAuNDE4QzAuMTg3LDYuNjMxLDAsNi44MTgsMCw3LjA1djEuOTE4YzAsMC4yMzEsMC4xODcsMC40MTgsMC40MTgsMC40MThoMS4wNDZjMC4xMzQsMC41NDIsMC4zNTEsMS4wNjIsMC42NDUsMS41NTFsLTAuNzUsMC43NWMtMC4xNjQsMC4xNjQtMC4xNjQsMC40MjksMCwwLjU5M2wxLjM2LDEuMzZjMC4xNjQsMC4xNjQsMC40MjksMC4xNjQsMC41OTMsMGwwLjc1LTAuNzVjMC40OTEsMC4yOTYsMS4wMSwwLjQ5MywxLjU1MSwwLjYyN3YxLjA2M0M1LjYxNCwxNC44MTMsNS44MDEsMTUsNi4wMzIsMTVINy45NWMwLjIzMSwwLDAuNDE5LTAuMTg3LDAuNDE5LTAuNDE4di0xLjA2M2MwLjU0Mi0wLjEzNCwxLjA2MS0wLjMzMywxLjU1MS0wLjYyN2wwLjc1LDAuNzVjMC4xNjQsMC4xNjQsMC40MywwLjE2NCwwLjU5NCwwbDEuMzU5LTEuMzZjMC4xNjQtMC4xNjQsMC4xNjQtMC40MjksMC0wLjU5M2wtMC43NS0wLjc1YzAuMjk1LTAuNDg5LDAuNTEtMS4wMTMsMC42NDUtMS41NTFoMS4wNjRDMTMuODEyLDkuMzg2LDE0LDkuMTk5LDE0LDguOTY4VjcuMDVDMTQsNi44MTgsMTMuODEyLDYuNjMyLDEzLjU4Miw2LjYzMnogTTcsMTAuNjQ0QzUuNTM5LDEwLjY0NCw0LjM1NSw5LjQ2LDQuMzU1LDhTNS41MzksNS4zNTYsNyw1LjM1NlM5LjY0NSw2LjU0LDkuNjQ1LDhTOC40NjEsMTAuNjQ0LDcsMTAuNjQ0eiIvPjxwYXRoIGZpbGw9IiM1NTU1NTUiIGQ9Ik0xMy41ODIsMjIuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDMsMC0wLjU5NGwtMS4zNTktMS4zNTljLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1Yy0wLjQ5LTAuMjk0LTEuMDEyLTAuNTEyLTEuNTUxLTAuNjQ1di0xLjA2NEM4LjM2OSwxNy4xODgsOC4xODIsMTcsNy45NSwxN0g2LjAzMmMtMC4yMzEsMC0wLjQxOSwwLjE4OC0wLjQxOSwwLjQxOHYxLjA2MmMtMC41NCwwLjEzNi0xLjA2MiwwLjM1My0xLjU1MSwwLjY0NmwtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQzLTAuMTY0LTAuNTk0LDBsLTEuMzU5LDEuMzU5Yy0wLjE2NCwwLjE2NC0wLjE2NCwwLjQzLDAsMC41OTRsMC43NSwwLjc1Yy0wLjI5MywwLjQ4OC0wLjQ5NCwxLjAxNS0wLjYyNywxLjU1MUgwLjQxOEMwLjE4OCwyMi42MzEsMCwyMi44MTgsMCwyMy4wNXYxLjkxOGMwLDAuMjMxLDAuMTg4LDAuNDE4LDAuNDE4LDAuNDE4aDEuMDQ2YzAuMTM0LDAuNTQyLDAuMzUxLDEuMDYyLDAuNjQ2LDEuNTUybC0wLjc1LDAuNzVjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMS4zNTksMS4zNmMwLjE2NCwwLjE2NCwwLjQzLDAuMTY0LDAuNTk0LDBsMC43NS0wLjc1YzAuNDksMC4yOTUsMS4wMSwwLjQ5MiwxLjU1MSwwLjYyN3YxLjA2MmMwLDAuMjMyLDAuMTg4LDAuNDIsMC40MTksMC40Mkg3Ljk1YzAuMjMxLDAsMC40MTktMC4xODgsMC40MTktMC40MThWMjkuNTJjMC41NDItMC4xMzUsMS4wNjEtMC4zMzQsMS41NTEtMC42MjdsMC43NSwwLjc1YzAuMTY0LDAuMTY0LDAuNDMsMC4xNjQsMC41OTQsMGwxLjM1OS0xLjM2YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTAuNzUtMC43NWMwLjI5NS0wLjQ4OSwwLjUxLTEuMDE0LDAuNjQ1LTEuNTUxaDEuMDY0QzEzLjgxMiwyNS4zODYsMTQsMjUuMTk5LDE0LDI0Ljk2OFYyMy4wNUMxNCwyMi44MTgsMTMuODEyLDIyLjYzMiwxMy41ODIsMjIuNjMyeiBNNywyNi42NDVjLTEuNDYxLDAtMi42NDUtMS4xODQtMi42NDUtMi42NDVTNS41MzksMjEuMzU1LDcsMjEuMzU1UzkuNjQ1LDIyLjUzOSw5LjY0NSwyNFM4LjQ2MSwyNi42NDUsNywyNi42NDV6Ii8+PC9zdmc+);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.23wmf14/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2014-02-13T17:50:00Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTRweCIgaGVpZ2h0PSIzMnB4Ij48cGF0aCBmaWxsPSIjODA4MDgwIiBkPSJNMTMuNTgyLDYuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTEuMzU5LTEuMzZjLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1QzkuNDMsMi44MzMsOC45MDgsMi42MTUsOC4zNjksMi40ODJWMS40MThDOC4zNjksMS4xODcsOC4xODIsMSw3Ljk1LDFINi4wMzJDNS44MDEsMSw1LjYxNCwxLjE4Nyw1LjYxNCwxLjQxOHYxLjA2M0M1LjA3MywyLjYxNiw0LjU1MiwyLjgzMyw0LjA2MiwzLjEyN2wtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQyOS0wLjE2NC0wLjU5MywwbC0xLjM2LDEuMzZjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMC43NSwwLjc1QzEuODE3LDUuNTY4LDEuNjE1LDYuMDk1LDEuNDgyLDYuNjMxSDAuNDE4QzAuMTg3LDYuNjMxLDAsNi44MTgsMCw3LjA1djEuOTE4YzAsMC4yMzEsMC4xODcsMC40MTgsMC40MTgsMC40MThoMS4wNDZjMC4xMzQsMC41NDIsMC4zNTEsMS4wNjIsMC42NDUsMS41NTFsLTAuNzUsMC43NWMtMC4xNjQsMC4xNjQtMC4xNjQsMC40MjksMCwwLjU5M2wxLjM2LDEuMzZjMC4xNjQsMC4xNjQsMC40MjksMC4xNjQsMC41OTMsMGwwLjc1LTAuNzVjMC40OTEsMC4yOTYsMS4wMSwwLjQ5MywxLjU1MSwwLjYyN3YxLjA2M0M1LjYxNCwxNC44MTMsNS44MDEsMTUsNi4wMzIsMTVINy45NWMwLjIzMSwwLDAuNDE5LTAuMTg3LDAuNDE5LTAuNDE4di0xLjA2M2MwLjU0Mi0wLjEzNCwxLjA2MS0wLjMzMywxLjU1MS0wLjYyN2wwLjc1LDAuNzVjMC4xNjQsMC4xNjQsMC40MywwLjE2NCwwLjU5NCwwbDEuMzU5LTEuMzZjMC4xNjQtMC4xNjQsMC4xNjQtMC40MjksMC0wLjU5M2wtMC43NS0wLjc1YzAuMjk1LTAuNDg5LDAuNTEtMS4wMTMsMC42NDUtMS41NTFoMS4wNjRDMTMuODEyLDkuMzg2LDE0LDkuMTk5LDE0LDguOTY4VjcuMDVDMTQsNi44MTgsMTMuODEyLDYuNjMyLDEzLjU4Miw2LjYzMnogTTcsMTAuNjQ0QzUuNTM5LDEwLjY0NCw0LjM1NSw5LjQ2LDQuMzU1LDhTNS41MzksNS4zNTYsNyw1LjM1NlM5LjY0NSw2LjU0LDkuNjQ1LDhTOC40NjEsMTAuNjQ0LDcsMTAuNjQ0eiIvPjxwYXRoIGZpbGw9IiM1NTU1NTUiIGQ9Ik0xMy41ODIsMjIuNjMyaC0xLjA2NGMtMC4xMzMtMC41MzgtMC4zNTQtMS4wNjUtMC42NDUtMS41NTJsMC43NS0wLjc1YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDMsMC0wLjU5NGwtMS4zNTktMS4zNTljLTAuMTY0LTAuMTY0LTAuNDMtMC4xNjQtMC41OTQsMGwtMC43NSwwLjc1Yy0wLjQ5LTAuMjk0LTEuMDEyLTAuNTEyLTEuNTUxLTAuNjQ1di0xLjA2NEM4LjM2OSwxNy4xODgsOC4xODIsMTcsNy45NSwxN0g2LjAzMmMtMC4yMzEsMC0wLjQxOSwwLjE4OC0wLjQxOSwwLjQxOHYxLjA2MmMtMC41NCwwLjEzNi0xLjA2MiwwLjM1My0xLjU1MSwwLjY0NmwtMC43NS0wLjc1Yy0wLjE2NC0wLjE2NC0wLjQzLTAuMTY0LTAuNTk0LDBsLTEuMzU5LDEuMzU5Yy0wLjE2NCwwLjE2NC0wLjE2NCwwLjQzLDAsMC41OTRsMC43NSwwLjc1Yy0wLjI5MywwLjQ4OC0wLjQ5NCwxLjAxNS0wLjYyNywxLjU1MUgwLjQxOEMwLjE4OCwyMi42MzEsMCwyMi44MTgsMCwyMy4wNXYxLjkxOGMwLDAuMjMxLDAuMTg4LDAuNDE4LDAuNDE4LDAuNDE4aDEuMDQ2YzAuMTM0LDAuNTQyLDAuMzUxLDEuMDYyLDAuNjQ2LDEuNTUybC0wLjc1LDAuNzVjLTAuMTY0LDAuMTY0LTAuMTY0LDAuNDI5LDAsMC41OTNsMS4zNTksMS4zNmMwLjE2NCwwLjE2NCwwLjQzLDAuMTY0LDAuNTk0LDBsMC43NS0wLjc1YzAuNDksMC4yOTUsMS4wMSwwLjQ5MiwxLjU1MSwwLjYyN3YxLjA2MmMwLDAuMjMyLDAuMTg4LDAuNDIsMC40MTksMC40Mkg3Ljk1YzAuMjMxLDAsMC40MTktMC4xODgsMC40MTktMC40MThWMjkuNTJjMC41NDItMC4xMzUsMS4wNjEtMC4zMzQsMS41NTEtMC42MjdsMC43NSwwLjc1YzAuMTY0LDAuMTY0LDAuNDMsMC4xNjQsMC41OTQsMGwxLjM1OS0xLjM2YzAuMTY0LTAuMTY0LDAuMTY0LTAuNDI5LDAtMC41OTNsLTAuNzUtMC43NWMwLjI5NS0wLjQ4OSwwLjUxLTEuMDE0LDAuNjQ1LTEuNTUxaDEuMDY0QzEzLjgxMiwyNS4zODYsMTQsMjUuMTk5LDE0LDI0Ljk2OFYyMy4wNUMxNCwyMi44MTgsMTMuODEyLDIyLjYzMiwxMy41ODIsMjIuNjMyeiBNNywyNi42NDVjLTEuNDYxLDAtMi42NDUtMS4xODQtMi42NDUtMi42NDVTNS41MzksMjEuMzU1LDcsMjEuMzU1UzkuNjQ1LDIyLjUzOSw5LjY0NSwyNFM4LjQ2MSwyNi42NDUsNywyNi42NDV6Ii8+PC9zdmc+);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.23wmf14/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2014-02-13T17:50:00Z)!ie;height:16px;width:14px;float:right;cursor:pointer}.skin-vector #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang .uls-settings-trigger:hover{background-position:right -16px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:23c8d0fb96f860393f9f8127be6cddad */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{text-decoration:none;color:black}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:52b1797f70c7e4094dfa4191101944e8 */</style><style>
+.wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask a.external{background-image:none !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond a.external{background-image:none !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ba4e3603af357b5172e85672664d39a8 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=site&only=styles&skin=vector&*">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+
+<script src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/load.php"></script><script src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/load(1).php"></script><style title="spinjs"></style>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Methods_of_computing_square_roots","wgTitle":"Methods of computing square roots","wgCurRevisionId":593271017,"wgRevisionId":593271017,"wgArticleId":2698660,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 errors: dates","Pages using web citations with no URL","Articles that may contain original research from January 2012","All articles that may contain original research","Wikipedia articles that are too technical from September 2012","All articles that are too technical","Articles needing expert attention from September 2012","All articles needing expert attention","Wikipedia articles needing clarification from February 2012","Root-finding algorithms","Computer arithmetic algorithms"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Methods_of_computing_square_roots","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgArticleFeedbackv5Permissions":{"aft-reader":true,"aft-member":false,"aft-editor":false,"aft-monitor":false,"aft-administrator":false,"aft-oversighter":false,"aft-noone":false},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"//bits.wikimedia.org/static-1.23wmf14/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048},"wikilove-recipient":"","wikilove-anon":0,"wgGuidedTourHelpGuiderUrl":"Help:Guided tours/guider","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"wikipedia","aftv5Article":{"id":2698660,"title":"Methods of computing square roots","namespace":0,"categories":["All articles needing expert attention","All articles that are too technical","All articles that may contain original research","Articles needing expert attention from September 2012","Articles that may contain original research from January 2012","CS1 errors: dates","Computer arithmetic algorithms","Pages using web citations with no URL","Root-finding algorithms","Wikipedia articles needing clarification from February 2012","Wikipedia articles that are too technical from September 2012"],"permissionLevel":false},"wgWikibaseItemId":"Q1197114"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"showhiddencats":false,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,
+"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"aftv5-last-filter":null,"visualeditor-enable":0,"visualeditor-enable-experimental":0,"visualeditor-enable-mwmath":0,"visualeditor-betatempdisable":0,"wikilove-enabled":1,"echo-subscriptions-web-page-review":true,"echo-subscriptions-email-page-review":false,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"echo-subscriptions-web-education-program":true,"echo-subscriptions-email-education-program":false,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"html","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,
+"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"echo-subscriptions-web-edit-thank":true,"echo-subscriptions-email-edit-thank":false,"echo-subscriptions-web-flow-discussion":true,"echo-subscriptions-email-flow-discussion":false,"gettingstarted-task-toolbar-show-intro":true,"uls-preferences":"","language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":
+false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"searchNs118":false,"searchNs119":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-teahouse":1,"gadget-ReferenceTooltips":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":1,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:5e4ad49afa9f26a7ed4e93dac6d2e189 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","wikibase.client.init","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script><script async="" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/checkLoggedIn"></script><script src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/load(2).php"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #b1b100;}
+.c.source-c .kw2 {color: #000000; font-weight: bold;}
+.c.source-c .kw3 {color: #000066;}
+.c.source-c .kw4 {color: #993333;}
+.c.source-c .co1 {color: #666666; font-style: italic;}
+.c.source-c .co2 {color: #339933;}
+.c.source-c .coMULTI {color: #808080; font-style: italic;}
+.c.source-c .es0 {color: #000099; font-weight: bold;}
+.c.source-c .es1 {color: #000099; font-weight: bold;}
+.c.source-c .es2 {color: #660099; font-weight: bold;}
+.c.source-c .es3 {color: #660099; font-weight: bold;}
+.c.source-c .es4 {color: #660099; font-weight: bold;}
+.c.source-c .es5 {color: #006699; font-weight: bold;}
+.c.source-c .br0 {color: #009900;}
+.c.source-c .sy0 {color: #339933;}
+.c.source-c .st0 {color: #ff0000;}
+.c.source-c .nu0 {color: #0000dd;}
+.c.source-c .nu6 {color: #208080;}
+.c.source-c .nu8 {color: #208080;}
+.c.source-c .nu12 {color: #208080;}
+.c.source-c .nu16 {color:#800080;}
+.c.source-c .nu17 {color:#800080;}
+.c.source-c .nu18 {color:#800080;}
+.c.source-c .nu19 {color:#800080;}
+.c.source-c .me1 {color: #202020;}
+.c.source-c .me2 {color: #202020;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><script src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/geoiplookup"></script><link rel="dns-prefetch" href="http://meta.wikimedia.org/"><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.23wmf14/skins/vector/csshover.min.htc")}</style><![endif]--><script async="" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/load(3).php"></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Methods_of_computing_square_roots skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<div id="siteNotice"><div id="centralNotice" class="cn-ToUAmendment"><style type="text/css">
+
+#centralNotice.collapsed #ChangeToU2014_v1 {
+ display: none;
+}
+
+#ChangeToU2014_v1 {
+ position: relative;
+ overflow: hidden;
+ background: url(//upload.wikimedia.org/wikipedia/commons/0/0d/Gray-gradient1.png) bottom repeat-x;
+ margin-bottom: 0.5em !important;
+ margin-top: 0.5em !important;
+ background-color:#FFFFFF;
+ border: solid 1px #aaaaaa; 
+ height:66px;
+}
+
+#ChangeToU2014_v1 a.cn-full-banner-click {
+ display:block;
+ height:100%;
+ width:100%;
+ cursor: pointer;
+}
+
+
+#ChangeToU2014_v1-logo {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-image: url(//upload.wikimedia.org/wikipedia/commons/thumb/1/12/Wikimedia_logo_text_RGB.svg/50px-Wikimedia_logo_text_RGB.svg.png);
+ height: 50px;
+ width: 50px;
+ background-repeat: no-repeat;
+}
+
+#ChangeToU2014_v1 #black-text {
+ font-size: 1.1em;
+ color: black;
+ padding: 0.5em 40px 0.4em 60px;
+ line-height: 1.3em;
+ text-align: center;
+ font-weight:bold;
+}
+
+
+#ChangeToU2014_v1 div#cn-toggle-box {
+ position: absolute;
+ z-index: 98;
+ top: 2px;
+ right: 6px;
+}
+
+#ChangeToU2014_v1 div#cn-translation-link {
+ position:absolute;
+ z-index:50;
+ bottom: -4px;
+ right: 6px;
+ font-size: 0.7em;
+}
+
+#ChangeToU2014_v1 #calltoaction {
+ padding-top: 5px;
+ color: #0645ad;
+}
+
+#cn-translation-link a:link, 
+#cn-translation-link a:visited, 
+#cn-translation-link a:hover { 
+ color: black; 
+} 
+
+</style>
+
+<div id="ChangeToU2014_v1">
+
+  <a class="cn-full-banner-click" href="http://meta.wikimedia.org/wiki/Terms_of_use/Paid_contributions_amendment" title="">
+<div id="ChangeToU2014_v1-logo"></div>
+    <div id="black-text">
+   Amending our Terms of Use: <br> Please comment on a proposed amendment regarding undisclosed paid editing.
+     </div>
+  </a>
+<div id="cn-translation-link">
+<a href="http://meta.wikimedia.org/w/index.php?title=Special:Translate&group=Centralnotice-tgroup-ChangeToU2014_v1&filter=" class="black-text2">
+			[ Help with translations! ]
+		</a>
+</div>
+ <div id="cn-toggle-box">
+  <a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" title="Close" onclick="mw.centralNotice.hideBanner();return false;"><img border="0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/CloseWindow19x19.png" alt="close"></a>  
+ </div>
+</div></div><!-- CentralNotice --></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Methods of computing square roots</span></h1>
+			<div id="bodyContent">
+								<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#mw-navigation">navigation</a>, 					<a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="metadata plainlinks ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tbody><tr>
+<td class="mbox-image">
+<div style="width:52px;"><img alt="" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text">
+<table class="collapsible" style="width:95%; background:transparent;" id="collapsibleTable0">
+<tbody><tr>
+<th style="text-align:left; padding:0.2em 2px 0.2em 0;"><span class="collapseButton">[<a id="collapseButton0" href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#">hide</a>]</span>This article has multiple issues. <span style="font-weight: normal;">Please help <b><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit">improve it</a></b> or discuss these issues on the <b><a href="http://en.wikipedia.org/wiki/Talk:Methods_of_computing_square_roots" title="Talk:Methods of computing square roots">talk page</a></b>.</span></th>
+</tr>
+<tr>
+<td>
+<table class="metadata plainlinks ambox ambox-content ambox-Original_research" role="presentation">
+<tbody><tr>
+<td class="mbox-image">
+<div style="width:52px;"><img alt="" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>possibly contains <a href="http://en.wikipedia.org/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit">improve it</a> by <a href="http://en.wikipedia.org/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="http://en.wikipedia.org/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a>. Statements consisting only of original research may be removed.</span> <small><i>(January 2012)</i></small></span></td>
+</tr>
+</tbody></table>
+<table class="metadata plainlinks ambox ambox-style ambox-technical" role="presentation">
+<tbody><tr>
+<td class="mbox-image">
+<div style="width:52px;"><img alt="" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>may be too <a href="http://en.wiktionary.org/wiki/technical#Adjective" class="extiw" title="wikt:technical">technical</a> for most readers to understand</b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit">improve</a> this article to <a href="http://en.wikipedia.org/wiki/Wikipedia:Make_technical_articles_understandable" title="Wikipedia:Make technical articles understandable">make it understandable to non-experts</a>, without removing the technical details. The <a href="http://en.wikipedia.org/wiki/Talk:Methods_of_computing_square_roots" title="Talk:Methods of computing square roots">talk page</a> may contain suggestions.</span> <small><i>(September 2012)</i></small></span></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<p>In <a href="http://en.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>, a branch of mathematics, there are several square root algorithms or methods for calculating the principal <a href="http://en.wikipedia.org/wiki/Square_root" title="Square root">square root</a> of a <a href="http://en.wikipedia.org/wiki/Nonnegative" title="Nonnegative" class="mw-redirect">nonnegative</a> <a href="http://en.wikipedia.org/wiki/Real_number" title="Real number">real number</a>. For the square roots of a negative or <a href="http://en.wikipedia.org/wiki/Complex_number" title="Complex number">complex number</a>, see <a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Negative_or_complex_square">below</a>.</p>
+<p>Finding <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png"> is the same as solving the equation <img class="tex" alt="f(x) = x^2 - S = 0\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/92aae2346fa239ac2f58948b3e263288.png">. Therefore, any general numerical <a href="http://en.wikipedia.org/wiki/Root-finding_algorithm" title="Root-finding algorithm">root-finding algorithm</a> can be used. <a href="http://en.wikipedia.org/wiki/Newton%27s_method" title="Newton&#39;s method">Newton's method</a>, for example, reduces in this case to the so-called Babylonian method:</p>
+<dl>
+<dd><img class="tex" alt="x_{n+1}=x_n-\frac{f(x_n)}{f&#39;(x_n)}=x_n-\frac{x_n^2-S}{2x_n}=\frac{1}{2}\left(x_n+\frac{S}{x_n}\right)" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/504e3fd1368a623d05c22142471eb697.png"></dd>
+</dl>
+<p>Generally, these methods yield approximate results. To get a higher precision for the root, a higher precision for the square is required and a larger number of steps must be calculated.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+<span class="toctoggle">&nbsp;[<a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Rough_estimation"><span class="tocnumber">1</span> <span class="toctext">Rough estimation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method"><span class="tocnumber">2</span> <span class="toctext">Babylonian method</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Example"><span class="tocnumber">2.1</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Convergence"><span class="tocnumber">2.2</span> <span class="toctext">Convergence</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Worst_case_for_convergence"><span class="tocnumber">2.2.1</span> <span class="toctext">Worst case for convergence</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Digit-by-digit_calculation"><span class="tocnumber">3</span> <span class="toctext">Digit-by-digit calculation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Basic_principle"><span class="tocnumber">3.1</span> <span class="toctext">Basic principle</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Example_2"><span class="tocnumber">3.1.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Decimal_.28base_10.29"><span class="tocnumber">3.2</span> <span class="toctext">Decimal (base 10)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Examples"><span class="tocnumber">3.2.1</span> <span class="toctext">Examples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Binary_numeral_system_.28base_2.29"><span class="tocnumber">3.3</span> <span class="toctext">Binary numeral system (base 2)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Example_3"><span class="tocnumber">3.3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Exponential_identity"><span class="tocnumber">4</span> <span class="toctext">Exponential identity</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Bakhshali_approximation"><span class="tocnumber">5</span> <span class="toctext">Bakhshali approximation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Example_4"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Vedic_duplex_method_for_extracting_a_square_root"><span class="tocnumber">6</span> <span class="toctext">Vedic duplex method for extracting a square root</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Basic_Principle_2"><span class="tocnumber">6.1</span> <span class="toctext">Basic Principle</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Example_5"><span class="tocnumber">6.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#A_two-variable_iterative_method"><span class="tocnumber">7</span> <span class="toctext">A two-variable iterative method</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Iterative_methods_for_reciprocal_square_roots"><span class="tocnumber">8</span> <span class="toctext">Iterative methods for reciprocal square roots</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Goldschmidt.E2.80.99s_algorithm"><span class="tocnumber">8.1</span> <span class="toctext">Goldschmidt’s algorithm</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Taylor_series"><span class="tocnumber">9</span> <span class="toctext">Taylor series</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Other_methods"><span class="tocnumber">10</span> <span class="toctext">Other methods</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/Methods of computing square roots - Wikipedia, the free encyclopedia.htm"><span class="tocnumber">11</span> <span class="toctext">Continued fraction expansion</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Example.2C_square_root_of_114_as_a_continued_fraction"><span class="tocnumber">11.1</span> <span class="toctext">Example, square root of 114 as a continued fraction</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Generalized_continued_fraction"><span class="tocnumber">11.2</span> <span class="toctext">Generalized continued fraction</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Pell.27s_equation"><span class="tocnumber">11.3</span> <span class="toctext">Pell's equation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Approximations_that_depend_on_IEEE_representation"><span class="tocnumber">12</span> <span class="toctext">Approximations that depend on IEEE representation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Reciprocal_of_the_square_root"><span class="tocnumber">12.1</span> <span class="toctext">Reciprocal of the square root</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Negative_or_complex_square"><span class="tocnumber">13</span> <span class="toctext">Negative or complex square</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#See_also"><span class="tocnumber">14</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Notes"><span class="tocnumber">15</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#External_links"><span class="tocnumber">16</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Rough_estimation">Rough estimation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=1" title="Edit section: Rough estimation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Many square root algorithms require an initial seed value. If the initial seed value is far away from the actual square root, the algorithm will be slowed down. It is therefore useful to have a rough estimate, which may be very inaccurate but easy to calculate. With <img class="tex" alt="S" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/5dbc98dcc983a70728bd082d1a47546e.png"> expressed in <a href="http://en.wikipedia.org/wiki/Scientific_notation" title="Scientific notation">scientific notation</a> as <img class="tex" alt="a\times10^{2n}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1cb747578dd4d89e23b85ddeb06fcd26.png"> where <img class="tex" alt=" 1\leq a&lt;100" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f705bec33786465f03eea189e14c679d.png"> and <i>n</i> is an integer, the square root <img class="tex" alt="\sqrt{S} = \sqrt{a}\times10^n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1d01e8f921d41dc2f632feee3b0bb7f6.png"> can be estimated as</p>
+<dl>
+<dd><img class="tex" alt=" \sqrt{S} \approx \begin{cases}
+2 \cdot 10^n &amp; \text{if } a &lt; 10, \\
+6 \cdot 10^n &amp; \text{if } a \geq 10.
+\end{cases}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/6219f440dbaf0a4d176759f698fe8c84.png"></dd>
+</dl>
+<p>The factors two and six are used because they approximate the <a href="http://en.wikipedia.org/wiki/Geometric_mean" title="Geometric mean">geometric means</a> of the lowest and highest possible values with the given number of digits: <img class="tex" alt="\sqrt{\sqrt{1} \cdot \sqrt{10}} = \sqrt[4]{10} \approx 2 \," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/743d139053c3fa9e80ce8373d131128e.png"> and <img class="tex" alt="\sqrt{\sqrt{10} \cdot \sqrt{100}} = \sqrt[4]{1000} \approx 6 \," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/3b64a7381e455f2e413183d00d2519fb.png">.</p>
+<p>For <img class="tex" alt=" S = 125348 = 12.5348 \times 10^4" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/49e814f580a41a9937366e487ac2eaf6.png">, the estimate is <img class="tex" alt=" \sqrt{S} \approx 6 \cdot 10^2 = 600" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0842e124ebf76e7a149c3eb79fe34190.png">.</p>
+<p>When working in the <a href="http://en.wikipedia.org/wiki/Binary_numeral_system" title="Binary numeral system" class="mw-redirect">binary numeral system</a> (as computers do internally), by expressing <img class="tex" alt="S" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/5dbc98dcc983a70728bd082d1a47546e.png"> as <img class="tex" alt="a\times2^{2n}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/dc6edf33693e52787c4b5a3e40f6fc5a.png"> where <img class="tex" alt=" 0.1_2\leq a&lt;10_2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/560989302b632da47f30b6dbf0afdc02.png">, the square root <img class="tex" alt="\sqrt{S} = \sqrt{a}\times2^n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/92dde84267d1c674f591f40ca03133a7.png"> can be estimated as <img class="tex" alt=" \sqrt{S} \approx 2^n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/b6a1999c965023f58f075f9a43e55ea8.png">, since the geometric mean of the lowest and highest possible values is <img class="tex" alt="\sqrt{\sqrt{0.1_2} \cdot \sqrt{10_2}} = \sqrt[4]{1} = 1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1179e10c37101cd45020836b6aa5dd1f.png">.</p>
+<p>For <img class="tex" alt=" S = 125348 = 1\;1110\;1001\;1010\;0100_2 = 1.1110\;1001\;1010\;0100_2\times2^{16}\, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7936b3c064d39634a35c47290e6d0701.png"> the binary approximation gives <img class="tex" alt=" \sqrt{S} \approx 2^8 = 1\;0000\;0000_2 = 256\, ." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/565b2d52e75d38b012cee1ada1261538.png"></p>
+<p>These approximations are useful to find better seeds for iterative algorithms, which results in faster convergence.</p>
+<h2><span class="mw-headline" id="Babylonian_method">Babylonian method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=2" title="Edit section: Babylonian method">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="dablink">"Heron's method" redirects here. For the formula used to find the area of a triangle, see <a href="http://en.wikipedia.org/wiki/Heron%27s_formula" title="Heron&#39;s formula">Heron's formula</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="http://en.wikipedia.org/wiki/File:Babylonian_method.svg" class="image"><img alt="" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/300px-Babylonian_method.svg.png" width="300" height="231" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Babylonian_method.svg/450px-Babylonian_method.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Babylonian_method.svg/600px-Babylonian_method.svg.png 2x"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Babylonian_method.svg" class="internal" title="Enlarge"><img src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/magnify-clip.png" width="15" height="11" alt=""></a></div>
+Graph charting the use of the Babylonian method for approximating the square root of 100 (10) using starting values <span style="color:#008"><i>x</i><sub>0</sub>&nbsp;=&nbsp;50</span>, <span style="color:#F00"><i>x</i><sub>0</sub>&nbsp;=&nbsp;1</span>, and <span style="color:#080"><i>x</i><sub>0</sub>&nbsp;=&nbsp;−5</span>. Note that using a negative starting value yields the negative root.</div>
+</div>
+</div>
+<p>Perhaps the first <a href="http://en.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithm</a> used for approximating <img class="tex" alt="\sqrt S" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c10bb0a11a10ed437f77ad3322ec0f38.png"> is known as the "Babylonian method", named after the <a href="http://en.wikipedia.org/wiki/Babylonian_mathematics" title="Babylonian mathematics">Babylonians</a>,<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-1"><span>[</span>1<span>]</span></a></sup> or "Hero's method", named after the first-century Greek mathematician <a href="http://en.wikipedia.org/wiki/Hero_of_Alexandria" title="Hero of Alexandria">Hero of Alexandria</a> who gave the first explicit description of the method.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-2"><span>[</span>2<span>]</span></a></sup> It can be derived from (but predates by 16 centuries) <a href="http://en.wikipedia.org/wiki/Newton%27s_method" title="Newton&#39;s method">Newton's method</a>. The basic idea is that if <i>x</i> is an overestimate to the square root of a non-negative real number <i>S</i> then <img class="tex" alt="\scriptstyle S/x\," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/3153a005d9a83b176da52bab0c247ef4.png"> will be an underestimate and so the average of these two numbers may reasonably be expected to provide a better approximation (though the formal proof of that assertion depends on the <a href="http://en.wikipedia.org/wiki/Inequality_of_arithmetic_and_geometric_means" title="Inequality of arithmetic and geometric means">inequality of arithmetic and geometric means</a> that shows this average is always an overestimate of the square root, as noted in the article on <a href="http://en.wikipedia.org/wiki/Square_root#Geometric_construction_of_the_square_root" title="Square root">square roots</a>, thus assuring convergence).</p>
+<p>More precisely, if <img class="tex" alt="x" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png"> is our initial guess of <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png"> and <img class="tex" alt="e" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/e1671797c52e15f763380b45e841ec32.png"> is the error in our estimate such that <img class="tex" alt="S=(x+e)^2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/491790f0c968f4c868f0da90b4095d5f.png">, then we can expand the binomial and solve for</p>
+<dl>
+<dd><img class="tex" alt="e=\frac{S-x^2}{2x+e} := \frac{S-x^2}{2x} " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8ba301f1c6b7adb45c90ee6562bad127.png"> since <img class="tex" alt=" e \ll x " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/bed3219c06851a82bb75bad420a950d8.png"></dd>
+</dl>
+<p>Therefore, we can compensate for the error and update our old estimate as</p>
+<dl>
+<dd><img class="tex" alt="x := x + e = \frac{S+x^2}{2x} = \frac{x+\frac{S}{x}}{2}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c72b63bc9687eeb302d58808e91b794e.png"></dd>
+</dl>
+<p>Since the computed error was not exact, this becomes our next best guess. The process of updating is iterated until desired accuracy is obtained. This is a <a href="http://en.wikipedia.org/wiki/Quadratic_convergence" title="Quadratic convergence" class="mw-redirect">quadratically convergent</a> algorithm, which means that the number of correct digits of the approximation roughly doubles with each iteration. It proceeds as follows:</p>
+<ol>
+<li>Begin with an arbitrary positive starting value <i>x</i><sub>0</sub> (the closer to the actual square root of S, the better).</li>
+<li>Let <i>x</i><sub><i>n</i>+1</sub> be the average of <i>x</i><sub><i>n</i></sub> and <i>S</i> / <i>x</i><sub><i>n</i></sub> (using the <a href="http://en.wikipedia.org/wiki/Arithmetic_mean" title="Arithmetic mean">arithmetic mean</a> to approximate the <a href="http://en.wikipedia.org/wiki/Geometric_mean" title="Geometric mean">geometric mean</a>).</li>
+<li>Repeat step 2 until the desired accuracy is achieved.</li>
+</ol>
+<p>It can also be represented as:</p>
+<dl>
+<dd><img class="tex" alt="x_0 \approx \sqrt{S}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/b6926b1f2ae3ae87812aee9e1734d936.png"></dd>
+<dd><img class="tex" alt="x_{n+1} = \frac{1}{2} \left(x_n + \frac{S}{x_n}\right)," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/473cd7bceb950c9c95e4182b8e0a5609.png"></dd>
+<dd><img class="tex" alt="\sqrt S = \lim_{n \to \infty} x_n." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/37bf6ffa4eb8faa293a8be6686aefde6.png"></dd>
+</dl>
+<p>This algorithm works equally well in the <a href="http://en.wikipedia.org/wiki/P-adic_number" title="P-adic number">p-adic numbers</a>, but cannot be used to identify real square roots with p-adic square roots; one can, for example, construct a sequence of rational numbers by this method that converges to +3 in the reals, but to −3 in the 2-adics.</p>
+<h3><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=3" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To calculate <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png">, where <i>S</i> = 125348, to 6 significant figures, use the rough estimation method above to get</p>
+<dl>
+<dd><img class="tex" alt="x_0 = 6 \cdot 10^2 = 600.000. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/21da3f14a2d3fb7213b518e32190848c.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="x_1 = \frac{1}{2} \left(x_0 + \frac{S}{x_0}\right) = \frac{1}{2} \left(600.000 + \frac{125348}{600.000}\right) = 404.457." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/dffc2fa1bfefe7548033510f4f84a33c.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="x_2 = \frac{1}{2} \left(x_1 + \frac{S}{x_1}\right) = \frac{1}{2} \left(404.457 + \frac{125348}{404.457}\right) = 357.187." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d4f89d71de0111f1578b638a5735f43d.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="x_3 = \frac{1}{2} \left(x_2 + \frac{S}{x_2}\right) = \frac{1}{2} \left(357.187 + \frac{125348}{357.187}\right) = 354.059." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/66d4bfbe5162c72d2a898c0f3444376d.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="x_4 = \frac{1}{2} \left(x_3 + \frac{S}{x_3}\right) = \frac{1}{2} \left(354.059 + \frac{125348}{354.059}\right) = 354.045." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/bef5f0d9429e9651e3738b303ca13a43.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="x_5 = \frac{1}{2} \left(x_4 + \frac{S}{x_4}\right) = \frac{1}{2} \left(354.045 + \frac{125348}{354.045}\right) = 354.045." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/cd9315ae6e20715e9f588009268c0735.png"></dd>
+</dl>
+<p>Therefore, <img class="tex" alt="\sqrt{125348} \approx 354.045 \,." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/509c9b897a309993db624642ffb6c289.png"></p>
+<h3><span class="mw-headline" id="Convergence">Convergence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=4" title="Edit section: Convergence">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Let the <a href="http://en.wikipedia.org/wiki/Relative_error" title="Relative error" class="mw-redirect">relative error</a> in <i>x</i><sub><i>n</i></sub> be defined by</p>
+<dl>
+<dd><img class="tex" alt="\varepsilon_n = \frac {x_n}{\sqrt{S}} - 1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/11d1a811a0e4801ff1113117d53823e0.png"></dd>
+</dl>
+<p>and thus</p>
+<dl>
+<dd><img class="tex" alt="x_n = \sqrt {S} \cdot (1 + \varepsilon_n)." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7f15380ba6596e500688826df1f790f7.png"></dd>
+</dl>
+<p>Then it can be shown that</p>
+<dl>
+<dd><img class="tex" alt="\varepsilon_{n+1} = \frac {\varepsilon_n^2}{2 (1 + \varepsilon_n)}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/a093bec357a823159948df9994d0ede7.png"></dd>
+</dl>
+<p>and thus that</p>
+<dl>
+<dd><img class="tex" alt="0 \leq \varepsilon_{n+2} \leq \min \left\{\frac {\varepsilon_{n+1}^2}{2}, \frac {\varepsilon_{n+1}}{2} \right\}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/e39382b0abd1a9099f4019bbf5deebf4.png"></dd>
+</dl>
+<p>and consequently that convergence is assured provided that <i>x</i><sub>0</sub> and <i>S</i> are both positive.</p>
+<h4><span class="mw-headline" id="Worst_case_for_convergence">Worst case for convergence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=5" title="Edit section: Worst case for convergence">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>If using the rough estimate above with the Babylonian method, then the worst cases are<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.wikipedia.org/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (February 2012)">clarification needed</span></a></i>]</sup>:</p>
+<dl>
+<dd><img class="tex" alt="
+\begin{align}
+S &amp; = 1;   &amp; x_0 &amp; = 2; &amp; x_1 &amp; = 1.250;  &amp; \varepsilon_1 &amp; = 0.250. \\
+S &amp; = 10;  &amp; x_0 &amp; = 2; &amp; x_1 &amp; = 3.500;  &amp; \varepsilon_1 &amp; &lt; 0.107. \\
+S &amp; = 10;  &amp; x_0 &amp; = 6; &amp; x_1 &amp; = 3.833;  &amp; \varepsilon_1 &amp; &lt; 0.213. \\
+S &amp; = 100; &amp; x_0 &amp; = 6; &amp; x_1 &amp; = 11.333; &amp; \varepsilon_1 &amp; &lt; 0.134.
+\end{align}
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1c61e427d8c3aff62511110a695a2a6a.png"></dd>
+</dl>
+<p>Thus in any case,</p>
+<dl>
+<dd><img class="tex" alt=" \varepsilon_1 \leq 2^{-2}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ccf85b0fd0d2d70e2fd2d6d8df89f150.png"></dd>
+<dd><img class="tex" alt=" \varepsilon_2 &lt; 2^{-5} &lt; 10^{-1}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/cc4667d57a6d3c8ae999e0ca81250374.png"></dd>
+<dd><img class="tex" alt=" \varepsilon_3 &lt; 2^{-11} &lt; 10^{-3}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8314f7ddbd2956eb7bd761b1db5b13c7.png"></dd>
+<dd><img class="tex" alt=" \varepsilon_4 &lt; 2^{-23} &lt; 10^{-6}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/e811a097fb4146af3ad1ddc30118f688.png"></dd>
+<dd><img class="tex" alt=" \varepsilon_5 &lt; 2^{-47} &lt; 10^{-14}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/df713a21e7fe82ccc81c650aad3bbf50.png"></dd>
+<dd><img class="tex" alt=" \varepsilon_6 &lt; 2^{-95} &lt; 10^{-28}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c9310385bf9e87a758c0fc0b3a15b094.png"></dd>
+<dd><img class="tex" alt=" \varepsilon_7 &lt; 2^{-191} &lt; 10^{-57}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/df2a26595663aecb8405c0c486959411.png"></dd>
+<dd><img class="tex" alt=" \varepsilon_8 &lt; 2^{-383} &lt; 10^{-115}. \, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/69a20af57d7e41094c37c13732dec77d.png"></dd>
+</dl>
+<p>Remember that rounding errors will slow the convergence. It is recommended to keep at least one extra digit beyond the desired accuracy of the <i>x</i><sub><i>n</i></sub> being calculated to minimize round off error.</p>
+<h2><span class="mw-headline" id="Digit-by-digit_calculation">Digit-by-digit calculation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=6" title="Edit section: Digit-by-digit calculation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This is a method to find each digit of the square root in a sequence. It is slower than the Babylonian method (if you have a calculator that can divide in one operation), but it has several advantages:</p>
+<ul>
+<li>It can be easier for manual calculations.</li>
+<li>Every digit of the root found is known to be correct, i.e., it does not have to be changed later.</li>
+<li>If the square root has an expansion that terminates, the algorithm terminates after the last digit is found. Thus, it can be used to check whether a given integer is a <a href="http://en.wikipedia.org/wiki/Square_number" title="Square number">square number</a>.</li>
+<li>The algorithm works for any <a href="http://en.wikipedia.org/wiki/Numeral_system" title="Numeral system">base</a>, and naturally, the way it proceeds depends on the base chosen.</li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Napier%27s_bones" title="Napier&#39;s bones">Napier's bones</a> include an aid for the execution of this algorithm. The <a href="http://en.wikipedia.org/wiki/Shifting_nth_root_algorithm" title="Shifting nth root algorithm">shifting <i>n</i>th root algorithm</a> is a generalization of this method.</p>
+<h3><span class="mw-headline" id="Basic_principle">Basic principle</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=7" title="Edit section: Basic principle">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Suppose we are to find the square root of <i>N</i> by expressing it as a sum of <i>n</i> positive numbers such that</p>
+<dl>
+<dd><img class="tex" alt="N = (a_1+a_2+a_3+\dotsb+a_n)^2." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/fb4bf8ec2e7b29535bf603edce051a04.png"></dd>
+</dl>
+<p>By repeatedly applying the basic identity</p>
+<dl>
+<dd><img class="tex" alt="(x+y)^2 = x^2 +2xy + y^2," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/772966268961faf0c1511fb85e909ccb.png"></dd>
+</dl>
+<p>the right-hand-side term can be expanded as</p>
+<dl>
+<dd><img class="tex" alt="
+\begin{align}
+&amp; (a_1+a_2+a_3+ \dotsb +a_n)^2 \\
+=&amp; \, a_1^2 + 2a_1a_2 + a_2^2 + 2(a_1+a_2) a_3 + a_3^2 + \dotsb + a_{n-1}^2 + 2  \left(\sum_{i=1}^{n-1} a_i\right) a_n + a_n^2 \\
+=&amp; \, a_1^2 + [2a_1 + a_2] a_2 + [2(a_1+a_2) + a_3] a_3 + \dotsb + \left[2 \left(\sum_{i=1}^{n-1} a_i\right) + a_n\right] a_n.
+\end{align}
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/97ce74c16ccc66ed5eed4d6f3e9e5fd2.png"></dd>
+</dl>
+<p>This expression allows us to find the square root by sequentially guessing the values of <img class="tex" alt="a_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d8dd7d0f3eb7145ca41c711457b7eb8f.png">s. Suppose that the numbers <img class="tex" alt="a_1, \ldots, a_{m-1}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/04a15a272f0122862c44dff0b5dd8f90.png"> have already been guessed, then the m-th term of the right-hand-side of above summation is given by <img class="tex" alt="Y_{m} = [2 P_{m-1} + a_{m}]a_{m}," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7400b2e64e6952d1cc4e1063f8216f58.png"> where <img class="tex" alt="P_{m-1} = \sum_{i=1}^{m-1} a_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/6df77f838ed5c095b75463456f793812.png"> is the approximate square root found so far. Now each new guess <img class="tex" alt="a_m" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f34ca83cedb0460b0a143bb2e45aea54.png"> should satisfy the recursion</p>
+<dl>
+<dd><img class="tex" alt="X_{m} = X_{m-1} - Y_{m}," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/4806111daa12623210b3d886e1320aad.png"></dd>
+</dl>
+<p>such that <img class="tex" alt="X_m \geq 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9c3b46cf3b87fe3ab37a0129a6afb566.png"> for all <img class="tex" alt="1\leq m\leq n," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8c97374323da39b98e2a36526c3d94bc.png"> with initialization <img class="tex" alt="X_0 = N." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2bccc6e12b25466dbf1e0543fec027c8.png"> When <img class="tex" alt="X_n = 0," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7243dd101433de9c7b293e9166f43271.png"> the exact square root has been found; if not, then the sum of <img class="tex" alt="a_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d8dd7d0f3eb7145ca41c711457b7eb8f.png">s gives a suitable approximation of the square root, with <img class="tex" alt="X_n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/837c9f1adf5d0e370c9a8972e0ccde69.png"> being the approximation error.</p>
+<h4><span class="mw-headline" id="Example_2">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=8" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Suppose we desire to find three digit square root for a five digit number such that <img class="tex" alt="N = (a_1\cdot100 +a_2\cdot10+a_3)^2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f922b93b59807e414bec719843b05cc1.png">. Here the 1, 10, and 100 are merely the place holders for a three digit decimal number. In each recursion the value of <img class="tex" alt="a_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d8dd7d0f3eb7145ca41c711457b7eb8f.png"> is searched from the set of decimal digits <img class="tex" alt="\{0,1,2,\ldots,9\}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/01edde2e0be9dcb422dcf3f4f411084c.png"></p>
+<p>1. Find the first digit <img class="tex" alt="a_1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8e6ba967645c302e1f2a60ec9c341e5c.png"> such that <img class="tex" alt="a_1^2\cdot10^4" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/3caccbe48885a1d3f9ba32e4b0530849.png"> comes as close to <img class="tex" alt="X_0=N" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1362d400254d25f9f4c741d289f9ccab.png"> as possible. That is,</p>
+<dl>
+<dd><img class="tex" alt="X_1 = N - a_1^2 \cdot 10^4 \geq 0." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f0c1ce6c34381ad506242ed47eecb6b7.png"></dd>
+</dl>
+<p>2. Next, find the second digit <img class="tex" alt="a_2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0f768ac5d5dea8d93716a27da05871de.png"> such that <img class="tex" alt="[20 a_1 + a_2] a_2\cdot10^2 " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9134fc673922dcd71f4f3c64583b0128.png"> comes as close to <img class="tex" alt="X_1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c264bdb22a754961ef6021b6c1914161.png"> as possible. That is,</p>
+<dl>
+<dd><img class="tex" alt="X_2 = X_1 - [20 a_1 + a_2] a_2\cdot10^2 \geq 0." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ae6b4349271942f21416fb489714fb4d.png"></dd>
+</dl>
+<p>3. Finally, find the last digit <img class="tex" alt="a_3" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/a7913eeb6dcd09b24f125da908600585.png"> such that <img class="tex" alt="[20(a_1\cdot10+a_2) + a_3] a_3" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/3a529ba686923814c53e5fc3a288686f.png"> comes as close to <img class="tex" alt="X_2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c5550be7b87cf24698427e4bdb08d21b.png"> as possible. That is,</p>
+<dl>
+<dd><img class="tex" alt="X_3 = X_2 - [20(a_1\cdot10+a_2) + a_3] a_3 \geq 0." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/e72844374a292d5ef068c0d475f958d3.png"></dd>
+</dl>
+<p>The <img class="tex" alt="X_3=0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/09eddb1c431bc8fe5a143eae66dbe16b.png"> if <img class="tex" alt="N" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8d9c307cb7f3c4a32822a51922d1ceaa.png"> is an exact square. If not, then we can increase the precision by adding more terms in the decimal expansion.</p>
+<p>The section below codifies this procedure. It is obvious that a similar method can be used to compute the square root in number systems other than the decimal number system. For instance, finding the digit-by-digit square root in the binary number system is quite efficient since the value of <img class="tex" alt="a_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d8dd7d0f3eb7145ca41c711457b7eb8f.png"> is searched from a smaller set of binary digits {0,1}. This makes the computation faster since at each stage the value of <img class="tex" alt="Y_m" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/4d948d42cd0c99dd47c8b619e66db99b.png"> is either <img class="tex" alt="Y_m = 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7fd9b8eaa8a6756a7c3a32ebfac5cdb2.png"> for <img class="tex" alt="a_m = 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ea740fad854cdffc7ed8623c58967a0a.png"> or <img class="tex" alt="Y_m = 2 P_{m-1} + 1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/acb57c5468fd7814c3047a51727e0974.png"> for <img class="tex" alt="a_m = 1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/888abd6125f357d049ccd2e507137a96.png">. The fact that we have only two possible options for <img class="tex" alt="a_m" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f34ca83cedb0460b0a143bb2e45aea54.png"> also makes the process of deciding the value of <img class="tex" alt="a_m" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f34ca83cedb0460b0a143bb2e45aea54.png"> at m-th stage of calculation easier. This is because we only need to check if <img class="tex" alt="Y_m \leq X_{m-1}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c056cd8417f98f284ff81a379f7df418.png"> for <img class="tex" alt="a_m = 1." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0daf7cabbbd9b464f67637a1332ea19a.png"> If this condition is satisfied, then we take <img class="tex" alt="a_m = 1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/888abd6125f357d049ccd2e507137a96.png">; if not then <img class="tex" alt="a_m = 0." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1536631091aa9a05ca5555ddef9ec67e.png"> Also, the fact that multiplication by 2 is done by left bit-shifts helps in the computation.</p>
+<h3><span class="mw-headline" id="Decimal_.28base_10.29">Decimal (base 10)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=9" title="Edit section: Decimal (base 10)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Write the original number in decimal form. The numbers are written similar to the <a href="http://en.wikipedia.org/wiki/Long_division" title="Long division">long division</a> algorithm, and, as in long division, the root will be written on the line above. Now separate the digits into pairs, starting from the decimal point and going both left and right. The decimal point of the root will be above the decimal point of the square. One digit of the root will appear above each pair of digits of the square.</p>
+<p>Beginning with the left-most pair of digits, do the following procedure for each pair:</p>
+<ol>
+<li>Starting on the left, bring down the most significant (leftmost) pair of digits not yet used (if all the digits have been used, write "00") and write them to the right of the remainder from the previous step (on the first step, there will be no remainder). In other words, multiply the remainder by 100 and add the two digits. This will be the <b>current value <i>c</i></b>.</li>
+<li>Find <i>p</i>, <i>y</i> and <i>x</i>, as follows:
+<ul>
+<li>Let <i><b>p</b></i> be the <b>part of the root found so far</b>, ignoring any decimal point. (For the first step, <i>p</i> = 0).</li>
+<li>Determine the greatest digit <i><b>x</b></i> such that <img class="tex" alt="x(20p + x) \le c" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/17c1b3a790d7264f70386645459de9dc.png">. We will use a new variable <i><b>y</b></i> = <i>x</i>(20<i>p</i> + <i>x</i>).
+<ul>
+<li>Note: 20<i>p</i> + <i>x</i> is simply twice <i>p</i>, with the digit <i>x</i> appended to the right).</li>
+<li>Note: You can find <i>x</i> by guessing what <i>c</i>/(20·<i>p</i>) is and doing a trial calculation of <i>y</i>, then adjusting <i>x</i> upward or downward as necessary.</li>
+</ul>
+</li>
+<li>Place the digit <img class="tex" alt="x" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9dd4e461268c8034f5c8564e155c67a6.png"> as the next digit of the root, i.e., above the two digits of the square you just brought down. Thus the next <i>p</i> will be the old <i>p</i> times 10 plus <i>x</i>.</li>
+</ul>
+</li>
+<li>Subtract <i>y</i> from <i>c</i> to form a new remainder.</li>
+<li>If the remainder is zero and there are no more digits to bring down, then the algorithm has terminated. Otherwise go back to step 1 for another iteration.</li>
+</ol>
+<h4><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=10" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><b>Find the square root of 152.2756.</b></p>
+<pre>        <u>  1  2. 3  4 </u>
+       /
+     \/  01 52.27 56
+
+         01                   1*1 &lt;= 1 &lt; 2*2                 x = 1
+        <u> 01 </u>                    y = x*x = 1*1 = 1
+         00 52                22*2 &lt;= 52 &lt; 23*3              x = 2
+        <u> 00 44 </u>                 y = (20+x)*x = 22*2 = 44
+            08 27             243*3 &lt;= 827 &lt; 244*4           x = 3
+           <u> 07 29 </u>              y = (240+x)*x = 243*3 = 729
+               98 56          2464*4 &lt;= 9856 &lt; 2465*5        x = 4
+              <u> 98 56 </u>           y = (2460+x)*x = 2464*4 = 9856
+               00 00          Algorithm terminates: Answer is 12.34
+</pre>
+<p><b>Find the square root of 2.</b></p>
+<pre>        <u>  1. 4  1  4  2</u>
+       /
+     \/  02.00 00 00 00
+
+         02                  1*1 &lt;= 2 &lt; 2*2                 x = 1
+        <u> 01 </u>                   y = x*x = 1*1 = 1
+         01 00               24*4 &lt;= 100 &lt; 25*5             x = 4
+        <u> 00 96 </u>                y = (20+x)*x = 24*4 = 96
+            04 00            281*1 &lt;= 400 &lt; 282*2           x = 1
+           <u> 02 81 </u>             y = (280+x)*x = 281*1 = 281
+            01 19 00         2824*4 &lt;= 11900 &lt; 2825*5       x = 4
+           <u> 01 12 96 </u>          y = (2820+x)*x = 2824*4 = 11296
+               06 04 00      28282*2 &lt;= 60400 &lt; 28283*3     x = 2
+                             The desired precision is achieved:
+                             The square root of 2 is about 1.4142
+</pre>
+<h3><span class="mw-headline" id="Binary_numeral_system_.28base_2.29">Binary numeral system (base 2)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=11" title="Edit section: Binary numeral system (base 2)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Inherent to digit-by-digit algorithms is a search and test step: find a digit, <img class="tex" alt="\, e" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/47512b76e977f6422c96c159ad2a4407.png">, when added to the right of a current solution <img class="tex" alt="\, r" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/4855b9b7658b32269a7ae21e47779463.png">, such that <img class="tex" alt="\,(r+e)\cdot(r+e) \le x" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/fea517478c4f25b60d8b693c116fef2e.png">, where <img class="tex" alt="\, x" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c9b156d8b2ef3e299acca75219990b56.png"> is the value for which a root is desired. Expanding: <img class="tex" alt="\,r\cdot r + 2re + e\cdot e \le x" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/847c7628decc400d6b3c0a360f5b71bd.png">. The current value of <img class="tex" alt="\,r\cdot r" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/3c5b79c3508edc2ea6b1ead4caca30b6.png">—or, usually, the remainder—can be incrementally updated efficiently when working in binary, as the value of <img class="tex" alt="\, e" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/47512b76e977f6422c96c159ad2a4407.png"> will be a single bit, and the operations needed to compute <img class="tex" alt="\,2\cdot r\cdot e" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/4a6611dd2c9f3c5949241b73261ae852.png"> and <img class="tex" alt="\,e\cdot e" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/a1e9d030904015913e0d688668a38865.png"> can be replaced with faster <a href="http://en.wikipedia.org/wiki/Bitwise_operation#Bit_shifts" title="Bitwise operation">bit shift</a> operations.</p>
+<h4><span class="mw-headline" id="Example_3">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=12" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Here we obtain the square root of 81, which when converted into binary gives 1010001. The numbers in the left column gives the option between that number or zero to be used for subtraction at that stage of computation. The final answer is 1001, which in decimal is 9.</p>
+<pre>             1 0 0 1
+            ---------
+           √ 1010001
+             
+      1      1
+             1
+            ---------
+      101     01  
+               0
+             --------
+      1001     100
+                 0
+             --------
+      10001    10001
+               10001
+              -------
+                   0
+</pre>
+<p>This gives rise to simple computer implementations:<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1"><span class="kw4">short</span> isqrt<span class="br0">(</span><span class="kw4">short</span> num<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw4">short</span> res <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw4">short</span> bit <span class="sy0">=</span> <span class="nu0">1</span> <span class="sy0">&lt;&lt;</span> <span class="nu0">14</span><span class="sy0">;</span> <span class="co1">// The second-to-top bit is set: 1 &lt;&lt; 30 for 32 bits</span>
+ 
+    <span class="co1">// "bit" starts at the highest power of four &lt;= the argument.</span>
+    <span class="kw1">while</span> <span class="br0">(</span>bit <span class="sy0">&gt;</span> num<span class="br0">)</span>
+        bit <span class="sy0">&gt;&gt;=</span> <span class="nu0">2</span><span class="sy0">;</span>
+ 
+    <span class="kw1">while</span> <span class="br0">(</span>bit <span class="sy0">!=</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>num <span class="sy0">&gt;=</span> res <span class="sy0">+</span> bit<span class="br0">)</span> <span class="br0">{</span>
+            num <span class="sy0">-=</span> res <span class="sy0">+</span> bit<span class="sy0">;</span>
+            res <span class="sy0">=</span> <span class="br0">(</span>res <span class="sy0">&gt;&gt;</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy0">+</span> bit<span class="sy0">;</span>
+        <span class="br0">}</span>
+        <span class="kw1">else</span>
+            res <span class="sy0">&gt;&gt;=</span> <span class="nu0">1</span><span class="sy0">;</span>
+        bit <span class="sy0">&gt;&gt;=</span> <span class="nu0">2</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    <span class="kw1">return</span> res<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Faster algorithms, in binary and decimal or any other base, can be realized by using lookup tables—in effect trading <a href="http://en.wikipedia.org/wiki/Space-time_tradeoff" title="Space-time tradeoff" class="mw-redirect">more storage space for reduced run time</a>.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Exponential_identity">Exponential identity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=13" title="Edit section: Exponential identity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="http://en.wikipedia.org/wiki/Calculator" title="Calculator">Pocket calculators</a> typically implement good routines to compute the <a href="http://en.wikipedia.org/wiki/Exponential_function" title="Exponential function">exponential function</a> and the <a href="http://en.wikipedia.org/wiki/Natural_logarithm" title="Natural logarithm">natural logarithm</a>, and then compute the square root of <i>S</i> using the identity found using the properties of logarithms (<img class="tex" alt="\ln x^n = n \ln x" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/85137d5fabb7dcc3ab7a2bd2433274e2.png">) and exponentials (<img class="tex" alt="e^{\ln x} = x" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/a24953e9b63f6501e8206e7a88d99cb7.png">):</p>
+<dl>
+<dd><img class="tex" alt="\sqrt{S} = e^{\frac{1}{2}\ln S}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/93a2210aef94c88ef934c5c46824e4d3.png"></dd>
+</dl>
+<p>The denominator in the fraction corresponds to the n<sup>th</sup> root. In the case above the denominator is 2, hence the equation specifies that the square root is to be found. The same identity is used when computing square roots with <a href="http://en.wikipedia.org/wiki/Logarithm_table" title="Logarithm table" class="mw-redirect">logarithm tables</a> or <a href="http://en.wikipedia.org/wiki/Slide_rule" title="Slide rule">slide rules</a>.</p>
+<h2><span class="mw-headline" id="Bakhshali_approximation">Bakhshali approximation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=14" title="Edit section: Bakhshali approximation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This method for finding an approximation to a square root was described in an ancient Indian mathematical manuscript called the <a href="http://en.wikipedia.org/wiki/Bakhshali_manuscript" title="Bakhshali manuscript">Bakhshali manuscript</a>. It is equivalent to two iterations of the Babylonian method beginning with <i>N</i>. The original presentation goes as follows: To calculate <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png">, let <i>N</i><sup>2</sup> be the nearest perfect square to <i>S</i>. Then, calculate:</p>
+<dl>
+<dd><img class="tex" alt="d = S - N^2 \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/fcdcf2eec0f20cbc7252c3ef4f1cbfa9.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="P = \frac{d}{2N}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/661e84eeb43d9c6f965475940ea2d20a.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="A = N + P\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c0743aa0f7867e4a9ee071ce48d763a9.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\sqrt{S} \approx A - \frac{P^2}{2A}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/483cb2031ed18a3a1fb116699690e819.png"></dd>
+</dl>
+<p>This can be also written as:</p>
+<dl>
+<dd><img class="tex" alt="\sqrt{S} \approx N + \frac{d}{2N} - \frac{d^2}{8N^3 + 4Nd} = \frac{8N^4 + 8N^2 d + d^2}{8N^3 + 4Nd} = \frac{N^4 + 6N^2S + S^2}{4N^3 + 4NS} = \frac{N^2(N^2 + 6S) + S^2}{4N(N^2 + S)}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/375f5ca1f3c47a50533cd244f837751f.png"></dd>
+</dl>
+<h3><span class="mw-headline" id="Example_4">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=15" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Find <img class="tex" alt="\sqrt{9.2345}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9e13d919d8df8b70478a0781882b3393.png"></p>
+<dl>
+<dd><img class="tex" alt="N=3\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c696c430d214c1e1638e9da45ae2dd39.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="d = 9.2345 - 3^2 = 0.2345\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/684c0563df93cbb168d25a270d02ba14.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="P = \frac{0.2345}{2 \times 3} = 0.0391" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/b72455a0f14b1b5933a372381db7a281.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="A = 3 + 0.0391 = 3.0391\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/627398b496cd690fcdf7be3e1aa009ff.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\sqrt{9.2345} \approx 3.0391 - \frac{0.0391^2}{2 \times 3.0391} \approx 3.0388" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c93e502648ff723a798591191505759f.png"></dd>
+</dl>
+<h2><span class="mw-headline" id="Vedic_duplex_method_for_extracting_a_square_root">Vedic duplex method for extracting a square root</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=16" title="Edit section: Vedic duplex method for extracting a square root">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Vedic duplex method from the book '<a href="http://en.wikipedia.org/wiki/Vedic_Mathematics_(book)" title="Vedic Mathematics (book)">Vedic Mathematics</a>' is a variant of the digit by digit method for calculating the square root.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-5"><span>[</span>5<span>]</span></a></sup> The <b>duplex</b> is the square of the central digit plus double the cross-product of digits equidistant from the center. The duplex is computed from the quotient digits (square root digits) computed thus far, but after the initial digits. The duplex is subtracted from the dividend digit prior to the second subtraction for the product of the quotient digit times the divisor digit. For perfect squares the duplex and the dividend will get smaller and reach zero after a few steps. For non-perfect squares the decimal value of the square root can be calculated to any precision desired. However, as the decimal places proliferate, the duplex adjustment gets larger and longer to calculate. The duplex method follows the Vedic ideal for an algorithm, one-line, mental calculation. It is flexible in choosing the first digit group and the divisor. Small divisors are to be avoided by starting with a larger initial group.</p>
+<h3><span class="mw-headline" id="Basic_Principle_2">Basic Principle</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=17" title="Edit section: Basic Principle">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>We proceed as with the digit-by-digit calculation by assuming that we want to express a number <i>N</i> as a square of the sum of <i>n</i> positive numbers as</p>
+<dl>
+<dd><img class="tex" alt="N = (a_0 + a_1 + \ldots + a_{n-1})^2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/5e219157cd06ed8e568b4078d8486853.png"></dd>
+<dd><img class="tex" alt=" = a_0^2 + 2a_0 \sum_{i=1}^{n-1}a_i + a_1^2 + 2a_1 \sum_{i=2}^{n-1}a_i + \ldots + a_{n-1}^2." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/768a62f44c374756451c059fe8c4c347.png"></dd>
+</dl>
+<p>Define divisor as <img class="tex" alt="q = 2a_0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d99a018f988cb461cd93bdcf49b06960.png"> and the duplex for a sequence of <i>m</i> numbers as</p>
+<dl>
+<dd><img class="tex" alt="d_m = 
+\begin{cases} 
+a_{\lceil m/2 \rceil}^2 + \sum_{i=1}^{\lfloor m/2 \rfloor} 2 a_i a_{m-i+1} &amp; \mbox{for} \; m \; \mbox{odd} \\
+\sum_{i=1}^{m/2} 2 a_i a_{m-i+1} &amp; \mbox{for} \; m \; \mbox{even}. \\
+\end{cases} 
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/fa00c40dc12903dc3d904df3d73664ea.png"></dd>
+</dl>
+<p>Now the computation can proceed by recursively guessing the values of <img class="tex" alt="a_m" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f34ca83cedb0460b0a143bb2e45aea54.png"> so that</p>
+<dl>
+<dd><img class="tex" alt="X_m = X_{m-1} - qa_m - d_m, " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1e513bfb1b66e886fde7f016eda6f4dd.png"></dd>
+</dl>
+<p>such that <img class="tex" alt="X_m \geq 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9c3b46cf3b87fe3ab37a0129a6afb566.png"> for all <img class="tex" alt="1 \leq m \leq n-1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/b3e30c22ec68861b771ed6640aa7bb79.png">, with initialization <img class="tex" alt="X_0 = N - a_0^2." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d7d1b98e161afedae6038f181f9893db.png"> The method is more similar to long division where <img class="tex" alt="X_{m-1}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/84cf7b52a78afd6fc419e3489a0bb14d.png"> is the dividend and <img class="tex" alt="X_{m}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/3f02264340e327470c4aac3e9a937253.png"> is the remainder. When <img class="tex" alt="X_m = 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0d9ea44abf7cb25b59c2d0a9318e1624.png"> the algorithm terminates and the sum of <img class="tex" alt="a_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d8dd7d0f3eb7145ca41c711457b7eb8f.png">s give the square root.</p>
+<p>In other words, to calculate the <b>duplex</b> of a number, double the product of each pair of equidistant digits plus the square of the center digit (of the digits to the right of the colon).</p>
+<pre>Number =&gt; Calculation = Duplex
+3 ==&gt; 3<sup>2</sup> = 9
+14 ==&gt;2(1·4) = 8 
+574 ==&gt; 2(5·4) + 7<sup>2</sup> = 89
+1,421 ==&gt; 2(1·1) + 2(4·2) = 2 + 16 = 18 
+10,523 ==&gt; 2(1·3) + 2(0·2) + 5<sup>2</sup> = 6+0+25 = 31 
+406,739 ==&gt; 2(4·9)+ 2(0·3)+ 2(6·7) = 72+0+84  = 156
+
+</pre>
+<p>In a square root calculation the quotient digit set increases incrementally for each step.</p>
+<h3><span class="mw-headline" id="Example_5">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=18" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Consider the perfect square 2809 = 53<sup>2</sup>. Use the duplex method to find the square root of 2,809.</p>
+<ul>
+<li>Set down the number in <b>groups of two digits</b>.</li>
+<li>Define a <i><b>divisor</b></i>, a <i><b>dividend</b></i> and a <i><b>quotient</b></i> to find the <i><b>root</b></i>.</li>
+<li>Given 2809. Consider the first group, 28.
+<ul>
+<li>Find the nearest perfect square below that group.</li>
+<li>The root of that perfect square is the first digit of our <b>root</b>.</li>
+<li>Since 28 &gt; 25 and 25 = 5<sup>2</sup>, take 5 as the first digit in the square root.</li>
+<li>For the <b>divisor</b> take double this first digit (2 · 5), which is 10.</li>
+</ul>
+</li>
+<li>Next, set up a division framework with a colon.
+<ul>
+<li>28: 0 9 is the <b>dividend</b> and 5: is the <b>quotient</b>. (<i>Note: the quotient should always be a single digit number, and it should be such that the dividend in the next stage is non-negative.</i>)</li>
+<li>Put a colon to the right of 28 and 5 and keep the colons lined up vertically. The <b>duplex</b> is calculated only on quotient digits to the right of the colon.</li>
+</ul>
+</li>
+<li>Calculate the <b>remainder</b>. 28: minus 25: is 3:.
+<ul>
+<li>Append the remainder on the left of the next digit to get the new dividend.</li>
+<li>Here, append 3 to the next dividend digit 0, which makes the new dividend 30. The divisor 10 goes into 30 just 3 times. (No reserve needed here for subsequent deductions.)</li>
+</ul>
+</li>
+<li>Repeat the operation.
+<ul>
+<li>The zero remainder appended to 9. Nine is the next dividend.</li>
+<li>This provides a digit to the right of the colon so deduct the duplex, 3<sup>2</sup> = 9.</li>
+<li>Subtracting this duplex from the dividend 9, a zero remainder results.</li>
+<li>Ten into zero is zero. The next root digit is zero. The next duplex is 2(3·0) = 0.</li>
+<li>The dividend is zero. This is an exact square root, 53.</li>
+</ul>
+</li>
+</ul>
+<pre>Find the square root of 2809.
+Set down the number in groups of two digits.
+The number of groups gives the number of whole digits in the root.
+Put a colon after the first group, 28, to separate it.
+From the first group, 28, obtain the divisor, 10, since
+28&gt;25=5<sup>2</sup> and by doubling this first root, 2x5=10.
+       Gross dividend:     28:  0  9. Using mental math:
+              Divisor: 10)     3  0   Square: 10)  28:  <sub>3</sub>0  9
+    Duplex, Deduction:     25: xx 09  Square root:  5:   3. 0
+             Dividend:         30 00
+            Remainder:      3: 00 00
+Square Root, Quotient:      5:  3. 0
+</pre>
+<h2><span class="mw-headline" id="A_two-variable_iterative_method">A two-variable iterative method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=19" title="Edit section: A two-variable iterative method">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This method is applicable for finding the square root of <img class="tex" alt="0 &lt; S &lt; 3 \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7dccba7ff954536b6298daa493ea665b.png"> and converges best for <img class="tex" alt="S \approx 1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/cca074deafe71e33dfca7a9e5938887a.png">. This, however, is no real limitation for a computer based calculation, as in base 2 floating point and fixed point representations, it is trivial to multiply <img class="tex" alt="S \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9fe1e9487c4a538f98d385e390785b8d.png"> by an integer power of 4, and therefore <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png"> by the corresponding power of 2, by changing the exponent or by shifting, respectively. Therefore, <img class="tex" alt="S \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9fe1e9487c4a538f98d385e390785b8d.png"> can be moved to the range <img class="tex" alt="\frac{1}{2} \le S &lt;2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/973f4f7c6d118c97c142f9535062971a.png">. Moreover, the following method does not employ general divisions, but only additions, subtractions, multiplications, and divisions by powers of two, which are again trivial to implement. A disadvantage of the method is that numerical errors accumulate, in contrast to single variable iterative methods such as the Babylonian one.</p>
+<p>The initialization step of this method is</p>
+<dl>
+<dd><img class="tex" alt="a_0 = S \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2c316e62021754320271eb50535b6d2c.png"></dd>
+<dd><img class="tex" alt="c_0 = S-1 \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/70bf58e37ae2376f33ffd4b0e38ef093.png"></dd>
+</dl>
+<p>while the iterative steps read</p>
+<dl>
+<dd><img class="tex" alt="a_{n+1} = a_n - a_n c_n / 2 \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/18a469e3d99d99a1db6d04ace41b13fe.png"></dd>
+<dd><img class="tex" alt="c_{n+1} = c_n^2 (c_n - 3) / 4 \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/eb71afa8c44ec95f7d19a96662ab4f15.png"></dd>
+</dl>
+<p>Then, <img class="tex" alt="a_n \rightarrow \sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/cfbc25c772fff9450a9f56d009a2678b.png"> (while <img class="tex" alt="c_n \rightarrow 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d85c1c469414972e63daf8e33d4b0919.png">).</p>
+<p>Note that the convergence of <img class="tex" alt="c_n \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/994e50346cd90970c91fa701a1d6df6c.png">, and therefore also of <img class="tex" alt="a_n \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/977819cc11e09f1aeb09f6bcc40aca61.png">, is quadratic.</p>
+<p>The proof of the method is rather easy. First, rewrite the iterative definition of <img class="tex" alt="c_n \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/994e50346cd90970c91fa701a1d6df6c.png"> as</p>
+<dl>
+<dd><img class="tex" alt="1 + c_{n+1} = (1 + c_n) (1 - c_n/2)^2  \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/4ea927928fb6681809bb7c3eb6e174ea.png">.</dd>
+</dl>
+<p>Then it is straightforward to prove by induction that</p>
+<dl>
+<dd><img class="tex" alt="S (1 + c_n) = a_n^2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2ee19c3aecd99da1955663112fae5fe9.png"></dd>
+</dl>
+<p>and therefore the convergence of <img class="tex" alt="a_n \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/977819cc11e09f1aeb09f6bcc40aca61.png"> to the desired result <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png"> is ensured by the convergence of <img class="tex" alt="c_n \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/994e50346cd90970c91fa701a1d6df6c.png"> to 0, which in turn follows from <img class="tex" alt="-1 &lt; c_0 &lt; 2 \,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f5684b0374eca579de8c5deedd751016.png">.</p>
+<p>This method was developed around 1950 by <a href="http://en.wikipedia.org/wiki/Maurice_Wilkes" title="Maurice Wilkes">M. V. Wilkes</a>, <a href="http://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)" title="David Wheeler (computer scientist)">D. J. Wheeler</a> and <a href="http://en.wikipedia.org/wiki/Stanley_Gill" title="Stanley Gill">S. Gill</a><sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-6"><span>[</span>6<span>]</span></a></sup> for use on <a href="http://en.wikipedia.org/wiki/Electronic_Delay_Storage_Automatic_Calculator" title="Electronic Delay Storage Automatic Calculator">EDSAC</a>, one of the first electronic computers.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-7"><span>[</span>7<span>]</span></a></sup> The method was later generalized, allowing the computation of non-square roots.<sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Iterative_methods_for_reciprocal_square_roots">Iterative methods for reciprocal square roots</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=20" title="Edit section: Iterative methods for reciprocal square roots">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following are iterative methods for finding the reciprocal square root of <i>S</i> which is <img class="tex" alt="1/\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/336d73958602822a541b12510b300ce9.png">. Once it has been found, find <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png"> by simple multiplication: <img class="tex" alt="\sqrt{S} = S \cdot (1/\sqrt{S})" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/a0702fca90a2afa35583605071b38c14.png">. These iterations involve only multiplication, and not division. They are therefore faster than the <a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method" title="Methods of computing square roots">Babylonian method</a>. However, they are not stable. If the initial value is not close to the reciprocal square root, the iterations will diverge away from it rather than converge to it. It can therefore be advantageous to perform an iteration of the Babylonian method on a rough estimate before starting to apply these methods.</p>
+<ul>
+<li>Applying <a href="http://en.wikipedia.org/wiki/Newton%27s_method" title="Newton&#39;s method">Newton's method</a> to the equation <img class="tex" alt="(1/x^2) - S = 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7ab5fde997013d802d25a7d8ddb324e8.png"> produces a method that converges quadratically using three multiplications per step:</li>
+</ul>
+<dl>
+<dd><img class="tex" alt="x_{n+1} = \frac{x_n}{2} \cdot (3 - S \cdot x_n^2)." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8e40e14e160ebd1e5dc1aab07caa6861.png"></dd>
+</dl>
+<ul>
+<li>Another iteration is obtained by <a href="http://en.wikipedia.org/wiki/Halley%27s_method" title="Halley&#39;s method">Halley's method</a>, which is the <a href="http://en.wikipedia.org/wiki/Householder%27s_method" title="Householder&#39;s method">Householder's method</a> of order two. This <a href="http://en.wikipedia.org/wiki/Rate_of_convergence" title="Rate of convergence">converges cubically</a>, but involves four multiplications per iteration:</li>
+</ul>
+<dl>
+<dd><img class="tex" alt="y_n = S \cdot x_n^2\, , \!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2c30fe32023c829cf8a51e5e5b3ead4e.png"></dd>
+<dd><img class="tex" alt="x_{n+1} = \frac{x_n}{8} \cdot (15 - y_n \cdot (10 - 3 \cdot y_n))." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7c58513ea04510b74b0e3524fb4de800.png"></dd>
+</dl>
+<h3><span class="mw-headline" id="Goldschmidt.E2.80.99s_algorithm">Goldschmidt’s algorithm</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=21" title="Edit section: Goldschmidt’s algorithm">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some computers use Goldschmidt's algorithm to simultaneously calculate <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png"> and <img class="tex" alt="1/\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/336d73958602822a541b12510b300ce9.png">. Goldschmidt's algorithm finds <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png"> faster than Newton-Raphson iteration on a computer with a <a href="http://en.wikipedia.org/wiki/Fused_multiply%E2%80%93add" title="Fused multiply–add" class="mw-redirect">fused multiply–add</a> instruction and either a pipelined floating point unit or two independent floating-point units. Two ways of writing Goldschmidt's algorithm are:<sup id="cite_ref-goldschmidt_algo_9-0" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-goldschmidt_algo-9"><span>[</span>9<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt="b_0 = S" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ad088e6e4d8721a531dfe10136b08718.png"></dd>
+<dd><img class="tex" alt="Y_0 \approx 1/\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/11b94597cd432d75d3b4ccd45e96e393.png"> (typically using a table lookup)</dd>
+<dd><img class="tex" alt="y_0 = Y_0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/dde78f26c0dfa1bc76f28649956390d1.png"></dd>
+<dd><img class="tex" alt="x_0 = S y_0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8100487fa10e1e7fe22bbf50ab6b7048.png"></dd>
+</dl>
+<p>Each iteration:</p>
+<dl>
+<dd><img class="tex" alt="b_{n+1} = b_n Y_n^2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0cc4168c1f0209f8ed3eacb14a1005cd.png"></dd>
+<dd><img class="tex" alt="Y_{n+1} = (3 - b_n)/2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0a4376bf3ccfa76629f0ec29578194dc.png"></dd>
+<dd><img class="tex" alt="x_{n+1} = x_n Y_{n+1}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/397ef135f9b96fce8a336c0de7e94b3b.png"></dd>
+<dd><img class="tex" alt="y_{n+1} = y_n Y_{n+1}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/dd53b76c48d686f5aa975e38d2992735.png"></dd>
+</dl>
+<p>until <img class="tex" alt="b_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c9f6d8557ce40f989fa727b5c0bb1ddf.png"> is sufficiently close to 1, or a fixed number of iterations.</p>
+<p>which causes</p>
+<dl>
+<dd><img class="tex" alt="\sqrt S = \lim_{n \to \infty} x_n." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/37bf6ffa4eb8faa293a8be6686aefde6.png"></dd>
+<dd><img class="tex" alt="1/\sqrt S = \lim_{n \to \infty} y_n." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/28626185c4331492527bd94b391dd1af.png"></dd>
+</dl>
+<p>Goldschmidt's equation can be rewritten as:</p>
+<dl>
+<dd><img class="tex" alt="y_0 \approx 1/\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ac7fa620a9883b7dbd88d3ed311b66c3.png"> (typically using a table lookup)</dd>
+<dd><img class="tex" alt="x_0 = S y_0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8100487fa10e1e7fe22bbf50ab6b7048.png"></dd>
+<dd><img class="tex" alt="h_0 = y_0/2" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/5c30eb070d0ef0a2aa3be37a3b197fa5.png"></dd>
+</dl>
+<p>Each iteration: (All 3 operations in this loop are in the form of a <a href="http://en.wikipedia.org/wiki/Fused_multiply%E2%80%93add" title="Fused multiply–add" class="mw-redirect">fused multiply–add</a>.)</p>
+<dl>
+<dd><img class="tex" alt="r_n = (1/2) - x_n h_n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/9c81cb007c532e8dcee575f832cd96f9.png"></dd>
+<dd><img class="tex" alt="x_{n+1} = x_n + x_n r_n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/a8bd569b617564a1f61d6fed243f1e2b.png"></dd>
+<dd><img class="tex" alt="h_{n+1} = h_n + h_n r_n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c3e320db52b38d177e39a6bccf1317a1.png"></dd>
+</dl>
+<p>until <img class="tex" alt="r_i" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/bedcf2f74ea8e1f0f46880c0c79592ff.png"> is sufficiently close to 0, or a fixed number of iterations.</p>
+<p>which causes</p>
+<dl>
+<dd><img class="tex" alt="\sqrt S = \lim_{n \to \infty} x_n." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/37bf6ffa4eb8faa293a8be6686aefde6.png"></dd>
+<dd><img class="tex" alt="1/\sqrt S = \lim_{n \to \infty} 2h_n." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/dd190c14207d9b59a99514b07e040b7c.png"></dd>
+</dl>
+<h2><span class="mw-headline" id="Taylor_series">Taylor series</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=22" title="Edit section: Taylor series">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If <i>N</i> is an approximation to <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png">, a better approximation can be found by using the <a href="http://en.wikipedia.org/wiki/Taylor_series" title="Taylor series">Taylor series</a> of the <a href="http://en.wikipedia.org/wiki/Square_root" title="Square root">square root</a> function:</p>
+<dl>
+<dd><img class="tex" alt="\sqrt{N^2+d} = \sum_{n=0}^\infty \frac{(-1)^{n}(2n)!d^n}{(1-2n)n!^2 4^nN^{2n-1}} = N + \frac{d}{2N} - \frac{d^2}{8N^3} + \frac{d^3}{16N^5} - \frac{5d^4}{128N^7} + \cdots" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/208b9af589f89b3e80308430eb82feee.png"></dd>
+</dl>
+<p>As an iterative method, the <a href="http://en.wikipedia.org/wiki/Order_of_convergence" title="Order of convergence" class="mw-redirect">order of convergence</a> is equal to the number of terms used. With 2 terms, it is identical to the <a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method" title="Methods of computing square roots">Babylonian method</a>; With 3 terms, each iteration takes almost as many operations as the <a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Bakhshali_approximation" title="Methods of computing square roots">Bakhshali approximation</a>, but converges more slowly. Therefore, this is not a particularly efficient way of calculation. To maximize the rate of convergence, choose <i>N</i> so that <img class="tex" alt=" \frac{|d|}{N^2} \," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/82378410bac5dcc2649db790cd7feec2.png"> is as small as possible.</p>
+<h2><span class="mw-headline" id="Other_methods">Other methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=23" title="Edit section: Other methods">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Other methods are less efficient than the ones presented above.</p>
+<p>A completely different method for computing the square root is based on the <a href="http://en.wikipedia.org/wiki/CORDIC" title="CORDIC">CORDIC</a> algorithm, which uses only very simple operations (addition, subtraction, bitshift and table lookup, but no multiplication). The square root of <i>S</i> may be obtained as the output <img class="tex" alt="x_n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/67b68721103b5a16194f4b3e3ec222db.png"> using the hyperbolic coordinate system in vectoring mode, with the following initialization:<sup id="cite_ref-10" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt="x_0 = S+1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/fb893e65b80ba23524c7000385e90643.png"></dd>
+<dd><img class="tex" alt="y_0 = S-1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f01416141facc411e9a65e720e262b28.png"></dd>
+<dd><img class="tex" alt="\omega_0 = 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/b216b6fc05bdaff29ca443fed0164122.png"></dd>
+</dl>
+<h2><span class="mw-headline" id="Continued_fraction_expansion">Continued fraction expansion</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=24" title="Edit section: Continued fraction expansion">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="http://en.wikipedia.org/wiki/Quadratic_irrational" title="Quadratic irrational">Quadratic irrationals</a> (numbers of the form <img class="tex" alt="\frac{a+\sqrt{b}}{c}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/56971cf64fb2c09dc3343330e7231c0a.png">, where <i>a</i>, <i>b</i> and <i>c</i> are integers), and in particular, square roots of integers, have <a href="http://en.wikipedia.org/wiki/Periodic_continued_fraction" title="Periodic continued fraction">periodic continued fractions</a>. Sometimes what is desired is finding not the numerical value of a square root, but rather its <a href="http://en.wikipedia.org/wiki/Continued_fraction" title="Continued fraction">continued fraction</a> expansion. The following iterative algorithm can be used for this purpose (<i>S</i> is any <a href="http://en.wikipedia.org/wiki/Natural_number" title="Natural number">natural number</a> that is not a <a href="http://en.wikipedia.org/wiki/Square_number" title="Square number">perfect square</a>):</p>
+<dl>
+<dd><img class="tex" alt="m_0=0\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ac79c02ea9c5855480c6a2d7a27accf6.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="d_0=1\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ea00cc1ad606d26516b5a8faa84621b8.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="a_0=\left\lfloor\sqrt{S}\right\rfloor\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f91746e90d964bf637f491ad334e829d.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="m_{n+1}=d_na_n-m_n\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/dbdef9aa869222e74116c9cfed1c9183.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="d_{n+1}=\frac{S-m_{n+1}^2}{d_n}\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0efdabc6e666d5c6ff520f6a809744c4.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="a_{n+1} =\left\lfloor\frac{\sqrt{S}+m_{n+1}}{d_{n+1}}\right\rfloor =\left\lfloor\frac{a_0+m_{n+1}}{d_{n+1}}\right\rfloor\!." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/e27672de3b266964851d27a15521e868.png"></dd>
+</dl>
+<p>Notice that <i>m</i><sub>n</sub>, <i>d</i><sub>n</sub>, and <i>a</i><sub>n</sub> are always integers. The algorithm terminates when this triplet is the same as one encountered before. The algorithm can also terminate on a<sub>i</sub> when a<sub>i</sub> = 2 a<sub>0</sub>,<sup id="cite_ref-11" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-11"><span>[</span>11<span>]</span></a></sup> which is easier to implement.</p>
+<p>The expansion will repeat from then on. The sequence [<i>a</i><sub>0</sub>; <i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, <i>a</i><sub>3</sub>, …] is the continued fraction expansion:</p>
+<dl>
+<dd><img class="tex" alt="\sqrt{S} = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3+\,\ddots}}} " src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/55e572743fc751813f7c305fdea522b3.png"></dd>
+</dl>
+<h3><span class="mw-headline" id="Example.2C_square_root_of_114_as_a_continued_fraction">Example, square root of 114 as a continued fraction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=25" title="Edit section: Example, square root of 114 as a continued fraction">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Begin with <i>m</i><sub>0</sub>&nbsp;=&nbsp;0; <i>d</i><sub>0</sub>&nbsp;=&nbsp;1; and <i>a</i><sub>0</sub>&nbsp;=&nbsp;10 (10<sup>2</sup>&nbsp;=&nbsp;100 and 11<sup>2</sup>&nbsp;=&nbsp;121&nbsp;&gt;&nbsp;114 so 10 chosen).</p>
+<dl>
+<dd><img class="tex" alt="
+\begin{align}
+\sqrt{114} &amp; = \frac{\sqrt{114}+0}{1} = 10+\frac{\sqrt{114}-10}{1} = 10+\frac{(\sqrt{114}-10)(\sqrt{114}+10)}{\sqrt{114}+10} \\
+&amp; = 10+\frac{114-100}{\sqrt{114}+10} = 10+\frac{1}{\frac{\sqrt{114}+10}{14}}.
+\end{align}
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/e8de3185e9ecb2b3451ac55d67b92d50.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="m_{1} = d_{0} \cdot a_{0} - m_{0} = 1 \cdot 10 - 0 = 10 \,." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c893a75f1a64a289f35b12a10b225bdd.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="d_{1} = \frac{S-m_{1}^2}{d_0} = \frac{114-10^2}{1} = 14 \,." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/4a70d4a630e6a2b1e310c45584b3e385.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="a_{1} = \left\lfloor \frac{a_0+m_{1}}{d_{1}} \right\rfloor = \left\lfloor \frac{10+10}{14} \right\rfloor = \left\lfloor \frac{20}{14} \right\rfloor = 1 \,." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/d57e1915f117ca94e47e5e667f0a8130.png"></dd>
+</dl>
+<p>So, <i>m</i><sub>1</sub>&nbsp;=&nbsp;10; <i>d</i><sub>1</sub>&nbsp;=&nbsp;14; and <i>a</i><sub>1</sub>&nbsp;=&nbsp;1.</p>
+<dl>
+<dd><img class="tex" alt="
+\frac{\sqrt{114}+10}{14} = 1+\frac{\sqrt{114}-4}{14} = 1+\frac{114-16}{14(\sqrt{114}+4)} = 1+\frac{1}{\frac{\sqrt{114}+4}{7}}.
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/b62fcce7a214f7a3de8a2a2eddf0f3d3.png"></dd>
+</dl>
+<p>Next, <i>m</i><sub>2</sub>&nbsp;=&nbsp;4; <i>d</i><sub>2</sub>&nbsp;=&nbsp;7; and <i>a</i><sub>2</sub>&nbsp;=&nbsp;2.</p>
+<dl>
+<dd><img class="tex" alt="
+\frac{\sqrt{114}+4}{7} = 2+\frac{\sqrt{114}-10}{7} = 2+\frac{14}{7(\sqrt{114}+10)} = 2+\frac{1}{\frac{\sqrt{114}+10}{2}}.
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/4d8c53061be8cd17928c3ba72a4d148e.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\frac{\sqrt{114}+10}{2}=10+\frac{\sqrt{114}-10}{2}=10+\frac{14}{2(\sqrt{114}+10)} = 10+\frac{1}{\frac{\sqrt{114}+10}{7}}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/51b819fda23962bde8bc8118a203a164.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\frac{\sqrt{114}+10}{7}=2+\frac{\sqrt{114}-4}{7}=2+\frac{98}{7(\sqrt{114}+4)} = 2+\frac{1}{\frac{\sqrt{114}+4}{14}}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/47e1cff7bff19a6c64c932ab6d9e33bb.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\frac{\sqrt{114}+4}{14}=1+\frac{\sqrt{114}-10}{14}=1+\frac{14}{14(\sqrt{114}+10)} = 1+\frac{1}{\frac{\sqrt{114}+10}{1}}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/df798e5b266a818ff76db76c59e59e18.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\frac{\sqrt{114}+10}{1}=20+\frac{\sqrt{114}-10}{1}=20+\frac{14}{\sqrt{114}+10} = 20+\frac{1}{\frac{\sqrt{114}+10}{14}}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/f8f23d3c21484b93d6224332d2aa0320.png"></dd>
+</dl>
+<p>Now, loop back to the second equation above.</p>
+<p>Consequently, the simple continued fraction for the square root of 114 is</p>
+<dl>
+<dd><img class="tex" alt="\sqrt{114} = [10;1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,\dots].\," src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8b51eb6ebcb2fecf993f83c47dd96556.png"></dd>
+</dl>
+<p>Its actual value is approximately 10.67707 82520 31311 21....</p>
+<h3><span class="mw-headline" id="Generalized_continued_fraction">Generalized continued fraction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=26" title="Edit section: Generalized continued fraction">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A more rapid method is to evaluate its <a href="http://en.wikipedia.org/wiki/Generalized_continued_fraction" title="Generalized continued fraction">generalized continued fraction</a>. From the formula derived <a href="http://en.wikipedia.org/wiki/Generalized_continued_fraction#Roots_of_positive_numbers" title="Generalized continued fraction">there</a>:</p>
+<dl>
+<dd><img class="tex" alt="
+\sqrt{z} = \sqrt{x^2+y} = x+\cfrac{y} {2x+\cfrac{y} {2x+\cfrac{y} {2x+\ddots}}} 
+= x+\cfrac{2x \cdot y} {2(2z-y)-y-\cfrac{y^2} {2(2z-y)-\cfrac{y^2} {2(2z-y)-\ddots}}}
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/844344a0418dbc48fdcee2267cb9fa67.png"></dd>
+</dl>
+<p>and the fact that 114 is 2/3 of the way between 10<sup>2</sup>=100 and 11<sup>2</sup>=121 results in</p>
+<dl>
+<dd><img class="tex" alt="
+\sqrt{114} = \cfrac{\sqrt{1026}}{3} = \cfrac{\sqrt{32^2+2}}{3} = \cfrac{32}{3}+\cfrac{2/3} {64+\cfrac{2} {64+\cfrac{2} {64+\cfrac{2} {64+\ddots}}}} = \cfrac{32}{3}+\cfrac{2} {192+\cfrac{18} {192+\cfrac{18} {192+\ddots}}},
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8aa27bb120955db7d843d159fec06144.png"></dd>
+</dl>
+<p>which is simply the aforementioned [10;1,2, 10,2,1, 20,1,2, 10,2,1, 20,1,2, ...] evaluated at every third term. Combining pairs of fractions produces</p>
+<dl>
+<dd><img class="tex" alt="
+\sqrt{114} = \cfrac{\sqrt{32^2+2}}{3} = \cfrac{32}{3}+\cfrac{64/3} {2050-1-\cfrac{1} {2050-\cfrac{1} {2050-\ddots}}}= \cfrac{32}{3}+\cfrac{64} {6150-3-\cfrac{9} {6150-\cfrac{9} {6150-\ddots}}},
+" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/a35d7c9cc2e1c88801507d95571eadf5.png"></dd>
+</dl>
+<p>which is now [10;1,2, 10,2,1,20,1,2, 10,2,1,20,1,2, ...] evaluated at the third term and every six terms thereafter.</p>
+<h3><span class="mw-headline" id="Pell.27s_equation">Pell's equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=27" title="Edit section: Pell&#39;s equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="http://en.wikipedia.org/wiki/Pell%27s_equation" title="Pell&#39;s equation">Pell's equation</a> (also known as <a href="http://en.wikipedia.org/wiki/Brahmagupta" title="Brahmagupta">Brahmagupta</a> equation since he was the first to give a solution to this particular equation) and its variants yield a method for efficiently finding continued fraction convergents of square roots of integers. However, it can be complicated to execute, and usually not every convergent is generated. The ideas behind the method are as follows:</p>
+<ul>
+<li>If (<i>p</i>, <i>q</i>) is a solution (where <i>p</i> and <i>q</i> are integers) to the equation <img class="tex" alt="p^2 = S \cdot q^2 \pm 1\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/0a7f02007702006d4eff1de3b3fe8ab7.png">, then <img class="tex" alt="\frac{p}{q}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/5859e7cb616f2bd444f2ff5df3783f89.png"> is a continued fraction convergent of <img class="tex" alt="\sqrt{S}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1125d8d0ee8e2b14b93166881d6e74b7.png">, and as such, is an excellent rational approximation to it.</li>
+<li>If (<i>p</i><sub>a</sub>, <i>q</i><sub>a</sub>) and (<i>p</i><sub>b</sub>, <i>q</i><sub>b</sub>) are solutions, then so is:</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="p = p_a p_b + S \cdot q_a q_b\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7a0fa8fabeb93db1cc27dcc1fa25e8c8.png"></dd>
+<dd><img class="tex" alt="q = p_a q_b + p_b q_a\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/24d3270e563a5edcd72c84710d2d8fa5.png"></dd>
+</dl>
+</dd>
+<dd>(compare to the multiplication of <a href="http://en.wikipedia.org/wiki/Quadratic_integer" title="Quadratic integer">quadratic integers</a>)</dd>
+</dl>
+<ul>
+<li>More generally, if (<i>p</i><sub>1</sub>, <i>q</i><sub>1</sub>) is a solution, then it is possible to generate a sequence of solutions (<i>p</i><sub><i>n</i></sub>, <i>q</i><sub><i>n</i></sub>) satisfying:</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="p_{m+n} = p_m p_n + S \cdot q_m q_n\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/19d43cce9fa00c907ae28cd5aff8754b.png"></dd>
+<dd><img class="tex" alt="q_{m+n} = p_m q_n + p_n q_m\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/53c4ce644fdd93a03e873b3060d86732.png"></dd>
+</dl>
+</dd>
+</dl>
+<p>The method is as follows:</p>
+<ul>
+<li>Find positive integers <i>p</i><sub>1</sub> and <i>q</i><sub>1</sub> such that <img class="tex" alt="p_1^2 = S \cdot q_1^2 \pm 1" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/89ba2278c76d9feb28682b5ca12b01a8.png">. This is the hard part; It can be done either by guessing, or by using fairly sophisticated techniques.</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>To generate a long list of convergents, iterate:</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="p_{n+1} = p_1 p_n + S \cdot q_1 q_n\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2f03f47815b60039aa6fa388a768b82d.png"></dd>
+<dd><img class="tex" alt="q_{n+1} = p_1 q_n + p_n q_1\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7331b716aea98d5b6e8ef9effa450377.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>To find the larger convergents quickly, iterate:</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="p_{2n} = p_n^2 + S \cdot q_n^2\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c87e5c3faf535265f53573da33b49dc0.png"></dd>
+<dd><img class="tex" alt="q_{2n} = 2 p_n q_n\,\!" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/42d65c3325476f08bcf934d25972cf37.png"></dd>
+</dl>
+</dd>
+<dd>Notice that the corresponding sequence of fractions coincides with the one given by the Hero's method starting with <img class="tex" alt="\textstyle\frac{p_1}{q_1}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ea110f17df3bd725892832cf2c86e3b3.png">.</dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>In either case, <img class="tex" alt="\frac{p_n}{q_n}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/1dcb04b2521229ed260e23041f02e8e8.png"> is a rational approximation satisfying</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="\left|\frac{p_n}{q_n} - \sqrt{S}\right| &lt; \frac{1}{q_n^2 \cdot \sqrt{S}}." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/8663c9c7c3c08a273ce5baa88f8966b6.png"></dd>
+</dl>
+</dd>
+</dl>
+<h2><span class="mw-headline" id="Approximations_that_depend_on_IEEE_representation">Approximations that depend on IEEE representation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=28" title="Edit section: Approximations that depend on IEEE representation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>On computers, a very rapid Newton's-method-based approximation to the square root can be obtained for floating point numbers when computers use an <a href="http://en.wikipedia.org/wiki/IEEE_floating-point_standard" title="IEEE floating-point standard" class="mw-redirect">IEEE</a> (or sufficiently similar) representation.</p>
+<p>This technique is based on the fact that the IEEE floating point format approximates base-2 logarithm. For example, you can get the approximate logarithm of 32-bit single precision floating point number by translating its binary representation as an integer, scaling it by <img class="tex" alt="2^{-23}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2a5f58bc5ddf6ca84d4c14970e5a3a3c.png">, and removing a bias of 127, i.e.</p>
+<dl>
+<dd><img class="tex" alt="x_\text{int} \cdot 2^{-23} - 127 \approx \log_2(x)." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/fd4036ce1fcc26c1c79fcec177e97f8c.png"></dd>
+</dl>
+<p>For example, 1.0 is represented by a <a href="http://en.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> number 0x3F800000, which would represent <img class="tex" alt="1065353216 = 127 \cdot 2^{23}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/53cb733fd09a68a97b387b6e5c2b5966.png"> if taken as an integer. Using the formula above you get <img class="tex" alt="1065353216 \cdot 2^{-23} - 127 = 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2370f0d2e500385c07c8d9b29c1b4942.png">, as expected from <img class="tex" alt="\log_2(1.0)" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ca7d0ca9af6f7ace4dd81aa4903a19a9.png">. In a similar fashion you get 0.5 from 1.5 (0x3FC00000).</p>
+<p><a href="http://en.wikipedia.org/wiki/File:Log2approx.png" class="image"><img alt="Log2approx.png" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/Log2approx.png" width="574" height="280"></a></p>
+<p>To get the square root, divide the logarithm by 2 and convert the value back. The following program demonstrates the idea. Note that the exponent's lowest bit is intentionally allowed to propagate into the mantissa. One way to justify the steps in this program is to assume <img class="tex" alt="b" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/92eb5ffee6ae2fec3ad71c777531578f.png"> is the exponent bias and <img class="tex" alt="n" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7b8b965ad4bca0e41ab51de7b31363a1.png"> is the number of explicitly stored bits in the mantissa and then show that</p>
+<dl>
+<dd><img class="tex" alt="(((x_\text{int} / 2^n - b) / 2) + b) \cdot 2^n = (x_\text{int} - 2^n) / 2 + ((b + 1) / 2) \cdot 2^n." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/bade265cbd9958afec3596aca03beda3.png"></dd>
+</dl>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1"><span class="coMULTI">/* Assumes that float is in the IEEE 754 single precision floating point format
+ * and that int is 32 bits. */</span>
+<span class="kw4">float</span> sqrt_approx<span class="br0">(</span><span class="kw4">float</span> z<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> val_int <span class="sy0">=</span> <span class="sy0">*</span><span class="br0">(</span><span class="kw4">int</span><span class="sy0">*</span><span class="br0">)</span><span class="sy0">&amp;</span>z<span class="sy0">;</span> <span class="coMULTI">/* Same bits, but as an int */</span>
+    <span class="coMULTI">/*
+     * To justify the following code, prove that
+     *
+     * ((((val_int / 2^m) - b) / 2) + b) * 2^m = ((val_int - 2^m) / 2) + ((b + 1) / 2) * 2^m)
+     *
+     * where
+     *
+     * b = exponent bias
+     * m = number of mantissa bits
+     *
+     * .
+     */</span>
+ 
+    val_int <span class="sy0">-=</span> <span class="nu0">1</span> <span class="sy0">&lt;&lt;</span> <span class="nu0">23</span><span class="sy0">;</span> <span class="coMULTI">/* Subtract 2^m. */</span>
+    val_int <span class="sy0">&gt;&gt;=</span> <span class="nu0">1</span><span class="sy0">;</span> <span class="coMULTI">/* Divide by 2. */</span>
+    val_int <span class="sy0">+=</span> <span class="nu0">1</span> <span class="sy0">&lt;&lt;</span> <span class="nu0">29</span><span class="sy0">;</span> <span class="coMULTI">/* Add ((b + 1) / 2) * 2^m. */</span>
+ 
+    <span class="kw1">return</span> <span class="sy0">*</span><span class="br0">(</span><span class="kw4">float</span><span class="sy0">*</span><span class="br0">)</span><span class="sy0">&amp;</span>val_int<span class="sy0">;</span> <span class="coMULTI">/* Interpret again as float */</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>The three mathematical operations forming the core of the above function can be expressed in a single line. An additional adjustment can be added to reduce the maximum relative error. So, the three operations, not including the cast, can be rewritten as</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">val_int <span class="sy0">=</span> <span class="br0">(</span><span class="nu0">1</span> <span class="sy0">&lt;&lt;</span> <span class="nu0">29</span><span class="br0">)</span> <span class="sy0">+</span> <span class="br0">(</span>val_int <span class="sy0">&gt;&gt;</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy0">-</span> <span class="br0">(</span><span class="nu0">1</span> <span class="sy0">&lt;&lt;</span> <span class="nu0">22</span><span class="br0">)</span> <span class="sy0">+</span> a<span class="sy0">;</span>
+</pre></div>
+</div>
+<p>where <i>a</i> is a bias for adjusting the approximation errors. For example, with <i>a</i> = 0 the results are accurate for even powers of 2 (e.g., 1.0), but for other numbers the results will be slightly too big (e.g.,1.5 for 2.0 instead of 1.414... with 6% error). With <i>a</i> = -0x4C000, the errors are between about -3.5% and 3.5%.</p>
+<p>If the approximation is to be used for an initial guess for <a href="http://en.wikipedia.org/wiki/Newton%27s_method" title="Newton&#39;s method">Newton's method</a> to the equation <img class="tex" alt="(1/x^2) - S = 0" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/7ab5fde997013d802d25a7d8ddb324e8.png">, then the reciprocal form shown in the following section is preferred.</p>
+<h3><span class="mw-headline" id="Reciprocal_of_the_square_root">Reciprocal of the square root</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=29" title="Edit section: Reciprocal of the square root">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.wikipedia.org/wiki/Fast_inverse_square_root" title="Fast inverse square root">Fast inverse square root</a></div>
+<p>A variant of the above routine is included below, which can be used to compute the <a href="http://en.wikipedia.org/wiki/Multiplicative_inverse" title="Multiplicative inverse">reciprocal</a> of the square root, i.e., <img class="tex" alt="x^{-{1\over2}}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/ae33acbd75c28a36c87cbfd707bc4e77.png"> instead, was written by Greg Walsh, and implemented into <a href="http://en.wikipedia.org/wiki/SGI_Indigo" title="SGI Indigo">SGI Indigo</a> by Gary Tarolli.<sup id="cite_ref-12" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-12"><span>[</span>12<span>]</span></a></sup><sup id="cite_ref-13" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-13"><span>[</span>13<span>]</span></a></sup> The integer-shift approximation produced a relative error of less than 4%, and the error dropped further to 0.15% with one iteration of <a href="http://en.wikipedia.org/wiki/Newton%27s_method" title="Newton&#39;s method">Newton's method</a> on the following line.<sup id="cite_ref-14" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-14"><span>[</span>14<span>]</span></a></sup> In computer graphics it is a very efficient way to normalize a vector.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1"><span class="kw4">float</span> invSqrt<span class="br0">(</span><span class="kw4">float</span> x<span class="br0">)</span>
+<span class="br0">{</span>
+        <span class="kw4">float</span> xhalf <span class="sy0">=</span> <span class="nu17">0.5f</span><span class="sy0">*</span>x<span class="sy0">;</span>
+        <span class="kw4">union</span>
+        <span class="br0">{</span>
+  	        <span class="kw4">float</span> x<span class="sy0">;</span>
+                <span class="kw4">int</span> i<span class="sy0">;</span>
+        <span class="br0">}</span> u<span class="sy0">;</span>
+        u.<span class="me1">x</span> <span class="sy0">=</span> x<span class="sy0">;</span>
+        u.<span class="me1">i</span> <span class="sy0">=</span> <span class="nu12">0x5f3759df</span> <span class="sy0">-</span> <span class="br0">(</span>u.<span class="me1">i</span> <span class="sy0">&gt;&gt;</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="coMULTI">/* The next line can be repeated any number of times to increase accuracy */</span>
+        u.<span class="me1">x</span> <span class="sy0">=</span> u.<span class="me1">x</span> <span class="sy0">*</span> <span class="br0">(</span><span class="nu17">1.5f</span> <span class="sy0">-</span> xhalf <span class="sy0">*</span> u.<span class="me1">x</span> <span class="sy0">*</span> u.<span class="me1">x</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw1">return</span> u.<span class="me1">x</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Some VLSI hardware implements inverse square root using a second degree polynomial estimation followed by a <a href="http://en.wikipedia.org/wiki/Division_algorithm#Goldschmidt_division" title="Division algorithm">Goldschmidt iteration</a>.<sup id="cite_ref-15" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-15"><span>[</span>15<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Negative_or_complex_square">Negative or complex square</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=30" title="Edit section: Negative or complex square">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If <i>S</i>&nbsp;&lt;&nbsp;0, then its principal square root is</p>
+<dl>
+<dd><img class="tex" alt="\sqrt {S} = \sqrt {\vert S \vert} \, \, i \,." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/2ef98695f085f25c7598e9a7ddcf4b6f.png"></dd>
+</dl>
+<p>If <i>S</i>&nbsp;=&nbsp;<i>a</i>+<i>bi</i> where <i>a</i> and <i>b</i> are real and <i>b</i>&nbsp;≠&nbsp;0, then its principal square root is</p>
+<dl>
+<dd><img class="tex" alt="\sqrt {S} = \sqrt{\frac{\vert S \vert + a}{2}} \, + \, \sgn (b) \sqrt{\frac{\vert S \vert - a}{2}} \, \, i \,." src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/db5ecd10e1c2383d811c52a18c7495d2.png"></dd>
+</dl>
+<p>This can be verified by squaring the root.<sup id="cite_ref-16" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-16"><span>[</span>16<span>]</span></a></sup><sup id="cite_ref-17" class="reference"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_note-17"><span>[</span>17<span>]</span></a></sup> Here</p>
+<dl>
+<dd><img class="tex" alt="\vert S \vert = \sqrt{a^2 + b^2}" src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/c05f5ffc9bd73c80dd353aa55dfa18ea.png"></dd>
+</dl>
+<p>is the <a href="http://en.wikipedia.org/wiki/Absolute_value" title="Absolute value">modulus</a> of <i>S</i>. The principal square root of a <a href="http://en.wikipedia.org/wiki/Complex_number" title="Complex number">complex number</a> is defined to be the root with the non-negative real part.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=31" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Alpha_max_plus_beta_min_algorithm" title="Alpha max plus beta min algorithm">Alpha max plus beta min algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Integer_square_root" title="Integer square root">Integer square root</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Mental_calculation" title="Mental calculation">Mental calculation</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Nth_root_algorithm" title="Nth root algorithm"><i>n</i>th root algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Shifting_nth-root_algorithm" title="Shifting nth-root algorithm" class="mw-redirect">Shifting nth-root algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Square_root_of_2" title="Square root of 2">Square root of 2</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=32" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-1"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">There is no direct evidence showing how the Babylonians computed square roots, although there are informed conjectures. (<a href="http://en.wikipedia.org/wiki/Square_root_of_2#Notes" title="Square root of 2">Square root of 2#Notes</a> gives a summary and references.)</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-2"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Heath, Thomas (1921). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=LOA5AAAAMAAJ&pg=PR323"><i>A History of Greek Mathematics, Vol. 2</i></a>. Oxford: Clarendon Press. pp.&nbsp;323–324.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.aufirst=Thomas&amp;rft.au=Heath%2C+Thomas&amp;rft.aulast=Heath&amp;rft.btitle=A+History+of+Greek+Mathematics%2C+Vol.+2&amp;rft.date=1921&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DLOA5AAAAMAAJ%26pg%3DPR323&amp;rft.pages=323%E2%80%93324&amp;rft.place=Oxford&amp;rft.pub=Clarendon+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-3"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://medialab.freaknet.org/martin/src/sqrt/">Fast integer square root by Mr. Woo's abacus algorithm</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-4"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://atoms.alife.co.uk/sqrt/SquareRoot.java">Integer Square Root function</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-5"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Sri Bharati Krisna Tirthaji (2008) [1965]. <i>Vedic Mathematics or Sixteen Simple Mathematical Formulae from the Vedas</i>. Motilal Banarsidass. <a href="http://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Special:BookSources/978-8120801639" title="Special:BookSources/978-8120801639">978-8120801639</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.aulast=Sri+Bharati+Krisna+Tirthaji&amp;rft.au=Sri+Bharati+Krisna+Tirthaji&amp;rft.btitle=Vedic+Mathematics+or+Sixteen+Simple+Mathematical+Formulae+from+the+Vedas&amp;rft.date=2008&amp;rft.genre=book&amp;rft.isbn=978-8120801639&amp;rft.pub=Motilal+Banarsidass&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-6"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">M. V. Wilkes, D. J. Wheeler and S. Gill, "The Preparation of Programs for an Electronic Digital Computer", Addison-Wesley, 1951.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-7"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">M. Campbell-Kelly, "Origin of Computing", Scientific American, September 2009.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-8"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">J. C. Gower, "A Note on an Iterative Method for Root Extraction", The Computer Journal 1(3):142–143, 1958.</span></li>
+<li id="cite_note-goldschmidt_algo-9"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-goldschmidt_algo_9-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Peter Markstein (Nov. 2004). "Software Division and Square Root Using Goldschmidt's Algorithms". <a href="http://en.wikipedia.org/wiki/CiteSeer#CiteSeerX" title="CiteSeer">CiteSeerX</a>: <span class="url"><a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.85.9648">10.1.1.85.9648</a></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.aulast=Peter+Markstein&amp;rft.au=Peter+Markstein&amp;rft.btitle=Software+Division+and+Square+Root+Using+Goldschmidt%27s+Algorithms&amp;rft.date=Nov.+2004&amp;rft.genre=book&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Check date values in: <code>|date=</code> (<a href="http://en.wikipedia.org/wiki/Help:CS1_errors#bad_date" title="Help:CS1 errors">help</a>);</span> <span style="display:none;font-size:100%" class="error citation-comment">Missing or empty <code>|url=</code> (<a href="http://en.wikipedia.org/wiki/Help:CS1_errors#cite_web_url" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-10"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Meher, P. K.; Valls, J.; Juang, T-B; Maharatna, K.; K. (2009). <a rel="nofollow" class="external text" href="http://www1.i2r.a-star.edu.sg/~pkmeher/papers/CORDIC-TUT-TACS-I.pdf">"50 Years of CORDIC: Algorithms, Architectures and Applications"</a>. <i>IEEE Transactions on Circuits &amp; Systems-I: Regular Papers</i> <b>56</b> (September): 1893–1907.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.atitle=50+Years+of+CORDIC%3A+Algorithms%2C+Architectures+and+Applications&amp;rft.aufirst=P.+K.&amp;rft.au=Juang%2C+T-B&amp;rft.au=K.&amp;rft.aulast=Meher&amp;rft.au=Maharatna%2C+K.&amp;rft.au=Meher%2C+P.+K.&amp;rft.au=Valls%2C+J.&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww1.i2r.a-star.edu.sg%2F~pkmeher%2Fpapers%2FCORDIC-TUT-TACS-I.pdf&amp;rft.issue=September&amp;rft.jtitle=IEEE+Transactions+on+Circuits+%26+Systems-I%3A+Regular+Papers&amp;rft.pages=1893%E2%80%931907&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=56" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-11"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Gliga, Alexandra Ioana (March 17, 2006). <a rel="nofollow" class="external text" href="http://web.math.princeton.edu/mathlab/jr02fall/Periodicity/alexajp.pdf"><i>On continued fractions of the square root of prime numbers</i></a> (pdf). Corollary 3.3.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.aufirst=Alexandra+Ioana&amp;rft.au=Gliga%2C+Alexandra+Ioana&amp;rft.aulast=Gliga&amp;rft.btitle=On+continued+fractions+of+the+square+root+of+prime+numbers&amp;rft.date=March+17%2C+2006&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fweb.math.princeton.edu%2Fmathlab%2Fjr02fall%2FPeriodicity%2Falexajp.pdf&amp;rft.pages=Corollary+3.3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-12"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Rys (2006-11-29). <a rel="nofollow" class="external text" href="http://www.beyond3d.com/content/articles/8/">"Origin of Quake3's Fast InvSqrt()"</a>. Beyond3D<span class="reference-accessdate">. Retrieved 2008-04-19</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.aulast=Rys&amp;rft.au=Rys&amp;rft.btitle=Origin+of+Quake3%27s+Fast+InvSqrt%28%29&amp;rft.date=2006-11-29&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.beyond3d.com%2Fcontent%2Farticles%2F8%2F&amp;rft.pub=Beyond3D&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-13"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Rys (2006-12-19). <a rel="nofollow" class="external text" href="http://www.beyond3d.com/content/articles/15/">"Origin of Quake3's Fast InvSqrt() - Part Two"</a>. Beyond3D<span class="reference-accessdate">. Retrieved 2008-04-19</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.aulast=Rys&amp;rft.au=Rys&amp;rft.btitle=Origin+of+Quake3%27s+Fast+InvSqrt%28%29+-+Part+Two&amp;rft.date=2006-12-19&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.beyond3d.com%2Fcontent%2Farticles%2F15%2F&amp;rft.pub=Beyond3D&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-14"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.lomont.org/Math/Papers/2003/InvSqrt.pdf">Fast Inverse Square Root</a> by Chris Lomont</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-15"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=627261">"High-Speed Double-Precision Computation of Reciprocal, Division, Square Root and Inverse Square Root"</a> by José-Alejandro Piñeiro and Javier Díaz Bruguera 2002 (abstract)</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-16"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Abramowitz, Miltonn; Stegun, Irene A. (1964). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=MtU8uP7XMvoC"><i>Handbook of mathematical functions with formulas, graphs, and mathematical tables</i></a>. Courier Dover Publications. p.&nbsp;17. <a href="http://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Special:BookSources/0-486-61272-4" title="Special:BookSources/0-486-61272-4">0-486-61272-4</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.au=Abramowitz%2C+Miltonn&amp;rft.aufirst=Miltonn&amp;rft.aulast=Abramowitz&amp;rft.au=Stegun%2C+Irene+A.&amp;rft.btitle=Handbook+of+mathematical+functions+with+formulas%2C+graphs%2C+and+mathematical+tables&amp;rft.date=1964&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DMtU8uP7XMvoC&amp;rft.isbn=0-486-61272-4&amp;rft.pages=17&amp;rft.pub=Courier+Dover+Publications&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>, <a rel="nofollow" class="external text" href="http://www.math.sfu.ca/~cbm/aands/page_17.htm">Section 3.7.26, p. 17</a></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#cite_ref-17"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Cooke, Roger (2008). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=lUcTsYopfhkC"><i>Classical algebra: its nature, origins, and uses</i></a>. John Wiley and Sons. p.&nbsp;59. <a href="http://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Special:BookSources/0-470-25952-3" title="Special:BookSources/0-470-25952-3">0-470-25952-3</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMethods+of+computing+square+roots&amp;rft.au=Cooke%2C+Roger&amp;rft.aufirst=Roger&amp;rft.aulast=Cooke&amp;rft.btitle=Classical+algebra%3A+its+nature%2C+origins%2C+and+uses&amp;rft.date=2008&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DlUcTsYopfhkC&amp;rft.isbn=0-470-25952-3&amp;rft.pages=59&amp;rft.pub=John+Wiley+and+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>, <a rel="nofollow" class="external text" href="http://books.google.com/books?id=lUcTsYopfhkC&pg=PA59">Extract: page 59</a></span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit&section=33" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation mathworld" id="Reference-Mathworld-Square_root_algorithms"><a href="http://en.wikipedia.org/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a>, "<a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/SquareRootAlgorithms.html">Square root algorithms</a>", <i><a href="http://en.wikipedia.org/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</span></li>
+<li><a rel="nofollow" class="external text" href="http://www.afjarvis.staff.shef.ac.uk/maths/jarvisspec02.pdf">Square roots by subtraction</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.andrijar.com/algorithms/algorithms.htm#qusr">Integer Square Root Algorithm by Andrija Radović</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.hparchive.com/Journals/HPJ-1977-05.pdf">Personal Calculator Algorithms I&nbsp;: Square Roots (William E. Egbert), Hewlett-Packard Journal (may 1977)&nbsp;: page 22</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.calculatorsquareroot.com/">Calculator to learn the square root</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1049
+CPU time usage: 1.708 seconds
+Real time usage: 6.928 seconds
+Preprocessor visited node count: 4030/1000000
+Preprocessor generated node count: 14477/1500000
+Post‐expand include size: 34290/2048000 bytes
+Template argument size: 3100/2048000 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 8/500
+Lua time usage: 0.113s
+Lua memory usage: 2.19 MB
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2698660-0!*!0!!en!4!*!math=0 and timestamp 20140216180917
+ -->
+<noscript>&lt;img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /&gt;</noscript></div>								<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&oldid=593271017">http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&amp;oldid=593271017</a>"				</div>
+												<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Root-finding_algorithms" title="Category:Root-finding algorithms">Root-finding algorithms</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Computer_arithmetic_algorithms" title="Category:Computer arithmetic algorithms">Computer arithmetic algorithms</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="http://en.wikipedia.org/wiki/Category:CS1_errors:_dates" title="Category:CS1 errors: dates">CS1 errors: dates</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Pages_using_web_citations_with_no_URL" title="Category:Pages using web citations with no URL">Pages using web citations with no URL</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Articles_that_may_contain_original_research_from_January_2012" title="Category:Articles that may contain original research from January 2012">Articles that may contain original research from January 2012</a></li><li><a href="http://en.wikipedia.org/wiki/Category:All_articles_that_may_contain_original_research" title="Category:All articles that may contain original research">All articles that may contain original research</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Wikipedia_articles_that_are_too_technical_from_September_2012" title="Category:Wikipedia articles that are too technical from September 2012">Wikipedia articles that are too technical from September 2012</a></li><li><a href="http://en.wikipedia.org/wiki/Category:All_articles_that_are_too_technical" title="Category:All articles that are too technical">All articles that are too technical</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Articles_needing_expert_attention_from_September_2012" title="Category:Articles needing expert attention from September 2012">Articles needing expert attention from September 2012</a></li><li><a href="http://en.wikipedia.org/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Wikipedia_articles_needing_clarification_from_February_2012" title="Category:Wikipedia articles needing clarification from February 2012">Wikipedia articles needing clarification from February 2012</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Methods+of+computing+square+roots&type=signup">Create account</a></li><li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Methods+of+computing+square+roots" title="You&#39;re encouraged to log in; however, it&#39;s not mandatory. [alt-shift-o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots" title="View the content page [alt-shift-c]" accesskey="c">Article</a></span></li>
+					<li id="ca-talk"><span><a href="http://en.wikipedia.org/wiki/Talk:Methods_of_computing_square_roots" title="Discussion about the content page [alt-shift-t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label" tabindex="0"><span>Variants</span><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots">Read</a></span></li>
+					<li id="ca-edit"><span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=edit" title="You can edit this page. 
+Please review your changes before saving. [alt-shift-e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=history" title="Past versions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label" tabindex="0"><span>Actions</span><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="http://en.wikipedia.org/w/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search Wikipedia [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton">		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="collapsible-nav">
+					<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label">Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [alt-shift-x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en" title="Support us">Donate to Wikipedia</a></li>
+			<li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikimedia Shop">Wikimedia Shop</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+	<h3 id="p-interaction-label" tabindex="2"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" aria-haspopup="true" aria-controls="p-interaction-list" role="button" aria-pressed="true" aria-expanded="true">Interaction</a></h3>
+	<div class="body" style="display: block;">
+		<ul id="p-interaction-list">
+			<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" tabindex="3"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" aria-haspopup="true" aria-controls="p-tb-list" role="button" aria-pressed="false" aria-expanded="false">Tools</a></h3>
+	<div class="body">
+		<ul id="p-tb-list">
+			<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Methods_of_computing_square_roots" title="List of all English Wikipedia pages containing links to this page [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Methods_of_computing_square_roots" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [alt-shift-u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&oldid=593271017" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&action=info">Page information</a></li>
+			<li id="t-wikibase"><a href="http://www.wikidata.org/wiki/Q1197114" title="Link to connected data repository item [alt-shift-g]" accesskey="g">Data item</a></li>
+<li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:Cite&page=Methods_of_computing_square_roots&id=593271017" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+	<h3 id="p-coll-print_export-label" tabindex="4"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" aria-haspopup="true" aria-controls="p-coll-print_export-list" role="button" aria-pressed="false" aria-expanded="false">Print/export</a></h3>
+	<div class="body">
+		<ul id="p-coll-print_export-list">
+			<li id="coll-create_a_book"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=Methods+of+computing+square+roots">Create a book</a></li>
+			<li id="coll-download-as-rl"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=render_article&arttitle=Methods+of+computing+square+roots&oldid=593271017&writer=rl">Download as PDF</a></li>
+			<li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Methods_of_computing_square_roots&printable=yes" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span class="uls-settings-trigger" title="Language settings" tabindex="0" role="button" aria-haspopup="true"></span>
+	<h3 id="p-lang-label" tabindex="5"><a href="http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#" aria-haspopup="true" aria-controls="p-lang-list" role="button" aria-pressed="true" aria-expanded="true">Languages</a></h3>
+	<div class="body" style="display: block;">
+		<ul id="p-lang-list">
+			<li class="interlanguage-link interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D8%B7%D8%B1%D9%82_%D8%AD%D8%B3%D8%A7%D8%A8_%D8%A7%D9%84%D8%AC%D8%B0%D8%B1_%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%B9%D9%8A" title="طرق حساب الجذر التربيعي – Arabic" lang="ar" hreflang="ar">العربية</a></li>
+			<li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/Heron-Verfahren" title="Heron-Verfahren – German" lang="de" hreflang="de">Deutsch</a></li>
+			<li class="interlanguage-link interwiki-es"><a href="http://es.wikipedia.org/wiki/C%C3%A1lculo_de_la_ra%C3%ADz_cuadrada" title="Cálculo de la raíz cuadrada – Spanish" lang="es" hreflang="es">Español</a></li>
+			<li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/M%C3%A9thode_de_H%C3%A9ron" title="Méthode de Héron – French" lang="fr" hreflang="fr">Français</a></li>
+			<li class="interlanguage-link interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EB%B0%94%EB%B9%8C%EB%A1%9C%EB%8B%88%EC%95%84_%EB%B2%95" title="바빌로니아 법 – Korean" lang="ko" hreflang="ko">한국어</a></li>
+			<li class="interlanguage-link interwiki-hi"><a href="http://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%AE%E0%A5%82%E0%A4%B2_%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A4%BE%E0%A4%B2%E0%A4%A8%E0%A5%87_%E0%A4%95%E0%A5%80_%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%81" title="वर्गमूल निकालने की विधियाँ – Hindi" lang="hi" hreflang="hi">हिन्दी</a></li>
+			<li class="interlanguage-link interwiki-it"><a href="http://it.wikipedia.org/wiki/Metodi_per_il_calcolo_della_radice_quadrata" title="Metodi per il calcolo della radice quadrata – Italian" lang="it" hreflang="it">Italiano</a></li>
+			<li class="interlanguage-link interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%94%D7%95%D7%A6%D7%90%D7%AA_%D7%A9%D7%95%D7%A8%D7%A9_%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99" title="הוצאת שורש ריבועי – Hebrew" lang="he" hreflang="he">עברית</a></li>
+			<li class="interlanguage-link interwiki-la"><a href="http://la.wikipedia.org/wiki/Radicis_extractio" title="Radicis extractio – Latin" lang="la" hreflang="la">Latina</a></li>
+			<li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E9%96%8B%E5%B9%B3%E6%B3%95" title="開平法 – Japanese" lang="ja" hreflang="ja">日本語</a></li>
+			<li class="interlanguage-link interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Metody_obliczania_pierwiastka_kwadratowego" title="Metody obliczania pierwiastka kwadratowego – Polish" lang="pl" hreflang="pl">Polski</a></li>
+			<li class="interlanguage-link interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%98%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%93%D0%B5%D1%80%D0%BE%D0%BD%D0%B0" title="Итерационная формула Герона – Russian" lang="ru" hreflang="ru">Русский</a></li>
+			
+			<li class="wbc-editpage"><a href="http://www.wikidata.org/wiki/Q1197114#sitelinks-wikipedia" title="Edit interlanguage links">Edit links</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 31 January 2014 at 13:03.<br></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a> <br>
+Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a class="external" href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/wiki/Methods_of_computing_square_roots" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.cite","mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.articleFeedbackv5.startup","ext.wikimediaShopLink.core","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script src="./Methods of computing square roots - Wikipedia, the free encyclopedia_files/load(4).php"></script>
+<!-- Served by mw1218 in 0.181 secs. -->
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

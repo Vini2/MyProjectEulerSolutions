@@ -1,0 +1,21 @@
+Palindromic in base 10 and 2 --> 1      Sum = 1
+Palindromic in base 10 and 2 --> 3      Sum = 4
+Palindromic in base 10 and 2 --> 5      Sum = 9
+Palindromic in base 10 and 2 --> 7      Sum = 16
+Palindromic in base 10 and 2 --> 9      Sum = 25
+Palindromic in base 10 and 2 --> 33      Sum = 58
+Palindromic in base 10 and 2 --> 99      Sum = 157
+Palindromic in base 10 and 2 --> 313      Sum = 470
+Palindromic in base 10 and 2 --> 585      Sum = 1055
+Palindromic in base 10 and 2 --> 717      Sum = 1772
+Palindromic in base 10 and 2 --> 7447      Sum = 9219
+Palindromic in base 10 and 2 --> 9009      Sum = 18228
+Palindromic in base 10 and 2 --> 15351      Sum = 33579
+Palindromic in base 10 and 2 --> 32223      Sum = 65802
+Palindromic in base 10 and 2 --> 39993      Sum = 105795
+Palindromic in base 10 and 2 --> 53235      Sum = 159030
+Palindromic in base 10 and 2 --> 53835      Sum = 212865
+Palindromic in base 10 and 2 --> 73737      Sum = 286602
+Palindromic in base 10 and 2 --> 585585      Sum = 872187
+Final Sum = 872187
+BUILD SUCCESSFUL (total time: 183 minutes 7 seconds)
