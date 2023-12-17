@@ -1,7 +1,7 @@
 max = 0
 num_to_test = 600851475143
 num = 600851475143
-n=3
+n = 3
 
 while True:
     while num % n == 0:
